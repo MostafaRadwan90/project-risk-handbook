@@ -1,0 +1,515 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 16: Crisis Management - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            .phases-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 20px 0;
+            }
+            .phase-box {
+                width: 45%;
+                min-width: 300px;
+                margin-bottom: 20px;
+                padding: 15px;
+                border: 1px solid #6f42c1; /* Purple theme for CM */
+                border-radius: 5px;
+                background-color: #f3effa;
+            }
+            .phase-box h4 {
+                margin-top: 0;
+                color: #4a148c;
+            }
+            .classification-model-box {
+                text-align: center;
+                padding: 10px;
+                border: 1px dashed #ccc;
+                margin: 10px auto;
+                max-width: 500px;
+            }
+            .case-study-box {
+                margin-top: 20px;
+                padding: 15px;
+                border: 1px solid #28a745; /* Green border for example */
+                background-color: #eaf6ec; /* Light green background */
+            }
+            .case-study-box h4 { color: #155724; }
+            .case-study-comparison {
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+            }
+            .case-study-column {
+                width: 48%;
+            }
+            .case-study-column.what-happened { background-color: #ffebee; padding:10px; border-radius:4px; border: 1px solid #ffcdd2;}
+            .case-study-column.should-have-happened { background-color: #e8f5e9; padding:10px; border-radius:4px; border: 1px solid #c8e6c9;}
+
+            .cm-posters-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 15px;
+                margin-top: 15px;
+            }
+            .cm-poster {
+                background-color: #e7f3ff;
+                border: 1px solid #b3d7ff;
+                padding: 15px;
+                border-radius: 5px;
+                width: 45%;
+                min-width: 250px;
+                text-align: center;
+                font-style: italic;
+            }
+            .image-placeholder { /* Reusing from previous for diagrams */
+                text-align: center;
+                padding: 20px;
+                border: 1px dashed #ccc;
+                background-color: #f9f9f9;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p style="font-size:1.2em; color:#ccc;">Safety Management Module (Based on Prof. Dr. ENG. Khaled Ahmed Hamdy's Material)</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter16_crisis_management_intro">
+                    <h1>Chapter 16: Crisis Management</h1>
+                    <p>While risk management aims to proactively identify and manage potential problems, crises can still occur. Crisis Management is the overall coordination of an organization's response to a crisis, in an effective, timely manner, with the goal of avoiding or minimizing damage to the organization's profitability, reputation, or ability to operate. This chapter outlines the development of a Crisis Management System (CMS) and examines real-world case studies.</p>
+                </section>
+
+                <section id="c16_aims_cms">
+                    <h2>16.1 Aims of the Crisis Management System (CMS) (Slide 176)</h2>
+                    <p>The main aims of a CMS are to:</p>
+                    <ul>
+                        <li><strong>Ensure proper Management of Crises and enable Business Continuity:</strong> To handle disruptive events effectively while maintaining essential business functions.</li>
+                        <li><strong>Allow the company to respond to unexpected events or situations</strong> with potentially negative effects that threaten resources and people or the success and continued operation of the facilities.</li>
+                    </ul>
+                </section>
+
+                <section id="c16_phases_developing_cms">
+                    <h2>16.2 Phases of Developing a Crisis Management System (CMS) (Slide 177 overview)</h2>
+                    <p>Developing a robust CMS typically involves several phases, as outlined on Slide 177. We will explore each in more detail.</p>
+                    <div class="image-placeholder">
+                        <p><i>Slide 177 shows a 5-phase arrow: 1. Reviewing Existing Situation → 2. Evaluating Crises and Planning Response → 3. Documenting the CMS → 4. Awareness and Training → 5. Implementing the System.</i></p>
+                    </div>
+
+                    <h3>16.2.1 Phase 1: Reviewing the Existing Situation (Slides 178-182)</h3>
+                    <div class="phase-box">
+                        <h4>Activities (Slide 178):</h4>
+                        <ul>
+                            <li>Identification of all Crises exposures that the company’s facilities may face.</li>
+                            <li>Evaluation of any/all existing Crisis Management Practices within the company.</li>
+                            <li>Evaluation of response to Crises faced in past years.</li>
+                        </ul>
+                        <h4>Deliverables (Slide 178):</h4>
+                        <ul>
+                            <li>Identification of all Crises exposures within the company’s facilities and their operations.</li>
+                            <li>Assessing existing situation in regards to Crisis Management and identifying Areas for improvement.</li>
+                        </ul>
+                    </div>
+                    <h4>Crisis Classification Models (Slide 179)</h4>
+                    <p>Understanding how to classify crises is essential. Slide 179 suggests methods like "By Origin," "By Category," and using a "Matrix." The most appropriate classification method will be selected during the project.</p>
+
+                    <h5>A. Crisis Classification by Origin (ISO 22361:2022 (E)) (Slide 180)</h5>
+                    <div class="classification-model-box">
+                        <p><strong>Origins of Crises</strong></p>
+                        <p>Disruptive Incidents | Operating Fluctuations | Poorly Managed Incidents</p>
+                    </div>
+
+                    <h5>B. Classification of Crisis by Category (Slide 181)</h5>
+                    <p>Examples of categories include:</p>
+                    <ul>
+                        <li>Natural (e.g., earthquakes, floods)</li>
+                        <li>Technological (e.g., industrial accidents, system failures)</li>
+                        <li>Confrontation (e.g., boycotts, strikes)</li>
+                        <li>Malevolence (e.g., terrorism, sabotage, cyberattacks)</li>
+                        <li>Organizational Misdeeds (e.g., skewed management values, deception, misconduct)</li>
+                        <li>Due to Workplace Violence</li>
+                        <li>Due to Rumors</li>
+                        <li>Financial (e.g., shortage of funds, bankruptcy)</li>
+                    </ul>
+
+                    <h5>C. Matrix Classification of Crisis (Slide 182)</h5>
+                    <div class="image-placeholder">
+                        <p><i>Slide 182 depicts a 2x2 matrix for crisis classification.
+                        <br><strong>Axes:</strong> Technical/Economic (Vertical) vs. Internal/External (Horizontal).
+                        <br><strong>Quadrants with examples:</strong>
+                        <br>- Top-Left (Internal, Technical/Economic): IT/Systems breakdown, Contamination, Industrial Accident.
+                        <br>- Top-Right (External, Technical/Economic): Industrial Accidents, Government Crisis, Utilities Failure, Natural Disasters, Supplier Failure.
+                        <br>- Bottom-Left (Internal, People/Social): On-site Product Tampering, Malicious Acts, Organizational Failure.
+                        <br>- Bottom-Right (External, People/Social): Sabotage, Terrorism, Labour Strikes, Off-site Product Tampering.</i>
+                    </div>
+
+                    <h3>16.2.2 Phase 2: Evaluating Crises Exposures & Planning the Response (Slides 183-184)</h3>
+                    <div class="phase-box">
+                        <h4>Activities (Slide 183):</h4>
+                        <ul>
+                            <li>Evaluate the risks involved in all the crises exposures identified in phase 1.</li>
+                            <li>Quantify crises exposures based on frequency, likelihood, and impact.</li>
+                            <li>Determine the appropriate responses to each of the crises.</li>
+                        </ul>
+                        <h4>Deliverables (Slide 183):</h4>
+                        <ul>
+                            <li>Evaluation of Risks for all Crises Exposures.</li>
+                            <li>Crises Response Plan covering all Crises Exposures.</li>
+                        </ul>
+                    </div>
+                    <h4>Planning for Crisis Management (Slide 184)</h4>
+                    <p>This involves several layers of planning:</p>
+                    <ul>
+                        <li><strong>General:</strong> Set parameters for strategy and planning stages; define structure, roles, responsibility, and authority.</li>
+                        <li><strong>Legal & Other Requirements:</strong> Maintain legal, regulatory, and other instructions related to threats and risks applicable to the company.</li>
+                        <li><strong>Risk Assessment & Impact Analysis:</strong> Hazard, risk, and threat identification; Risk Assessment; Impact analysis.</li>
+                        <li><strong>CM Plan:</strong> Trigger for activation of the plan; Alert and Activation Procedure; Types of Crises; Stages of Crises; Crisis Response Action Steps.</li>
+                    </ul>
+
+                    <h4>Types of Response Stages (Slide 185)</h4>
+                    <div class="image-placeholder">
+                        <p><i>Slide 185 shows a flow:
+                        <br>1. Gain and maintain situational awareness → [Immediate Response Stage]
+                        <br>2. Activate Crises Response plan and deploy resources → [Immediate Response Stage continues]
+                        <br>3. Coordinate response and communicate → [Transitional Response Stage]
+                        <br>4. Monitor, recover and repair → [Recovery Stage]
+                        <br>5. De-mobilize → [Recovery Stage continues]</i>
+                    </div>
+
+                    <h4>Types of Crises (by Impact Level - Slide 186)</h4>
+                    <p>Slide 186 presents a tiered model of crises based on impact, suggesting different response coordination needs:</p>
+                    <ul>
+                        <li><strong>Type 1 Crisis (Internal Impact):</strong> Can be resolved with existing resources or limited assistance (e.g., Minor Structural Damage). Response involves immediate actions, transitional steps, and recovery, often managed internally.</li>
+                        <li><strong>Type 2 Crisis (Public Impact):</strong> Requires considerable coordination with external jurisdictions (e.g., Hostage situation). Response involves Basic Life Support (BLS), potential company-wide coordination, and external agency involvement.</li>
+                        <li><strong>Type 3 Crisis (National Impact):</strong> Catastrophic event involving entire surrounding/extended community, beyond emergency response capabilities of internal resources (e.g., Major Earthquake). Response involves BLS, coordination with and often leadership by Relevant Government Authority.</li>
+                    </ul>
+                    <p>This slide also links these types to Strategic, Tactical, and Operational levels of response.</p>
+
+
+                    <h3>16.2.3 Phase 3: Planning & Developing CMS Documentation (Slides 187-190)</h3>
+                    <div class="phase-box">
+                        <h4>Activities (Slide 187):</h4>
+                        <ul>
+                            <li>Setting the Crisis Command Structure.</li>
+                            <li>Determining the number and types of Crisis Management documents to develop.</li>
+                            <li>Developing the Crisis Management documents.</li>
+                        </ul>
+                        <h4>Deliverables (Slide 187):</h4>
+                        <ul>
+                            <li>Crisis Management & Business Continuity System Documentation, including:
+                                <ul>
+                                    <li>Crisis Command Structure</li>
+                                    <li>Crisis Management Policy & Objectives</li>
+                                    <li>CM Manual</li>
+                                    <li>Interfaces with Existing Systems.</li>
+                                    <li>CM Processes & SOPs (Standard Operating Procedures)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4>Sample Crisis Command Structure (Slide 188)</h4>
+                     <div class="image-placeholder">
+                        <p><i>Slide 188 shows an organogram: CEO at the top, below is Crisis Management Commander. Reporting to the Commander are: Media Coordinator (with Official Spokes Person below), Planning Coordinator, Logistics Coordinator, Operations Coordinator (with Department Crisis Coordinator below, who oversees Site Security, Department Technical Support, and Contractors/Operators/Consultants), Finance Coordinator, and Legal Coordinator.</i></p>
+                    </div>
+                    <h4>Contents of the CMS Documents (Slide 189)</h4>
+                     <div class="image-placeholder">
+                        <p><i>Slide 189 shows a pyramid:
+                        <br>Top: Policy
+                        <br>Level 2: Governance Framework
+                        <br>Level 3: System Procedures
+                        <br>Level 4: Crisis Response Instructions
+                        <br>Base: Supporting Documentation</i>
+                    </div>
+                     <h4>The Business Continuity Framework (Slide 190)</h4>
+                     <div class="image-placeholder">
+                        <p><i>Slide 190 shows a Plan-Do-Check-Act style cycle for Business Continuity Management, centered around "Continual Improvement." Key stages include: Start (know your organization, define scope, identify objectives, preliminary determination of scenarios), Policy development, Planning (structure, legal, risk assessment, crisis response plan), Implementation & operation (build & embedding, competence, communication, operational control, finance), Performance assessment (evaluation, measurement, testing, corrective/preventive action, audits), and Management review.</i></p>
+                    </div>
+
+
+                    <h3>16.2.4 Phase 4: Awareness and Training (Slides 191-195)</h3>
+                     <div class="phase-box">
+                        <h4>Activities (Slide 191):</h4>
+                        <ul>
+                            <li>Raising awareness about Crisis Management and benefits of implementing a CMS.</li>
+                            <li>Selecting and Training Crisis Coordinators from each department on Crisis Identification, Evaluation, and Response Planning.</li>
+                            <li>Training the Crisis Management Team on Crisis Response.</li>
+                        </ul>
+                        <h4>Deliverables (Slide 191):</h4>
+                        <ul>
+                            <li>Crisis Management Awareness Posters/signs, Leaflets, Brochures, and Handouts.</li>
+                            <li>Training Course for Crisis Coordinators.</li>
+                            <li>Training Course for Crisis Management Team.</li>
+                        </ul>
+                    </div>
+                    <h4>Sample Standard Statements for Crisis Communication (Slides 192-194)</h4>
+                    <ul>
+                        <li>"We have implemented our crisis response plan, which places the highest priority on the health and safety of customers and staff." (Slide 192)</li>
+                        <li>"We will be supplying additional information when it is available and posting it on our website and other media channels." (Slide 193)</li>
+                        <li>"Our hearts and minds are with those who are in harm's way, and we are doing all that we can to ensure their safety." (Slide 194)</li>
+                    </ul>
+                    <h4>Sample CM Posters (Slide 195)</h4>
+                    <div class="cm-posters-container">
+                        <div class="cm-poster">"Always be prepared. Problems start with: 1. I didn’t see 2. I didn’t know 3. I didn’t think"</div>
+                        <div class="cm-poster">"The Secret of Crisis Management is not good vs bad, it is preventing the bad from getting worse." - Andy Gillman</div>
+                        <div class="cm-poster">"Crisis Management is being cool in the eye of the storm."</div>
+                        <div class="cm-poster">"Expect the unexpected. Crises happen. It is how we respond that matters."</div>
+                    </div>
+
+                    <h3>16.2.5 Phase 5: System Implementation (Slide 196)</h3>
+                    <div class="phase-box">
+                        <h4>Activities (Slide 196):</h4>
+                        <ul>
+                            <li>Ensure that the CMS is implemented in a formal way.</li>
+                            <li>Ensure full understanding and acceptance.</li>
+                            <li>Audit the system for its application and suitability, and the results of the audits should be reviewed by top management.</li>
+                        </ul>
+                        <h4>Deliverables (Slide 196):</h4>
+                        <ul>
+                            <li>Functional Crisis Management and Business Continuity System.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c16_case_studies">
+                    <h2>16.3 Case Studies in Crisis Management (Slides 197-202)</h2>
+
+                    <div class="case-study-box">
+                        <h4>Case 1: Samsung Galaxy Note 7 Battery Explosions (2016) (Slides 197-198)</h4>
+                        <p><strong>Crisis:</strong> Reports emerged of Galaxy Note 7 smartphones catching fire or exploding due to faulty batteries. Samsung launched a global recall.</p>
+                        <div class="case-study-comparison">
+                            <div class="case-study-column what-happened">
+                                <strong>What actually happened:</strong>
+                                <ol>
+                                    <li>Rushing to release product.</li>
+                                    <li>Insufficient Product Testing.</li>
+                                    <li>Initial Silence.</li>
+                                    <li>Delayed recognition of the severity of the issue.</li>
+                                    <li>Failure to communicate the risks effectively to consumers.</li>
+                                </ol>
+                            </div>
+                            <div class="case-study-column should-have-happened">
+                                <strong>What should have happened:</strong>
+                                <ul>
+                                    <li>Rigorous testing to ensure product safety and quality.</li>
+                                    <li>Having a clear product recall plan in place.</li>
+                                    <li>Timely and effective communication to: Swiftly acknowledge the issue, Provide accurate information, Keep consumers informed throughout the crisis.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><strong>Outcome:</strong> Damage to company reputation and huge financial losses.</p>
+                    </div>
+
+                    <div class="case-study-box">
+                        <h4>Case 2: United Airlines Passenger Removal Crisis (2017) (Slides 199-200)</h4>
+                        <p><strong>Crisis:</strong> Forcible removal of a passenger from an overbooked flight, captured on video and widely circulated.</p>
+                         <div class="case-study-comparison">
+                            <div class="case-study-column what-happened">
+                                <strong>What actually happened:</strong>
+                                <ol>
+                                    <li>Forcibly removing the passenger.</li>
+                                    <li>Lack of empathy from airline staff removing the passenger.</li>
+                                    <li>Initial response from the CEO was to defend the staff actions saying they were acting within company policies.</li>
+                                </ol>
+                            </div>
+                            <div class="case-study-column should-have-happened">
+                                <strong>What should have happened:</strong>
+                                <ul>
+                                    <li>More Negotiations with Passenger.</li>
+                                    <li>Swift and sincere apology.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><strong>Outcome:</strong> Company lost over $800 Million Dollars in Value.</p>
+                    </div>
+
+                    <div class="case-study-box">
+                        <h4>Case 3: The Tylenol Crisis (Johnson & Johnson) (1982) (Slides 201-202)</h4>
+                        <p><strong>Crisis:</strong> Seven people died after taking Cyanide-laced Tylenol Pills. Evidence showed the Cyanide was accidentally introduced on store shelves (not J&J's manufacturing fault).</p>
+                        <p><strong>What actually happened (J&J's Response):</strong></p>
+                        <ul>
+                            <li>Showed empathy for the families of the victims immediately.</li>
+                            <li>Stopped all Product Advertising.</li>
+                            <li>Sent 450,000 messages to healthcare facilities and other stakeholders.</li>
+                            <li>Issued safety warnings to customers.</li>
+                            <li>Started using tamper-proof packaging.</li>
+                            <li>Apologized for not introducing tamper-proof packaging earlier.</li>
+                        </ul>
+                        <p><strong>Outcome & Lessons:</strong></p>
+                        <ul>
+                            <li>J&J set the CM Script that companies often use to date.</li>
+                            <li>Transparency and Integrity are Key to Crisis Management.</li>
+                            <li>J&J's swift and responsible actions helped it recover consumer trust and market share.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c16_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 16 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Crisis Management System (CMS):</strong> Aims to ensure proper management of crises, enable business continuity, and allow effective response to unexpected negative events.</li>
+                            <li><strong>CMS Development Phases:</strong> 1. Review Existing Situation; 2. Evaluate Exposures & Plan Response; 3. Document CMS; 4. Awareness & Training; 5. Implement System.</li>
+                            <li><strong>Crisis Classification:</strong> Can be done by origin (disruptive incidents, operating fluctuations, poorly managed incidents), category (natural, technological, malevolence, etc.), or using a matrix (Internal/External vs. Technical/People impact).</li>
+                            <li><strong>Crisis Response:</strong> Involves immediate, transitional, and recovery stages. Different types of crises (Internal, Public, National) require different levels of coordination.</li>
+                            <li><strong>CMS Documentation:</strong> Includes policy, governance, procedures, response instructions, and supporting documents, often organized around a Crisis Command Structure.</li>
+                            <li><strong>Awareness & Training:</strong> Crucial for effective CMS implementation, involving communication, training for coordinators and teams.</li>
+                            <li><strong>Case Studies:</strong> Highlight the importance of proactive planning, swift and empathetic communication, transparency, and taking responsibility in managing crises effectively (e.g., Tylenol) versus the negative impacts of poor handling (e.g., Samsung Note 7, United Airlines).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c16_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 16 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. What is a primary aim of a Crisis Management System (CMS) according to Slide 176?</p>
+                            <ul>
+                                <li>a) To assign blame for crises.</li>
+                                <li>b) To ensure proper management of crises and enable business continuity.</li>
+                                <li>c) To replace the need for regular risk management.</li>
+                                <li>d) To focus solely on financial recovery after a crisis.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_1"><strong>Answer:</strong> b) To ensure proper management of crises and enable business continuity.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. Which of the following is the FIRST phase in developing a CMS as per Slide 177?</p>
+                            <ul>
+                                <li>a) Documenting the CMS</li>
+                                <li>b) Awareness and Training</li>
+                                <li>c) Reviewing the Existing Situation</li>
+                                <li>d) Implementing the System</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_2"><strong>Answer:</strong> c) Reviewing the Existing Situation.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. Crisis classification by "Origin" (ISO 22361:2022) includes which of these categories? (Slide 180)</p>
+                            <ul>
+                                <li>a) Natural, Technological, Malevolence</li>
+                                <li>b) Internal Impact, Public Impact, National Impact</li>
+                                <li>c) Disruptive Incidents, Operating Fluctuations, Poorly Managed Incidents</li>
+                                <li>d) Strengths, Weaknesses, Opportunities, Threats</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_3"><strong>Answer:</strong> c) Disruptive Incidents, Operating Fluctuations, Poorly Managed Incidents.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. Evaluating crises exposures and determining appropriate responses occurs in which phase of CMS development? (Slide 183)</p>
+                            <ul>
+                                <li>a) Phase 1: Reviewing Existing Situation</li>
+                                <li>b) Phase 2: Evaluating Crises Exposures & Planning Response</li>
+                                <li>c) Phase 3: Documenting the CMS</li>
+                                <li>d) Phase 4: Awareness and Training</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_4"><strong>Answer:</strong> b) Phase 2: Evaluating Crises Exposures & Planning Response.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. A crisis like a major earthquake that is beyond the emergency response capabilities of internal resources would be classified as what Type of Crisis on Slide 186?</p>
+                            <ul>
+                                <li>a) Type 1 Crisis (Internal Impact)</li>
+                                <li>b) Type 2 Crisis (Public Impact)</li>
+                                <li>c) Type 3 Crisis (National Impact)</li>
+                                <li>d) Type 0 Crisis (Minor Incident)</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_5"><strong>Answer:</strong> c) Type 3 Crisis (National Impact).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. Developing the Crisis Command Structure and CM Manual are deliverables of which CMS development phase? (Slide 187)</p>
+                            <ul>
+                                <li>a) Phase 2</li>
+                                <li>b) Phase 3</li>
+                                <li>c) Phase 4</li>
+                                <li>d) Phase 5</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_6"><strong>Answer:</strong> b) Phase 3 (Planning & Developing CMS Documentation).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. Which of these is a key activity in Phase 4: Awareness and Training for CMS? (Slide 191)</p>
+                            <ul>
+                                <li>a) Auditing the system for suitability.</li>
+                                <li>b) Selecting and Training Crisis Coordinators.</li>
+                                <li>c) Evaluating existing crisis management practices.</li>
+                                <li>d) Setting the Crisis Command Structure.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_7"><strong>Answer:</strong> b) Selecting and Training Crisis Coordinators.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. In the Samsung Galaxy Note 7 case, what was a key failing in their crisis response? (Slide 198)</p>
+                            <ul>
+                                <li>a) Over-communicating with consumers.</li>
+                                <li>b) Swiftly acknowledging the issue and recalling all products immediately.</li>
+                                <li>c) Initial silence and delayed recognition of the issue's severity.</li>
+                                <li>d) Conducting too much product testing.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_8"><strong>Answer:</strong> c) Initial silence and delayed recognition of the issue's severity.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. What was a key element of Johnson & Johnson's successful handling of the Tylenol crisis? (Slide 202)</p>
+                            <ul>
+                                <li>a) Denying any responsibility for the tampering.</li>
+                                <li>b) Showing empathy, communicating transparently, and taking swift action like product recall and tamper-proof packaging.</li>
+                                <li>c) Waiting for government agencies to mandate action.</li>
+                                <li>d) Quietly reformulating the product without public announcement.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_9"><strong>Answer:</strong> b) Showing empathy, communicating transparently, and taking swift action like product recall and tamper-proof packaging.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. The final phase of developing a CMS, ensuring it's formally implemented and audited, is: (Slide 196)</p>
+                            <ul>
+                                <li>a) Phase 3: Documenting the CMS</li>
+                                <li>b) Phase 4: Awareness and Training</li>
+                                <li>c) Phase 5: System Implementation</li>
+                                <li>d) Phase 1: Reviewing Existing Situation</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans16_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans16_10"><strong>Answer:</strong> c) Phase 5: System Implementation.</div>
+                        </div>
+                    </div>
+                </section>
+                 <div class="callout callout-remark">
+                    <h4>Concluding Thought (Inspired by Slide 203)</h4>
+                    <p>As highlighted throughout these materials, especially in safety and crisis contexts: <strong>Nothing takes the place of preparedness.</strong> Effective risk management, robust safety systems, and well-planned crisis responses are all built on a foundation of proactive preparation.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling; 
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

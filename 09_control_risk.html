@@ -1,0 +1,388 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 9: Control Risk - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            /* Styles for ITTO diagrams - consistent with previous chapters */
+            .itto-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                gap: 10px;
+            }
+            .itto-box {
+                border: 1px solid #0779e4;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #f0f8ff;
+                width: 32%; /* Or adjust as needed */
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+                display: flex; /* Added for vertical alignment */
+                flex-direction: column; /* Added for vertical alignment */
+            }
+            .itto-box h4 {
+                margin-top: 0;
+                color: #0779e4;
+                border-bottom: 1px solid #add8e6;
+                padding-bottom: 5px;
+            }
+            .itto-box ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                flex-grow: 1; /* Allow ul to grow and push content down */
+            }
+            .itto-box ul li {
+                padding: 5px 0;
+                border-bottom: 1px dotted #eee;
+            }
+            .itto-box ul li:last-child {
+                border-bottom: none;
+            }
+            .process-arrow {
+                font-size: 2em;
+                color: #0779e4;
+                align-self: center;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p>By: Dr. Aly Sherif Abdel Fayad</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter9_control_risk">
+                    <h1>Chapter 9: Control Risk</h1>
+                    <p>Control Risk is the process of implementing risk response plans, tracking identified risks, monitoring residual risks, identifying new risks, and evaluating risk process effectiveness throughout the project. This chapter details the inputs, tools & techniques, and outputs of this crucial ongoing process, ensuring that the project remains aligned with its risk management objectives.</p>
+                </section>
+
+                <section id="c9_ittos_control_risk">
+                    <h2>9.1 ITTOs for Control Risk (Slide 67)</h2>
+                    <p>The Control Risk process (referred to as Monitor Risks in later PMBOK® editions) ensures that risk responses are executed as planned, new risks are identified and managed, and the overall risk management approach remains effective.</p>
+                    <div class="itto-container">
+                        <div class="itto-box">
+                            <h4>Inputs</h4>
+                            <ul>
+                                <li><strong>Project Management Plan:</strong>
+                                    <ul>
+                                        <li>Risk Management Plan (provides the framework for all risk activities)</li>
+                                        <li>(Other components like baselines for variance analysis)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Project Documents:</strong>
+                                    <ul>
+                                        <li>Issue Log</li>
+                                        <li>Lessons Learned Register</li>
+                                        <li>Risk Register (key document being monitored and updated)</li>
+                                        <li>Risk Report</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Work Performance Data (Slide 67):</strong> Raw observations and measurements identified during activities performed to carry out the project work (e.g., actual costs incurred, percent of work physically completed).</li>
+                                <li><strong>Work Performance Reports (Slide 67):</strong> Formatted and contextualized information derived from work performance data (e.g., status reports, progress reports).</li>
+                            </ul>
+                        </div>
+                        <span class="process-arrow">➔</span>
+                        <div class="itto-box">
+                            <h4>Tools & Techniques</h4>
+                            <ul>
+                                <li><strong>Data Analysis:</strong>
+                                    <ul>
+                                        <li>Technical Performance Analysis (Slide 67 - "Technical performance measurement")</li>
+                                        <li>Reserve Analysis (Slide 67)</li>
+                                        <li>Variance and Trend Analysis (Slide 67)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Risk Reassessment (Slide 67)</strong></li>
+                                <li><strong>Risk Audits (Slide 67)</strong></li>
+                                <li><strong>Meetings (Slide 67)</strong> (e.g., risk review meetings)</li>
+                                <li><strong>Expert Judgment</strong></li>
+                                 <li><strong>Interpersonal and Team Skills</strong></li>
+                            </ul>
+                        </div>
+                        <span class="process-arrow">➔</span>
+                        <div class="itto-box">
+                            <h4>Outputs</h4>
+                            <ul>
+                                <li><strong>Work Performance Information (Slide 67):</strong> Processed work performance data providing insights into how project work is performing against baselines, including risk status.</li>
+                                <li><strong>Change Requests (Slide 67)</strong></li>
+                                <li><strong>Project Management Plan Updates (Slide 67):</strong> Any component may be updated as a result of controlling risks.</li>
+                                <li><strong>Project Documents Updates (Slide 67):</strong>
+                                    <ul>
+                                        <li>Assumption Log</li>
+                                        <li>Issue Log</li>
+                                        <li>Lessons Learned Register</li>
+                                        <li>Risk Register (updated with outcomes of reassessments, audits, actual impacts)</li>
+                                        <li>Risk Report</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Organizational Process Assets Updates (Slide 67)</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="c9_tools_techniques_control_risk">
+                    <h2>9.2 Key Tools and Techniques for Controlling Risks</h2>
+
+                    <h3>9.2.1 Risk Reassessment (Slide 69)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Risk Reassessment</h4>
+                        <p>Risk reassessment involves periodically reviewing and updating the project's risk status. It is not a one-time activity but an ongoing effort throughout the project lifecycle.</p>
+                    </div>
+                    <p>Key activities during risk reassessment include:</p>
+                    <ul>
+                        <li><strong>Identification of new risks:</strong> As the project progresses, new uncertainties may emerge.</li>
+                        <li><strong>Reassessment of current risks:</strong> The probability, impact, or priority of previously identified risks may change.</li>
+                        <li><strong>The closing of risks that are outdated:</strong> Risks that are no longer relevant (e.g., they have occurred and been dealt with, or the window of opportunity/threat has passed) should be closed.</li>
+                    </ul>
+                    <p>Slide 69 emphasizes that "Project risk reassessments should be regularly scheduled." The frequency and detail depend on how the project progresses relative to its objectives.</p>
+
+                    <h3>9.2.2 Risk Audits (Slide 70)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Risk Audit</h4>
+                        <p>Risk audits examine and document the effectiveness of risk responses in dealing with identified risks and their root causes, as well as the effectiveness of the overall risk management process.</p>
+                    </div>
+                    <p>Key aspects of risk audits:</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> To evaluate the effectiveness of risk management, not just individual responses. To identify lessons learned for the current and future projects.</li>
+                        <li><strong>Frequency:</strong> Performed at an appropriate frequency, which may be defined in the Risk Management Plan.</li>
+                        <li><strong>Format:</strong> Can be part of routine project review meetings or held as separate risk audit meetings.</li>
+                        <li><strong>Defined Objectives:</strong> "The format for the audit and its objectives should be clearly defined before the audit is conducted." (Slide 70)</li>
+                    </ul>
+                    <div class="callout callout-tip">
+                        <h4>Focus of a Risk Audit</h4>
+                        <p>A risk audit might ask questions like: Were the planned risk responses implemented correctly? Were they effective? Was the risk identification process thorough? Are risk owners fulfilling their responsibilities?</p>
+                    </div>
+
+                    <h3>9.2.3 Variance and Trend Analysis (Slide 71)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Variance and Trend Analysis</h4>
+                        <p>Variance analysis compares planned results (baselines) to actual results to identify deviations. Trend analysis examines project performance over time to determine if performance is improving or deteriorating.</p>
+                    </div>
+                    <p>In the context of risk control:</p>
+                    <ul>
+                        <li><strong>Monitoring Performance:</strong> Used for monitoring overall project performance against cost and schedule baselines.</li>
+                        <li><strong>Forecasting Deviations:</strong> "Outcomes from these analyses may forecast potential deviation of the project at completion from cost and schedule targets." (Slide 71)</li>
+                        <li><strong>Indicating Risk Impact:</strong> "Deviation from the baseline plan may indicate the potential impact of threats or opportunities." (Slide 71) For example, consistent cost overruns in a particular area might signal an unmanaged risk or an ineffective response.</li>
+                    </ul>
+
+                    <h3>9.2.4 Technical Performance Measurement (Slide 72)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Technical Performance Measurement (TPM)</h4>
+                        <p>Technical performance measurement compares technical accomplishments during project execution to the schedule of technical achievement. It requires the definition of objective, quantifiable measures of technical performance, which can be used to compare actual results against targets.</p>
+                    </div>
+                    <p>Key aspects of TPM:</p>
+                    <ul>
+                        <li><strong>Quantifiable Measures:</strong> Relies on objective metrics (e.g., transaction processing speed, defect rates, weight, power consumption).</li>
+                        <li><strong>Comparison:</strong> Actual technical achievements are compared against planned achievements at specific milestones.</li>
+                        <li><strong>Forecasting Success:</strong> "Deviation, such as demonstrating more or less functionality than planned at a milestone, can help to forecast the degree of success in achieving the project’s scope." (Slide 72) Deviations can indicate the materialization of technical risks or opportunities.</li>
+                    </ul>
+
+                    <h3>9.2.5 Reserve Analysis</h3>
+                    <p>This technique is listed under Tools & Techniques on Slide 67. It involves monitoring the status of contingency and management reserves.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> To determine if the remaining reserves are adequate for the remaining risks in the project.</li>
+                        <li><strong>Action:</strong> If reserves are being depleted faster than expected, or if new significant risks emerge, it may trigger a need for additional funding or a change in risk response strategies.</li>
+                    </ul>
+
+                    <h3>9.2.6 Meetings</h3>
+                    <p>Regular risk review meetings are essential for controlling risks. These meetings provide a forum to:</p>
+                    <ul>
+                        <li>Discuss the status of identified risks and their responses.</li>
+                        <li>Identify new risks.</li>
+                        <li>Reassess existing risks.</li>
+                        <li>Review the effectiveness of the risk management process.</li>
+                        <li>Communicate risk information to stakeholders.</li>
+                    </ul>
+                </section>
+
+                <section id="c9_outputs_control_risk">
+                    <h2>9.3 Key Outputs of Control Risk</h2>
+                    <p>The Control Risk process generates important information and updates that feed into other project management processes.</p>
+
+                    <h3>9.3.1 Work Performance Information</h3>
+                    <p>This output provides a performance context for the project, including how risks are affecting performance. It can highlight areas where risk responses are working or where new actions are needed.</p>
+
+                    <h3>9.3.2 Change Requests (Slide 73)</h3>
+                    <p>As risks are controlled and responses implemented, changes to the project plan or baselines may be necessary. These are formally managed through change requests.</p>
+                    <div class="callout callout-definition">
+                        <h4>Corrective Actions</h4>
+                        <p>Activities that realign the performance of the project work with the project management plan. They include implementing contingency plans and workarounds. Workarounds are responses to emerging risks that were previously unidentified or accepted passively.</p>
+                    </div>
+                    <div class="callout callout-definition">
+                        <h4>Preventive Actions</h4>
+                        <p>Activities that ensure that future performance of the project work is aligned with the project management plan. These aim to reduce the probability of negative impacts from potential future risks.</p>
+                    </div>
+                    <p>Change requests can also include defect repairs or updates to formal project documents or the project management plan.</p>
+
+                    <h3>9.3.3 Project Management Plan and Project Documents Updates</h3>
+                    <p>Various components of the project management plan (e.g., baselines, subsidiary plans) and project documents (especially the Risk Register and Risk Report) are updated to reflect the outcomes of risk control activities, new risks, closed risks, and the effectiveness of responses.</p>
+                </section>
+
+                <section id="c9_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 9 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Control Risk:</strong> An ongoing process to implement risk responses, track and reassess risks, identify new risks, and evaluate the effectiveness of the risk management process.</li>
+                            <li><strong>Key Techniques:</strong>
+                                <ul>
+                                    <li><strong>Risk Reassessment:</strong> Periodically reviewing and updating risk status.</li>
+                                    <li><strong>Risk Audits:</strong> Examining the effectiveness of risk responses and the overall risk management process.</li>
+                                    <li><strong>Variance and Trend Analysis:</strong> Comparing planned vs. actual performance to identify deviations and trends indicating risk impacts.</li>
+                                    <li><strong>Technical Performance Measurement:</strong> Comparing actual technical achievements against planned targets.</li>
+                                    <li><strong>Reserve Analysis:</strong> Monitoring contingency and management reserves.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Key Outputs:</strong> Work Performance Information, Change Requests (corrective and preventive actions), and updates to the Project Management Plan and Project Documents.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c9_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 9 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. Which of the following is a primary input to the Control Risk process according to Slide 67?</p>
+                            <ul>
+                                <li>a) Risk Breakdown Structure</li>
+                                <li>b) Work Performance Data</li>
+                                <li>c) Stakeholder Engagement Plan</li>
+                                <li>d) Final Project Report</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_1"><strong>Answer:</strong> b) Work Performance Data.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. Periodically reviewing and updating the project's risk status, including identifying new risks and closing outdated ones, is known as: (Slide 69)</p>
+                            <ul>
+                                <li>a) Risk Audit</li>
+                                <li>b) Variance Analysis</li>
+                                <li>c) Risk Reassessment</li>
+                                <li>d) Technical Performance Measurement</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_2"><strong>Answer:</strong> c) Risk Reassessment.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. Which technique examines the effectiveness of risk responses and the overall risk management process? (Slide 70)</p>
+                            <ul>
+                                <li>a) Risk Audit</li>
+                                <li>b) Trend Analysis</li>
+                                <li>c) Reserve Analysis</li>
+                                <li>d) Monte Carlo Simulation</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_3"><strong>Answer:</strong> a) Risk Audit.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. Comparing planned results to actual results to identify deviations that might indicate the impact of threats or opportunities is: (Slide 71)</p>
+                            <ul>
+                                <li>a) Technical Performance Measurement</li>
+                                <li>b) Risk Reassessment</li>
+                                <li>c) Variance and Trend Analysis</li>
+                                <li>d) Risk Audit</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_4"><strong>Answer:</strong> c) Variance and Trend Analysis.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. Comparing technical accomplishments during project execution to the schedule of technical achievement is known as: (Slide 72)</p>
+                            <ul>
+                                <li>a) Variance Analysis</li>
+                                <li>b) Technical Performance Measurement</li>
+                                <li>c) Risk Reassessment</li>
+                                <li>d) Reserve Analysis</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_5"><strong>Answer:</strong> b) Technical Performance Measurement.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. Monitoring the status of contingency and management reserves to ensure they are adequate for remaining risks is part of:</p>
+                            <ul>
+                                <li>a) Risk Identification</li>
+                                <li>b) Qualitative Risk Analysis</li>
+                                <li>c) Reserve Analysis</li>
+                                <li>d) Risk Response Planning</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_6"><strong>Answer:</strong> c) Reserve Analysis.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. Activities that realign the performance of the project work with the project management plan, including implementing workarounds, are called: (Slide 73)</p>
+                            <ul>
+                                <li>a) Preventive Actions</li>
+                                <li>b) Corrective Actions</li>
+                                <li>c) Defect Repairs</li>
+                                <li>d) Scope Adjustments</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_7"><strong>Answer:</strong> b) Corrective Actions.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. Activities that ensure future project performance is aligned with the project management plan are known as: (Slide 73)</p>
+                            <ul>
+                                <li>a) Preventive Actions</li>
+                                <li>b) Corrective Actions</li>
+                                <li>c) Contingency Plans</li>
+                                <li>d) Fallback Plans</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_8"><strong>Answer:</strong> a) Preventive Actions.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. Which of the following is a key output of the Control Risk process? (Slide 67)</p>
+                            <ul>
+                                <li>a) The initial Risk Management Plan</li>
+                                <li>b) The Risk Breakdown Structure</li>
+                                <li>c) Change Requests</li>
+                                <li>d) The Project Charter</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_9"><strong>Answer:</strong> c) Change Requests.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. Risk reassessments should typically be:</p>
+                            <ul>
+                                <li>a) Performed only once at the project midpoint.</li>
+                                <li>b) Scheduled regularly throughout the project.</li>
+                                <li>c) Conducted only if a major crisis occurs.</li>
+                                <li>d) The sole responsibility of the project sponsor.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans9_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans9_10"><strong>Answer:</strong> b) Scheduled regularly throughout the project.</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling; 
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

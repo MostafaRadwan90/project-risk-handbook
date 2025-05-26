@@ -1,0 +1,315 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Risk Management Handbook</title>
+        
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #0779e4;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+            margin-bottom: 0.7em;
+        }
+        h1 { font-size: 2.2em; border-bottom: 2px solid #0779e4; padding-bottom: 0.3em;}
+        h2 { font-size: 1.8em; border-bottom: 1px solid #eee; padding-bottom: 0.2em; margin-top: 1.5em;}
+        h3 { font-size: 1.5em; margin-top: 1.2em;}
+        h4 { font-size: 1.2em; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #0779e4;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .callout {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left-width: 5px;
+            border-left-style: solid;
+            border-radius: 5px;
+        }
+        .callout-definition {
+            border-left-color: #17a2b8; /* Teal */
+            background-color: #e8f7f9;
+        }
+        .callout-tip {
+            border-left-color: #28a745; /* Green */
+            background-color: #eaf6ec;
+        }
+        .callout-remark {
+            border-left-color: #ffc107; /* Yellow */
+            background-color: #fff8e9;
+        }
+        .callout-example {
+            border-left-color: #6f42c1; /* Purple */
+            background-color: #f3effa;
+        }
+        .callout-formula {
+            border-left-color: #fd7e14; /* Orange */
+            background-color: #fff4ec;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .callout-summary {
+            border-left-color: #007bff; /* Blue */
+            background-color: #e7f3ff;
+            padding: 20px;
+        }
+        .callout-summary h4 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .quiz-box {
+            padding: 20px;
+            margin-top: 30px;
+            border: 2px solid #0779e4;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+        .quiz-box h3 {
+            margin-top: 0;
+            color: #0779e4;
+        }
+        .quiz-question {
+            margin-bottom: 15px;
+        }
+        .quiz-question p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .quiz-question ul {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+        }
+        .quiz-answer {
+            margin-top: 5px;
+            padding: 5px;
+            background-color: #e9ecef;
+            border-radius: 3px;
+            display: none; /* Initially hidden */
+        }
+        .toggle-answer {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .toc {
+            background-color: #eef;
+            padding: 15px;
+            border: 1px solid #ccd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .toc h2 {
+            margin-top: 0;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc ul li {
+            margin-bottom: 8px;
+        }
+        .toc ul li a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        .toc ul li a:hover {
+            text-decoration: underline;
+        }
+        .toc ul ul { /* For sub-topics */
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .toc ul ul li {
+            font-size: 0.9em;
+        }
+
+        /* Specific for Cover Page */
+        .cover-page {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom right, #0052D4, #65C7F7, #9CECFB);
+            color: white;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cover-page h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+            color: white;
+            border-bottom: none;
+        }
+        .cover-page h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            font-style: italic;
+            color: white;
+            border-bottom: none;
+        }
+        .cover-page p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+        }
+        .course-outline ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+        .course-outline li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="cover-page">
+            <h1>Project Risk Management</h1>
+            <p>By: Dr. Aly Sherif Abdel Fayad</p>
+        </div>
+
+        <div class="container">
+            <div class="main-content">
+                <section id="course_outline">
+                    <h1>Course Outline</h1>
+                    <div class="course-outline">
+                        <ul>
+                            <li>Risk definition</li>
+                            <li>Risk in Construction projects</li>
+                            <li>Risk Tolerance</li>
+                            <li>Risk Appetite</li>
+                            <li>Risk exposure</li>
+                            <li>Project Risk Management (Overview)</li>
+                            <li>Risk Management Planning</li>
+                            <li>Risk Breakdown Structure (RBS)</li>
+                            <li>Probability Impact Matrix</li>
+                            <li>Risk Identification</li>
+                            <li>Risk Analysis (Overview)</li>
+                            <li>Qualitative Analysis</li>
+                            <li>Quantitative Analysis</li>
+                            <li>Plan Risk Response</li>
+                            <li>Risk Avoidance</li>
+                            <li>Risk Mitigation</li>
+                            <li>Risk Transference</li>
+                            <li>Risk Accept</li>
+                            <li>Strategies for positive risks or opportunities</li>
+                            <li>Control Risk</li>
+                            <li>Health and Safety measurements</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="references_used">
+                    <h2>References Mentioned in Course Material</h2>
+                    <p>This handbook will draw upon the concepts presented in the course, and expand on them using established Project Management literature. The following references were listed in the source material:</p>
+                    <ul>
+                        <li>Risk Management for Design and Construction by: Ovidiu Cretu, Robert Stewart, and Terry Berends.</li>
+                        <li>Practical risk management in the construction industry by Leslie Edward.</li>
+                        <li>Risk analysis in project management by Raftery, John.</li>
+                        <li>Enterprise risk management implementation in construction firms: An organizational change perspective by Zhao, Xianbo; Hwang, Bon-Gang; Pheng Low, Sui.</li>
+                        <li>Principles of Construction Safety by Allan St John Holt.</li>
+                        <li>PMBOK® Guide (A Guide to the Project Management Body of Knowledge) - <i>Standard reference, will be used throughout.</i></li>
+                    </ul>
+                    <div class="callout callout-remark">
+                        <h4>Remark</h4>
+                        <p>Content will be expanded based on these and other verified academic and professional sources to ensure comprehensive understanding.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        // JavaScript for toggling answers - will be used later
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

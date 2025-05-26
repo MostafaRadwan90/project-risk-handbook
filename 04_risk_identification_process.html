@@ -1,0 +1,461 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 4: The Risk Identification Process - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            .swot-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                margin: 20px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            .swot-quadrant {
+                padding: 15px;
+                border-radius: 5px;
+            }
+            .swot-strengths { background-color: #e6ffed; border: 1px solid #a3d9b1; } /* Light green */
+            .swot-weaknesses { background-color: #ffe6e6; border: 1px solid #d9a3a3; } /* Light red */
+            .swot-opportunities { background-color: #e6f2ff; border: 1px solid #a3c2d9; } /* Light blue */
+            .swot-threats { background-color: #fff5e6; border: 1px solid #d9c2a3; } /* Light orange */
+            .swot-quadrant h4 { margin-top: 0; }
+
+            .stakeholder-grid-container {
+                margin: 20px auto;
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #f9f9f9;
+                max-width: 600px;
+            }
+            .stakeholder-grid-table {
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            .stakeholder-grid-table th, .stakeholder-grid-table td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                height: 100px; /* Give some height to cells */
+            }
+            .stakeholder-grid-table .axis-label-power {
+                font-weight: bold;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                text-align: center;
+                vertical-align: middle;
+            }
+            .stakeholder-grid-table .axis-label-interest {
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .cell-low-power-low-interest { background-color: #e0e0e0; } /* Monitor */
+            .cell-high-power-low-interest { background-color: #add8e6; } /* Keep Satisfied */
+            .cell-low-power-high-interest { background-color: #90ee90; } /* Keep Informed */
+            .cell-high-power-high-interest { background-color: #ffb6c1; } /* Manage Closely */
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p>By: Dr. Aly Sherif Abdel Fayad</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter4_risk_identification">
+                    <h1>Chapter 4: The Risk Identification Process</h1>
+                    <p>Risk Identification is the process of determining which risks might affect the project and documenting their characteristics. It is a cornerstone of effective project risk management, as risks cannot be managed unless they are first identified (Slide 19).</p>
+                </section>
+
+                <section id="c4_what_is_risk_id">
+                    <h2>4.1 Understanding Risk Identification</h2>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Risk Identification (PMBOK® Guide)</h4>
+                        <p>Risk Identification is the process of determining which risks may affect the project and documenting their characteristics. Participants in risk identification activities can include the project manager, project team members, risk management team (if assigned), subject matter experts from other parts of the organization, customers, end users, other project managers, stakeholders, and risk management experts.</p>
+                    </div>
+
+                    <h3>4.1.1 Importance and Nature of Risk Identification</h3>
+                    <ul>
+                        <li><strong>Foundation for Management:</strong> As stated, "Risk can not be managed unless it is first identified" (Slide 19). This underscores its fundamental role.</li>
+                        <li><strong>Dynamic Process:</strong> It's "impossible to identify all the risks early in the beginning of the project" (Slide 19). Project risk exposure changes over time due to internal decisions, external changes, and the emergence of previously unknowable risks.</li>
+                        <li><strong>Iterative Approach:</strong> The identification process "should be iterative to allow for identifying risks that were unknowable or emergent firstly" (Slide 19). This means revisiting risk identification throughout the project lifecycle.</li>
+                        <li><strong>Early Response Consideration:</strong> "When a risk is first identified, potential responses may also be identified for immediate action if such action is appropriate" (Slide 19). This links identification closely with initial response planning.</li>
+                    </ul>
+
+                    <h3>4.1.2 Success Factors for Risk Identification (Slide 20)</h3>
+                    <p>The success of the risk identification process depends on several factors:</p>
+                    <ul>
+                        <li><strong>Early identification:</strong> Starting the process as soon as possible.</li>
+                        <li><strong>Iterative identification:</strong> Repeating the process throughout the project.</li>
+                        <li><strong>Emergent identification:</strong> Being open to new risks as they become apparent.</li>
+                        <li><strong>Comprehensive identification:</strong> Striving to identify as many risks as possible from various sources.</li>
+                        <li><strong>Explicit identification of opportunities:</strong> Actively looking for positive risks, not just threats.</li>
+                        <li><strong>Multiple perspectives:</strong> Involving a diverse group of stakeholders and experts.</li>
+                        <li><strong>Risks linked to project objectives:</strong> Focusing on uncertainties that can impact the project's goals.</li>
+                        <li><strong>Complete risk statement:</strong> Clearly articulating each identified risk.</li>
+                        <li><strong>Ownership and level of detail:</strong> Assigning owners to risks and documenting them appropriately.</li>
+                        <li><strong>Objectivity:</strong> Minimizing bias in the identification process.</li>
+                    </ul>
+                </section>
+
+                <section id="c4_stakeholders">
+                    <h2>4.2 Understanding Project Stakeholders in Risk Identification</h2>
+                    <p>Project stakeholders are individuals, groups, or organizations that may affect, be affected by, or perceive themselves to be affected by a decision, activity, or outcome of a project. Their involvement is crucial in risk identification due to their varied perspectives and interests.</p>
+                    <p>Slide 22 shows a typical stakeholder map, illustrating the project manager at the center interacting with various stakeholders like Senior Management, Project Team, Business Partners, Customers, Regulatory bodies, Suppliers, and Competitors.</p>
+
+                    <h3>4.2.1 Stakeholder Classification (Slide 24)</h3>
+                    <p>Classifying stakeholders helps in prioritizing their engagement and understanding their potential influence on project risks. A common method is the Power/Interest Grid (or Power/Influence Grid, Salience Model, etc.). Slide 24 highlights key classification items:</p>
+                    <ul>
+                        <li><strong>Power:</strong> Authority or ability to influence project outcomes.</li>
+                        <li><strong>Interest:</strong> Level of concern or stake in the project's success.</li>
+                        <li><strong>Influence:</strong> Active involvement and ability to affect decisions.</li>
+                        <li><strong>Impact:</strong> Ability to affect project planning or execution.</li>
+                    </ul>
+                    <p>The Power/Interest Grid, shown conceptually on Slide 24, categorizes stakeholders into four quadrants, suggesting engagement strategies:</p>
+                    <div class="stakeholder-grid-container">
+                        <h4>Power/Interest Grid for Stakeholder Prioritization</h4>
+                        <table class="stakeholder-grid-table">
+                            <tr>
+                                <td rowspan="2" class="axis-label-power">Power</td>
+                                <td class="cell-high-power-low-interest"><strong>Keep Satisfied</strong><br/>(High Power, Low Interest)</td>
+                                <td class="cell-high-power-high-interest"><strong>Manage Closely</strong><br/>(High Power, High Interest)</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-low-power-low-interest"><strong>Monitor</strong><br/>(Low Power, Low Interest)</td>
+                                <td class="cell-low-power-high-interest"><strong>Keep Informed</strong><br/>(Low Power, High Interest)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td colspan="2" class="axis-label-interest">Interest</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <ul>
+                        <li><strong>High Power, High Interest (Manage Closely):</strong> These are key players. Fully engage them and make the greatest efforts to satisfy them. Their risks (both threats they pose and opportunities they offer) are critical.</li>
+                        <li><strong>High Power, Low Interest (Keep Satisfied):</strong> Put enough work in with these people to keep them satisfied, but not so much that they become bored with your message. Address their risks but don't over-communicate.</li>
+                        <li><strong>Low Power, High Interest (Keep Informed):</strong> Adequately inform these people, and talk to them to ensure that no major issues are arising. They can often be very helpful with the detail of your project and identify risks in their area of interest.</li>
+                        <li><strong>Low Power, Low Interest (Monitor):</strong> Monitor these people, but do not bore them with excessive communication.</li>
+                    </ul>
+                </section>
+
+                <section id="c4_inputs_risk_id">
+                    <h2>4.3 Inputs to Risk Identification</h2>
+                    <p>While Slide 23 shows a detailed ITTO diagram, the core idea is that comprehensive information is needed to identify risks effectively. Key inputs generally include:</p>
+                    <ul>
+                        <li><strong>Risk Management Plan:</strong> Outlines how risk identification will be performed, including roles, responsibilities, and required approaches.</li>
+                        <li><strong>Project Management Plan Components:</strong> Scope, schedule, cost, and quality baselines; resource management plan, etc., provide context about project objectives and constraints.</li>
+                        <li><strong>Project Documents:</strong> Assumption log, lessons learned register, stakeholder register, requirements documentation, etc.</li>
+                        <li><strong>Enterprise Environmental Factors & Organizational Process Assets:</strong> Industry risk studies, organizational risk policies, checklists from past projects, lessons learned databases.</li>
+                    </ul>
+                     <div class="callout callout-remark">
+                        <h4>Note on ITTOs</h4>
+                        <p>The PMBOK® Guide provides a comprehensive list of Inputs, Tools & Techniques, and Outputs (ITTOs) for each process. For this handbook, we are focusing on the concepts and techniques highlighted in the lecture slides, with PMBOK® context for depth.</p>
+                    </div>
+                </section>
+
+                <section id="c4_techniques_risk_id">
+                    <h2>4.4 Tools and Techniques for Risk Identification</h2>
+                    <p>A variety of techniques can be used to identify project risks. The slides highlight several key methods (Slides 25-28).</p>
+
+                    <h3>4.4.1 Brainstorming (Slide 25)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Brainstorming</h4>
+                        <p>A group creativity technique designed to generate a large number of ideas for the solution to a problem. In risk identification, its objective is to obtain a comprehensive list of project risks.</p>
+                    </div>
+                    <ul>
+                        <li><strong>Process:</strong> Typically done by a team, often multidisciplinary and may include outside experts.</li>
+                        <li><strong>Facilitation:</strong> Ideas are generated under the leadership of a facilitator to ensure an open and creative environment.</li>
+                        <li><strong>Guidance:</strong> The Risk Breakdown Structure (RBS) can be used as a framework or guideline.</li>
+                        <li><strong>Outcome:</strong> Risks are identified and often categorized.</li>
+                    </ul>
+                    <div class="callout callout-tip">
+                        <h4>Effective Brainstorming</h4>
+                        <p>Encourage free-flowing ideas, avoid criticism during the session, and build upon others' suggestions. Focus on quantity of ideas initially, then refine and filter later.</p>
+                    </div>
+
+                    <h3>4.4.2 Delphi Technique (Slide 26)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Delphi Technique</h4>
+                        <p>An information gathering technique used as a way to reach a consensus of experts on a subject. Experts participate anonymously.</p>
+                    </div>
+                    <ul>
+                        <li><strong>Process:</strong>
+                            <ol>
+                                <li>A questionnaire is sent to a panel of experts soliciting ideas about important project risks.</li>
+                                <li>Responses are summarized and re-circulated to the experts for further comment and refinement.</li>
+                                <li>This process is repeated for a few rounds.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Anonymity:</strong> Prevents dominant personalities from influencing the outcome and encourages honest opinions.</li>
+                        <li><strong>Outcome:</strong> Aims to reach a consensus on key risks or risk characteristics.</li>
+                    </ul>
+
+                    <h3>4.4.3 SWOT Analysis (Slide 27)</h3>
+                    <div class="callout callout-definition">
+                        <h4>SWOT Analysis</h4>
+                        <p>An analysis technique that examines the project from the perspectives of Strengths, Weaknesses, Opportunities, and Threats to increase the breadth of identified risks.</p>
+                    </div>
+                    <p>SWOT analysis helps identify risks by considering internal factors (Strengths, Weaknesses) and external factors (Opportunities, Threats) related to the project.</p>
+                    <div class="swot-container">
+                        <div class="swot-quadrant swot-strengths">
+                            <h4>Strengths (Internal, Positive)</h4>
+                            <p><em>e.g., Skilled team, strong financial backing, unique technology.</em> Risks here might be failing to leverage these strengths.</p>
+                        </div>
+                        <div class="swot-quadrant swot-weaknesses">
+                            <h4>Weaknesses (Internal, Negative)</h4>
+                            <p><em>e.g., Lack of expertise, poor communication, outdated equipment.</em> These are direct sources of threats.</p>
+                        </div>
+                        <div class="swot-quadrant swot-opportunities">
+                            <h4>Opportunities (External, Positive)</h4>
+                            <p><em>e.g., New market, favorable regulations, emerging technology.</em> These are sources of positive risks.</p>
+                        </div>
+                        <div class="swot-quadrant swot-threats">
+                            <h4>Threats (External, Negative)</h4>
+                            <p><em>e.g., New competitors, economic downturn, supply chain disruptions.</em> These are direct sources of negative risks.</p>
+                        </div>
+                    </div>
+                    <p>The SWOT analysis encourages looking at the project from a strategic level to identify risks that might otherwise be missed if focusing only on operational details.</p>
+
+                    <h3>4.4.4 Interviewing (Slide 28)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Interviewing</h4>
+                        <p>A technique that involves talking to experienced project participants, stakeholders, and Subject Matter Experts (SMEs) to identify risks.</p>
+                    </div>
+                    <p>Interviews allow for a deeper understanding of specific areas of the project and can uncover risks based on individual experiences and insights. It's important to create a trusting environment to encourage open sharing.</p>
+
+                    <h3>4.4.5 Root Cause Analysis (Slide 28)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Root Cause Analysis (RCA)</h4>
+                        <p>An analytical technique used to determine the fundamental underlying reason that causes a risk (or a problem that has already occurred). It helps to identify the problem, discover causes, and develop preventive action.</p>
+                    </div>
+                    <p>By identifying the root causes of potential risks, more effective prevention and mitigation strategies can be developed, rather than just addressing the symptoms.</p>
+
+                    <h3>4.4.6 Checklist Analysis (Slide 28)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Checklist Analysis</h4>
+                        <p>A technique for identifying risks using a list of potential risk categories or specific risks developed based on historical information, knowledge from previous similar projects, and other sources.</p>
+                    </div>
+                    <ul>
+                        <li><strong>Source:</strong> Often derived from lessons learned databases or industry best practices.</li>
+                        <li><strong>Structure:</strong> The lowest level of the Risk Breakdown Structure (RBS) can be used as a risk checklist.</li>
+                        <li><strong>Benefit:</strong> Quick and simple way to ensure common risks are not overlooked.</li>
+                        <li><strong>Caution:</strong> Checklists should not be the sole method, as they might not cover unique or novel risks for the current project. They should be reviewed and updated.</li>
+                    </ul>
+
+                    <h3>4.4.7 Assumptions and Constraints Analysis (Slide 28)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Assumptions and Constraints Analysis</h4>
+                        <p>This technique explores the validity of project assumptions and constraints to identify risks arising from their inaccuracy, inconsistency, or incompleteness.</p>
+                    </div>
+                    <ul>
+                        <li><strong>Assumptions:</strong> Factors considered to be true, real, or certain without proof or demonstration. If an assumption proves false, it can become a risk.</li>
+                        <li><strong>Constraints:</strong> Limiting factors that affect the execution of a project or process. Changes to constraints or misunderstood constraints can be risks.</li>
+                    </ul>
+                    <div class="callout callout-example">
+                        <h4>Example: Assumption Analysis</h4>
+                        <p>An assumption might be "Key raw material X will be available at current prices." A risk identified through assumption analysis would be "Price of raw material X increases significantly," impacting project cost.</p>
+                    </div>
+
+                    <h3>4.4.8 Other Techniques</h3>
+                    <p>The PMBOK® Guide also lists other techniques, such as:</p>
+                    <ul>
+                        <li><strong>Documentation Reviews:</strong> Structured review of project plans, contracts, previous project files, etc.</li>
+                        <li><strong>Diagramming Techniques:</strong>
+                            <ul>
+                                <li><strong>Cause and Effect Diagrams (Ishikawa or Fishbone):</strong> Help identify causes of risks.</li>
+                                <li><strong>System or Process Flow Charts:</strong> Show how elements interrelate, revealing potential points of failure.</li>
+                                <li><strong>Influence Diagrams:</strong> Graphical representation of situations showing causal influences, time ordering of events, and other relationships.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Expert Judgment:</strong> Leveraging the experience and expertise of individuals in specific areas.</li>
+                    </ul>
+                </section>
+
+                <section id="c4_output_risk_register">
+                    <h2>4.5 Output: The Risk Register (Slide 29)</h2>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Risk Register</h4>
+                        <p>The Risk Register is a document that captures the details of identified individual project risks. It is a live document that is updated throughout the project lifecycle as new risks are identified, existing risks change, or risks are closed out.</p>
+                    </div>
+                    <p>The risk register is the primary output of the Risk Identification process and serves as a central repository for risk information. Slide 29 indicates that the risk register typically contains:</p>
+                    <ul>
+                        <li><strong>List of Identified Risks:</strong> A unique identifier for each risk.</li>
+                        <li><strong>Risk Description:</strong> A clear statement of the risk, including the event and its potential cause and effect.</li>
+                        <li><strong>Risk Category:</strong> Classification of the risk, often based on the RBS (e.g., Technical, External, Organizational).</li>
+                        <li><strong>Root Causes:</strong> The fundamental reasons why the risk might occur.</li>
+                        <li><strong>Potential Impact:</strong> The effect on project objectives if the risk materializes.</li>
+                        <li><strong>Probability:</strong> The likelihood of the risk occurring.</li>
+                        <li><strong>Proposed Responses:</strong> Initial ideas for how to deal with the risk (though detailed response planning comes later).</li>
+                        <li><em>Other potential fields (based on PMBOK® and common practice):</em> Risk Owner, Triggers (conditions that indicate a risk is about to occur or has occurred), Current Status, etc.</li>
+                    </ul>
+                    <p>The risk register will be updated and expanded through subsequent risk management processes like qualitative analysis, quantitative analysis, and response planning.</p>
+                    <div class="callout callout-remark">
+                        <h4>Living Document</h4>
+                        <p>It's crucial to remember that the Risk Register is not static. It evolves as the project progresses and more information becomes available.</p>
+                    </div>
+                </section>
+
+                <section id="c4_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 4 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Risk Identification:</strong> The iterative process of determining potential risks (threats and opportunities) and documenting their characteristics.</li>
+                            <li><strong>Success Factors:</strong> Include early & iterative identification, comprehensiveness, involving multiple perspectives, and linking risks to objectives.</li>
+                            <li><strong>Stakeholders:</strong> Key sources of risk information; classification (e.g., Power/Interest grid) helps prioritize engagement.</li>
+                            <li><strong>Key Identification Techniques:</strong> Brainstorming, Delphi Technique, SWOT Analysis, Interviewing, Root Cause Analysis, Checklist Analysis, Assumptions and Constraints Analysis.</li>
+                            <li><strong>Risk Register:</strong> The primary output, a document listing identified risks, their descriptions, categories, causes, potential impacts, probabilities, and initial response ideas. It's a dynamic document.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c4_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 4 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. Why is risk identification considered an iterative process?</p>
+                            <ul>
+                                <li>a) Because it only needs to be done once at the project start.</li>
+                                <li>b) Because new risks can emerge and existing risks can change throughout the project.</li>
+                                <li>c) Because it is performed solely by the project manager.</li>
+                                <li>d) Because all risks can be identified with certainty at the beginning.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_1"><strong>Answer:</strong> b) Because new risks can emerge and existing risks can change throughout the project.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. Which of the following is NOT listed as a success factor for risk identification on Slide 20?</p>
+                            <ul>
+                                <li>a) Early identification</li>
+                                <li>b) Comprehensive identification</li>
+                                <li>c) Assigning blame for risks</li>
+                                <li>d) Explicit identification of opportunities</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_2"><strong>Answer:</strong> c) Assigning blame for risks.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. A stakeholder classification tool that groups stakeholders based on their authority and level of concern is the:</p>
+                            <ul>
+                                <li>a) RACI Matrix</li>
+                                <li>b) SWOT Analysis</li>
+                                <li>c) Power/Interest Grid</li>
+                                <li>d) Risk Register</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_3"><strong>Answer:</strong> c) Power/Interest Grid.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. Which risk identification technique uses an anonymous panel of experts through multiple rounds of questionnaires?</p>
+                            <ul>
+                                <li>a) Brainstorming</li>
+                                <li>b) Delphi Technique</li>
+                                <li>c) Interviewing</li>
+                                <li>d) Checklist Analysis</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_4"><strong>Answer:</strong> b) Delphi Technique.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. SWOT analysis helps identify risks by examining:</p>
+                            <ul>
+                                <li>a) Only project weaknesses and threats.</li>
+                                <li>b) Internal strengths & weaknesses and external opportunities & threats.</li>
+                                <li>c) Only external opportunities and threats.</li>
+                                <li>d) The probability and impact of known risks.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_5"><strong>Answer:</strong> b) Internal strengths & weaknesses and external opportunities & threats.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. Using a list of potential risks from past similar projects is characteristic of which technique?</p>
+                            <ul>
+                                <li>a) Root Cause Analysis</li>
+                                <li>b) Assumptions Analysis</li>
+                                <li>c) Checklist Analysis</li>
+                                <li>d) Brainstorming</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_6"><strong>Answer:</strong> c) Checklist Analysis.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. Exploring the validity of factors considered true without proof to identify risks is known as:</p>
+                            <ul>
+                                <li>a) SWOT Analysis</li>
+                                <li>b) Assumptions Analysis</li>
+                                <li>c) Delphi Technique</li>
+                                <li>d) Interviewing</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_7"><strong>Answer:</strong> b) Assumptions Analysis.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. The primary output of the Risk Identification process is the:</p>
+                            <ul>
+                                <li>a) Risk Management Plan</li>
+                                <li>b) Risk Breakdown Structure</li>
+                                <li>c) Risk Register</li>
+                                <li>d) Stakeholder Analysis Report</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_8"><strong>Answer:</strong> c) Risk Register.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. Which of the following is typically NOT included in an initial Risk Register entry per Slide 29?</p>
+                            <ul>
+                                <li>a) List of identified risk</li>
+                                <li>b) Detailed quantitative financial impact</li>
+                                <li>c) Risk category</li>
+                                <li>d) Proposed Responses (initial ideas)</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_9"><strong>Answer:</strong> b) Detailed quantitative financial impact (This is usually determined in Quantitative Risk Analysis, if performed. Qualitative impact is often noted earlier).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. According to Slide 25, what is the objective of Brainstorming in risk identification?</p>
+                            <ul>
+                                <li>a) To reach an expert consensus anonymously.</li>
+                                <li>b) To analyze the root causes of problems.</li>
+                                <li>c) To obtain a LIST of project risks.</li>
+                                <li>d) To validate project assumptions.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans4_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans4_10"><strong>Answer:</strong> c) To obtain a LIST of project risks.</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling;
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

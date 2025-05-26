@@ -1,0 +1,475 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 6: Quantitative Risk Analysis - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            .distribution-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin: 20px 0;
+            }
+            .distribution-item {
+                text-align: center;
+                width: 30%;
+                min-width: 250px; /* Ensure items don't get too small */
+                margin-bottom: 20px;
+            }
+            .distribution-item img { /* Placeholder for actual images */
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            .distribution-item p {
+                font-weight: bold;
+            }
+            .tornado-diagram-container {
+                margin: 20px auto;
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #f9f9f9;
+                max-width: 700px;
+                text-align: center; /* Center the placeholder image */
+            }
+            .tornado-diagram-container img {
+                 max-width: 100%;
+                 height: auto;
+                 border: 1px solid #ddd;
+                 border-radius: 4px;
+                 padding: 5px;
+            }
+             /* Simple table styling for examples */
+            .example-table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+            .example-table th, .example-table td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+            .example-table th {
+                background-color: #e9ecef;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p>By: Dr. Aly Sherif Abdel Fayad</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter6_quant_analysis">
+                    <h1>Chapter 6: Quantitative Risk Analysis</h1>
+                    <p>While Qualitative Risk Analysis helps prioritize risks, Quantitative Risk Analysis numerically analyzes the combined effect of identified individual project risks and other sources of uncertainty on overall project objectives. This chapter explores the methods, techniques, and outputs associated with this more in-depth level of analysis.</p>
+                </section>
+
+                <section id="c6_intro_quant_analysis">
+                    <h2>6.1 Introduction to Quantitative Risk Analysis</h2>
+                    <div class="callout callout-definition">
+                        <h4>Definition: Perform Quantitative Risk Analysis (PMBOK® Guide)</h4>
+                        <p>Perform Quantitative Risk Analysis is the process of numerically analyzing the combined effect of identified individual project risks and other sources of uncertainty on overall project objectives. The key benefit of this process is that it quantifies overall project risk exposure, and it can also provide additional quantitative risk information to support risk response planning.</p>
+                    </div>
+                    <p>This process is not always required for all projects. It is most likely to be used for large, complex, or strategically important projects where a numerical understanding of risk exposure is beneficial for decision-making.</p>
+
+                    <h3>6.1.1 Examples of Quantitative Risk Scenarios (Slides 37, 38)</h3>
+                    <div class="callout callout-example">
+                        <h4>Example 1: Material Shortage (Slide 37)</h4>
+                        <ul>
+                            <li><strong>Risk Event:</strong> Material delay beyond the activity planned start date.</li>
+                            <li><strong>Probability:</strong> 20%</li>
+                            <li><strong>Impact if it occurs:</strong>
+                                <ul>
+                                    <li>Two weeks of project delay.</li>
+                                    <li>$50,000 in liquidated damages.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>This scenario allows for calculating the Expected Monetary Value (EMV) of the delay and financial penalty, and for modeling the schedule impact.</p>
+                    </div>
+                    <div class="callout callout-example">
+                        <h4>Example 2: Productivity Drop (Slide 38)</h4>
+                        <ul>
+                            <li><strong>Risk Event:</strong> Labor productivity drop due to inconvenient weather.</li>
+                            <li><strong>Probability:</strong> 30%</li>
+                            <li><strong>Impact if it occurs:</strong>
+                                <ul>
+                                    <li>Increase in activity duration by 5 days.</li>
+                                    <li>$6,000 in additional expenses.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Similar to the first example, this provides data for quantitative schedule and cost risk analysis.</p>
+                    </div>
+                </section>
+
+                <section id="c6_representation_prob_impact">
+                    <h2>6.2 Representation of Risk Probability & Impact (Slides 39-41)</h2>
+                    <p>Quantitative analysis requires representing risk probability and impact in numerical terms.</p>
+                    <h3>6.2.1 Descriptive/Tabular Form (Slide 39)</h3>
+                    <p>A common way to start is by tabulating the risk events, their states (e.g., delay occurs vs. no delay), probabilities, and the corresponding impacts on objectives like time and cost.</p>
+                    <table class="example-table">
+                        <caption>Table: Representing Risk Probability & Impact (based on Slide 39)</caption>
+                        <thead>
+                            <tr>
+                                <th>Risk Event</th>
+                                <th>State</th>
+                                <th>Probability</th>
+                                <th>Impact (Time)</th>
+                                <th>Impact (Cost)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Material Delivery</td>
+                                <td>Delay</td>
+                                <td>20%</td>
+                                <td>2 weeks</td>
+                                <td>$50,000</td>
+                            </tr>
+                            <tr>
+                                <td>No delay</td>
+                                <td>80%</td>
+                                <td>0</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Labor Productivity</td>
+                                <td>Delay (drop)</td>
+                                <td>30%</td>
+                                <td>5 days</td>
+                                <td>$6,000</td>
+                            </tr>
+                            <tr>
+                                <td>No delay</td>
+                                <td>70%</td>
+                                <td>0</td>
+                                <td>$0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>6.2.2 Graphical Means (Slides 40, 41)</h3>
+                    <p>Probability distributions are used to represent the uncertainty in values such as activity durations or costs. Instead of a single-point estimate, a range of possible values is used, each with an associated probability.</p>
+                    <ul>
+                        <li><strong>Simple Case (Slide 40):</strong> For the productivity drop example, if an activity normally costs $30,000, and a 30% chance of productivity drop increases the cost to $36,000, this can be shown as a discrete probability distribution (70% chance of $30k, 30% chance of $36k).</li>
+                        <li><strong>Diverse Case / Continuous Distributions (Slide 41):</strong> More complex scenarios might involve a wider range of possible outcomes, represented by histograms or continuous probability distributions (like Normal, Beta, Triangular, as shown later on Slide 45). These graphs show the likelihood of different cost or duration outcomes.</li>
+                    </ul>
+                    <div class="callout callout-remark">
+                        <h4>From Discrete to Continuous</h4>
+                        <p>Simple scenarios might use discrete probabilities for a few outcomes. More complex modeling, especially for Monte Carlo simulation, often uses continuous probability distributions to represent the range and likelihood of possible values for variables like activity costs or durations.</p>
+                    </div>
+                </section>
+
+                <section id="c6_quant_analysis_steps">
+                    <h2>6.3 Quantitative Risk Analysis Steps (Slide 42)</h2>
+                    <p>The process typically involves these general steps:</p>
+                    <ol>
+                        <li><strong>Quantify the possible outcomes for the project & their probabilities:</strong> This often involves modeling the project (e.g., schedule network, cost estimate) and assigning probability distributions to uncertain elements.</li>
+                        <li><strong>Assess the probability of achieving specific objectives:</strong> For example, determining the likelihood of completing the project by a certain date or within a specific budget.</li>
+                        <li><strong>Identify the most influential risks on the project & their relative impact:</strong> Techniques like sensitivity analysis help pinpoint which risks have the greatest effect on overall project outcomes.</li>
+                        <li><strong>Identify project cost, schedule, quality, and scope given the project risks:</strong> Provide a range of possible project outcomes and their probabilities, rather than single-point estimates.</li>
+                    </ol>
+                </section>
+
+                <section id="c6_probability_analysis">
+                    <h2>6.4 Probability Analysis (Slides 43-45)</h2>
+                    <p>Probability analysis is a technique used to forecast future events by assessing the likelihood of different outcomes.</p>
+                    <h3>6.4.1 Probabilistic Approach (Slide 43)</h3>
+                    <p>This approach estimates risk as a function of:</p>
+                    <ul>
+                        <li><strong>The severity (or magnitude)</strong> of each consequence.</li>
+                        <li><strong>The likelihood (probability)</strong> of the occurrence of each consequence.</li>
+                    </ul>
+                    <div class="callout callout-tip">
+                        <h4>Data Dependency</h4>
+                        <p>A crucial point from Slide 43 is that effective probability analysis "depends on the existence of a satisfactory pool of data." This data can come from past projects, expert judgment, or industry benchmarks.</p>
+                    </div>
+
+                    <h3>6.4.2 Process (Slide 44)</h3>
+                    <ol>
+                        <li><strong>Statistical analysis:</strong> Performed on data from past comparable projects and current conditions.</li>
+                        <li><strong>Risk range identification:</strong> Determine the possible range of values for an uncertain variable.</li>
+                        <li><strong>Histogram development:</strong> Represent the frequency of occurrence for values along the identified range.</li>
+                        <li><strong>Probability distribution fitting:</strong> Apply statistical methods to fit the most suitable probability distribution (profile) to the data.</li>
+                    </ol>
+
+                    <h3>6.4.3 Common Probability Distributions (Slide 45)</h3>
+                    <p>Several types of probability distributions are commonly used in quantitative risk analysis:</p>
+                    <div class="distribution-container">
+                        <div class="distribution-item">
+                            <p>Normal Distribution</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/320px-Normal_Distribution_PDF.svg.png" alt="Normal Distribution Graph">
+                            <p>Characterized by its mean and standard deviation. Symmetrical bell curve. Often used when an outcome is the sum of many small effects.</p>
+                        </div>
+                        <div class="distribution-item">
+                            <p>Beta Distribution</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Beta_distribution_pdf.svg/320px-Beta_distribution_pdf.svg.png" alt="Beta Distribution Graph">
+                            <p>Defined by two shape parameters (alpha and beta) over a fixed range [0,1], often scaled to fit a specific range [a,b]. Very flexible, can model various shapes. Commonly used in PERT analysis.</p>
+                        </div>
+                        <div class="distribution-item">
+                            <p>Triangular Distribution</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Triangular_distribution_PMF.svg/320px-Triangular_distribution_PMF.svg.png" alt="Triangular Distribution Graph">
+                            <p>Defined by minimum, most likely, and maximum values. Useful when these three points are the easiest estimates to obtain from experts.</p>
+                        </div>
+                    </div>
+                    <p>Other distributions include Uniform (all values in a range are equally likely), Log-Normal (for variables that are the product of many small effects), and discrete distributions.</p>
+                </section>
+
+                <section id="c6_modeling_simulation">
+                    <h2>6.5 Modeling and Simulation (Slides 46-48)</h2>
+                    <h3>6.5.1 Modeling vs. Simulation (Slide 46)</h3>
+                    <table class="example-table">
+                        <thead>
+                            <tr>
+                                <th>Modeling</th>
+                                <th>Simulation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Representation of a concept or an idea. For example, a project schedule network or a cost estimate is a model.</td>
+                                <td>A translation of the model into a form suitable for experimentation. It involves running the model many times to observe its behavior.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Simulation modeling can be used as:</p>
+                    <ul>
+                        <li>An analysis tool for predicting the effect of changes to existing systems.</li>
+                        <li>A design tool to predict the performance of new systems under varying sets of circumstances.</li>
+                    </ul>
+
+                    <h3>6.5.2 Monte Carlo Technique (Slides 47, 48)</h3>
+                    <div class="callout callout-definition">
+                        <h4>Monte Carlo Technique</h4>
+                        <p>A simulation technique that involves using random numbers and probability distributions to solve problems. It computes the project model many times (iterates), with input values for each iteration chosen at random from their probability distributions.</p>
+                    </div>
+                    <p>Key aspects and benefits of Monte Carlo simulation:</p>
+                    <ul>
+                        <li><strong>Iterative Calculation:</strong> The project model (e.g., schedule or cost) is computed many times (hundreds or thousands of iterations).</li>
+                        <li><strong>Random Sampling:</strong> In each iteration, values for uncertain variables (e.g., activity durations, costs) are sampled from their defined probability distributions.</li>
+                        <li><strong>Outputs:</strong>
+                            <ul>
+                                <li>Evaluates the overall risk of the project (e.g., range of possible completion dates or total costs).</li>
+                                <li>Provides the probability of completing the project on a specific time/cost.</li>
+                                <li>Provides the probability of any activity being on the critical path (criticality index).</li>
+                                <li>Translates uncertainties in individual elements into their potential impact on the total project.</li>
+                                <li>Results in a probability distribution of possible project outcomes (e.g., an S-curve for project completion date).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Model Establishment:</strong> A model needs to be established (e.g., Work Breakdown Structure for cost risk analysis, schedule network for schedule risk analysis).</li>
+                    </ul>
+                    <div class="callout callout-tip">
+                        <h4>Application of Monte Carlo</h4>
+                        <p>Monte Carlo simulation is widely used for schedule risk analysis (to determine the probability of meeting deadlines and identify critical activities) and cost risk analysis (to determine the probability of meeting budget targets and establish contingency reserves).</p>
+                    </div>
+                </section>
+
+                <section id="c6_sensitivity_analysis">
+                    <h2>6.6 Sensitivity Analysis (Slides 49, 50)</h2>
+                    <div class="callout callout-definition">
+                        <h4>Sensitivity Analysis</h4>
+                        <p>A quantitative risk analysis technique that helps to determine which individual project risks or other sources of uncertainty have the most potential impact on project outcomes. It examines the extent to which the uncertainty of each project element affects the objective being studied when all other uncertain elements are held at their baseline values.</p>
+                    </div>
+                    <h3>6.6.1 Tornado Diagram (Slide 50)</h3>
+                    <p>One typical display of sensitivity analysis is the Tornado Diagram.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Visually compares the relative importance of variables that have a high degree of uncertainty to those that are more stable.</li>
+                        <li><strong>Structure:</strong>
+                            <ul>
+                                <li>The Y-axis lists each type of uncertainty or risk.</li>
+                                <li>The X-axis shows the spread or correlation of the uncertainty to the studied output (e.g., project cost or completion date). The bars are ordered by descending impact, resembling a tornado.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Interpretation:</strong> Risks with longer bars at the top of the diagram have a greater influence on the project outcome. This helps focus risk response efforts on the most impactful risks.</li>
+                    </ul>
+                    <div class="tornado-diagram-container">
+                        <p><strong>Conceptual Tornado Diagram (based on Slide 50)</strong></p>
+                        <img src="https://i.stack.imgur.com/oJ4k7.png" alt="Example Tornado Diagram Structure">
+                        <p><em>The diagram shows horizontal bars representing the sensitivity of the project outcome (e.g., cost) to different risks. Longer bars indicate higher sensitivity. Risks are listed vertically, typically sorted by impact.</em></p>
+                    </div>
+                </section>
+
+                <section id="c6_outputs_quant_analysis">
+                    <h2>6.7 Outputs of Perform Quantitative Risk Analysis (Slide 51)</h2>
+                    <p>The main outputs provide deeper insights into overall project risk exposure.</p>
+                     <div class="callout callout-definition">
+                        <h4>Project Documents Updates</h4>
+                        <p>Key updates resulting from quantitative analysis include:</p>
+                        <ul>
+                            <li><strong>Probabilistic analysis of the project:</strong> Estimates of potential project schedule and cost outcomes listing the possible completion dates and costs with their confidence levels (e.g., S-curves).</li>
+                            <li><strong>Probability of achieving cost and time objectives:</strong> The likelihood of meeting specific targets, given the identified risks.</li>
+                            <li><strong>Prioritized list of quantified risks:</strong> Shows which risks pose the greatest threat or offer the greatest opportunity to the project, often including their contribution to overall project risk (e.g., from sensitivity analysis).</li>
+                            <li><strong>Trends in quantitative risk analysis results:</strong> As the analysis is repeated, trends can become apparent, indicating the effectiveness of risk responses or changes in risk exposure.</li>
+                        </ul>
+                        <p>The Risk Register and Risk Report are significantly updated with this information.</p>
+                    </div>
+                </section>
+
+                <section id="c6_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 6 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Quantitative Risk Analysis:</strong> Numerically analyzes the combined effect of risks on overall project objectives.</li>
+                            <li><strong>Probability Distributions:</strong> Used to represent uncertainty in variables like cost and duration (e.g., Normal, Beta, Triangular).</li>
+                            <li><strong>Modeling and Simulation:</strong> Involves creating a project model and using techniques like Monte Carlo simulation to iterate through scenarios.</li>
+                            <li><strong>Monte Carlo Technique:</strong> Uses random sampling from probability distributions to generate a range of possible project outcomes and their likelihoods.</li>
+                            <li><strong>Sensitivity Analysis:</strong> Identifies which risks have the most potential impact on project outcomes (often displayed via a Tornado Diagram).</li>
+                            <li><strong>Outputs:</strong> Probabilistic analysis of the project, probability of achieving objectives, prioritized list of quantified risks, and trends.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c6_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 6 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. What is the primary purpose of Quantitative Risk Analysis?</p>
+                            <ul>
+                                <li>a) To subjectively prioritize risks based on expert opinion.</li>
+                                <li>b) To numerically analyze the combined effect of risks on overall project objectives.</li>
+                                <li>c) To identify all possible risks in a project.</li>
+                                <li>d) To assign risk owners.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_1"><strong>Answer:</strong> b) To numerically analyze the combined effect of risks on overall project objectives.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. If a material delay has a 20% probability and could cause a $50,000 loss, what is the Expected Monetary Value (EMV) of this risk?</p>
+                            <ul>
+                                <li>a) $2,500</li>
+                                <li>b) $10,000</li>
+                                <li>c) $50,000</li>
+                                <li>d) $250,000</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_2"><strong>Answer:</strong> b) $10,000 (0.20 * $50,000).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. Which probability distribution is defined by minimum, most likely, and maximum values? (Slide 45)</p>
+                            <ul>
+                                <li>a) Normal Distribution</li>
+                                <li>b) Beta Distribution</li>
+                                <li>c) Triangular Distribution</li>
+                                <li>d) Uniform Distribution</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_3"><strong>Answer:</strong> c) Triangular Distribution.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. The Monte Carlo technique primarily involves: (Slide 47)</p>
+                            <ul>
+                                <li>a) A single calculation of the project model.</li>
+                                <li>b) Expert judgment without numerical data.</li>
+                                <li>c) Computing the project model many times with random inputs from probability distributions.</li>
+                                <li>d) Creating a qualitative risk matrix.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_4"><strong>Answer:</strong> c) Computing the project model many times with random inputs from probability distributions.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. What does Sensitivity Analysis help determine? (Slide 49)</p>
+                            <ul>
+                                <li>a) The total cost of all risk responses.</li>
+                                <li>b) Which risks have the most potential impact on project objectives.</li>
+                                <li>c) The exact date of project completion.</li>
+                                <li>d) The risk appetite of stakeholders.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_5"><strong>Answer:</strong> b) Which risks have the most potential impact on project objectives.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. A Tornado Diagram is a typical display of which quantitative analysis technique? (Slide 50)</p>
+                            <ul>
+                                <li>a) Monte Carlo Simulation</li>
+                                <li>b) Expected Monetary Value Analysis</li>
+                                <li>c) Sensitivity Analysis</li>
+                                <li>d) Decision Tree Analysis</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_6"><strong>Answer:</strong> c) Sensitivity Analysis.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. Which of these is a key output of Perform Quantitative Risk Analysis? (Slide 51)</p>
+                            <ul>
+                                <li>a) The initial Risk Register.</li>
+                                <li>b) The Risk Management Plan.</li>
+                                <li>c) Probabilistic analysis of the project (e.g., S-curves).</li>
+                                <li>d) Stakeholder classification.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_7"><strong>Answer:</strong> c) Probabilistic analysis of the project (e.g., S-curves).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. According to Slide 43, effective probability analysis primarily depends on:</p>
+                            <ul>
+                                <li>a) The complexity of the mathematical models used.</li>
+                                <li>b) The number of people involved in the analysis.</li>
+                                <li>c) The existence of a satisfactory pool of data.</li>
+                                <li>d) The software tools available.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_8"><strong>Answer:</strong> c) The existence of a satisfactory pool of data.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. In a Tornado Diagram, risks with longer bars typically indicate:</p>
+                            <ul>
+                                <li>a) Lower impact on the project outcome.</li>
+                                <li>b) Higher impact or sensitivity on the project outcome.</li>
+                                <li>c) Risks that have already occurred.</li>
+                                <li>d) Risks that have been successfully mitigated.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_9"><strong>Answer:</strong> b) Higher impact or sensitivity on the project outcome.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. What is a key difference between modeling and simulation as described on Slide 46?</p>
+                            <ul>
+                                <li>a) Modeling is for cost, simulation is for schedule.</li>
+                                <li>b) Modeling is a representation, while simulation is experimentation with the model.</li>
+                                <li>c) Simulation is done first, then modeling.</li>
+                                <li>d) They are essentially the same concept.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans6_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans6_10"><strong>Answer:</strong> b) Modeling is a representation, while simulation is experimentation with the model.</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling; 
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

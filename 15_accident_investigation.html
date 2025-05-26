@@ -1,0 +1,582 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 15: Accident Investigation - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            .accident-pyramid-container, .loss-causation-container, .accident-iceberg-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .accident-pyramid-container img, .loss-causation-container img, .accident-iceberg-container img {
+                max-width: 80%;
+                height: auto;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .evidence-types-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                margin: 20px 0;
+            }
+            .evidence-type-box {
+                padding: 15px;
+                border: 1px solid #0779e4;
+                border-radius: 5px;
+                background-color: #f0f8ff;
+            }
+            .evidence-type-box h4 {
+                margin-top: 0;
+                color: #0056b3;
+            }
+            .loss-causation-model-detailed {
+                padding: 15px;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+            }
+            .lcm-column {
+                padding: 10px;
+                border: 1px solid #b3d7ff;
+                background-color: #e7f3ff;
+                margin-bottom:5px;
+            }
+            .lcm-column h5 { margin-top:0; color: #0056b3; }
+
+            .example-case-study {
+                margin-top: 20px;
+                padding: 15px;
+                border: 1px solid #28a745; /* Green border for example */
+                background-color: #eaf6ec; /* Light green background */
+            }
+            .example-case-study h3 { color: #155724; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p style="font-size:1.2em; color:#ccc;">Safety Management Module (Based on Prof. Dr. ENG. Khaled Ahmed Hamdy's Material)</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter15_accident_investigation_intro">
+                    <h1>Chapter 15: Accident Investigation</h1>
+                    <p>Accident investigation is a critical reactive component of safety management. Its purpose is not to assign blame, but to identify root causes to prevent recurrence. This chapter covers the principles, processes, and techniques involved in effective accident and incident investigation, including the widely used Loss Causation Model.</p>
+                </section>
+
+                <section id="c15_importance_investigating">
+                    <h2>15.1 Importance of Investigating Accidents & Incidents (Slides 140, 141)</h2>
+                    <p>Slide 140 introduces the concept of the "accident pyramid" or "safety triangle," which illustrates the typical ratio of incidents:</p>
+                    <div class="accident-pyramid-container">
+                        <img src="https://i.imgur.com/3G3E4uI.png" alt="Accident Pyramid Concept">
+                        <p><em>Conceptual Accident Pyramid (based on Slide 140): 1 Major Accident, 10 Minor Accidents, 30 Property Damage Incidents, 600 Near Misses/Incidents with No Loss.</em></p>
+                    </div>
+                    <p>Key takeaways from this concept:</p>
+                    <ul>
+                        <li><strong>Many More Incidents than Accidents:</strong> There are significantly more near misses and minor incidents than serious accidents.</li>
+                        <li><strong>Common Causes:</strong> "The causes and potential are exactly the same" for near misses and accidents.</li>
+                        <li><strong>Free Lessons:</strong> "Lessons learned from near misses are free" – they provide opportunities to improve safety before a loss-producing event occurs.</li>
+                    </ul>
+                    <p>Slide 141 emphasizes "Finding HI-POs" (High Potential Incidents). Even if an event didn't result in a major loss this time, if it had the potential to, it should be investigated thoroughly. This means:</p>
+                    <ul>
+                        <li>All events should be reported.</li>
+                        <li>All events having high potential (HI-PO) should be investigated fully.</li>
+                    </ul>
+                </section>
+
+                <section id="c15_purpose_investigations">
+                    <h2>15.2 Purpose of Investigations (Slide 142)</h2>
+                    <p>The primary objectives of conducting an accident/incident investigation are to:</p>
+                    <ul>
+                        <li><strong>Describe what happened:</strong> Establish a clear sequence of events.</li>
+                        <li><strong>Determine basic (root) causes:</strong> Go beyond immediate causes to find underlying systemic issues.</li>
+                        <li><strong>Evaluate the risks:</strong> Understand the likelihood and severity of similar events.</li>
+                        <li><strong>Develop controls:</strong> Recommend corrective and preventive actions to prevent recurrence.</li>
+                        <li><strong>Define trends:</strong> Identify patterns in incidents over time.</li>
+                        <li><strong>Demonstrate concern:</strong> Show management's commitment to safety and worker well-being.</li>
+                    </ul>
+                    <div class="callout callout-remark">
+                        <h4>Focus on Prevention, Not Blame</h4>
+                        <p>A fundamental principle of modern accident investigation is that its goal is to learn and prevent future incidents, not to find someone to blame. A blame culture discourages reporting and hinders learning.</p>
+                    </div>
+                </section>
+
+                <section id="c15_role_first_line_mgr">
+                    <h2>15.3 Role of First-Line Managers (Slides 143, 144)</h2>
+                    <p>Slide 143 states, "The first line manager will be the key investigator of most events."</p>
+                    <p>Why should First-Line Managers Investigate? (Slide 144)</p>
+                    <ul>
+                        <li><strong>Personal Interest:</strong> They are directly responsible for their team's safety.</li>
+                        <li><strong>Knowledge of People and Conditions:</strong> They are familiar with the workers, tasks, and environment.</li>
+                        <li><strong>Information Access:</strong> They know how and where to get the needed information.</li>
+                        <li><strong>Ability to Initiate Action:</strong> They are positioned to start or take corrective actions.</li>
+                        <li><strong>Benefit from Investigating:</strong> They gain insights to improve safety in their area.</li>
+                    </ul>
+                </section>
+
+                <section id="c15_personnel_involved">
+                    <h2>15.4 Personnel Involved in Investigations (Slides 145, 146)</h2>
+                    <p>Investigations often involve multiple parties (Slide 145):</p>
+                    <ul>
+                        <li>Injured person(s)</li>
+                        <li>Witnesses</li>
+                        <li>First-line supervisor/team leader</li>
+                        <li>Senior/middle manager</li>
+                        <li>Safety specialists</li>
+                        <li>Safety representatives (e.g., union or worker representatives)</li>
+                    </ul>
+                    <p>Additionally, as per Slide 146, others who might get "involved" include:</p>
+                    <ul>
+                        <li><strong>Experts:</strong> Technical specialists, engineers, etc., depending on the nature of the incident.</li>
+                        <li><strong>External agencies:</strong> Regulatory bodies (e.g., OSHA, HSE), police, depending on the severity and type of incident.</li>
+                    </ul>
+                </section>
+
+                <section id="c15_reporting_culture">
+                    <h2>15.5 Reporting Accidents/Incidents (Slides 147, 148)</h2>
+                    <h3>15.5.1 Why People May Not Report (Slide 147)</h3>
+                    <ul>
+                        <li>Fear of discipline</li>
+                        <li>Concern about their record or reputation</li>
+                        <li>Dislike of medical personnel or procedures</li>
+                        <li>Fear of medical treatment</li>
+                        <li>Desire to avoid work interruption</li>
+                        <li>Desire to keep personnel records clear</li>
+                        <li>Avoidance of paperwork</li>
+                        <li>Concern about the attitude of others (e.g., peers, supervisors)</li>
+                        <li>Poor understanding of the importance of reporting</li>
+                    </ul>
+                    <h3>15.5.2 Getting Events Reported (Slide 148)</h3>
+                    <p>To foster a strong reporting culture:</p>
+                    <ul>
+                        <li>React in a positive and encouraging manner to reports.</li>
+                        <li>Explain continuously the importance of reporting all incidents, including near misses.</li>
+                        <li>Focus on loss control (input) performance, not just outcomes.</li>
+                        <li>Follow-up quickly and decisively on reports and investigations.</li>
+                        <li>Communicate the status of investigations and actions if ongoing.</li>
+                    </ul>
+                </section>
+
+                <section id="c15_steps_investigation">
+                    <h2>15.6 Steps in Conducting Investigations (Slide 149)</h2>
+                    <p>A systematic approach to investigations typically includes:</p>
+                    <ol>
+                        <li><strong>Proper initial response:</strong> Secure the scene, provide first aid, etc.</li>
+                        <li><strong>Gather information:</strong> Collect evidence from various sources.</li>
+                        <li><strong>Analyze causes:</strong> Differentiate between immediate and basic (root) causes.</li>
+                        <li><strong>Take remedial action:</strong> Develop and implement corrective and preventive actions.</li>
+                        <li><strong>Complete and manage documentation and reporting:</strong> Record findings and recommendations.</li>
+                        <li><strong>Management follow-up:</strong> Ensure actions are completed and effective.</li>
+                    </ol>
+                </section>
+
+                <section id="c15_initial_actions_scene">
+                    <h2>15.7 Initial Actions at Accident Scene (Slide 150)</h2>
+                    <p>Immediate actions are crucial:</p>
+                    <ul>
+                        <li><strong>Take control:</strong> Secure the scene to prevent further harm and preserve evidence.</li>
+                        <li><strong>Ensure first aid and call emergency services</strong> if needed.</li>
+                        <li><strong>Control potential secondary accidents.</strong></li>
+                        <li><strong>Identify sources of evidence.</strong></li>
+                        <li><strong>Preserve evidence:</strong> Avoid disturbing the scene unnecessarily.</li>
+                        <li><strong>Determine loss potential:</strong> Assess the actual and potential severity.</li>
+                        <li><strong>Notify appropriate personnel</strong> (management, safety department, etc.).</li>
+                    </ul>
+                </section>
+
+                <section id="c15_gathering_evidence">
+                    <h2>15.8 Gathering Evidence (Slides 151-156)</h2>
+                    <p>Evidence gathering focuses on four key sources (the "4 Ps"):</p>
+                    <div class="evidence-types-grid">
+                        <div class="evidence-type-box">
+                            <h4>People Evidence (Slide 152, 153)</h4>
+                            <p>Involves interviewing individuals to understand what they saw, heard, or did.</p>
+                            <strong>Interviewing Considerations:</strong>
+                            <ul>
+                                <li>Where to interview (private, comfortable setting).</li>
+                                <li>Who to interview (injured, witnesses, supervisors).</li>
+                                <li>Condition of people at the scene (shock, trauma).</li>
+                                <li>How to handle multiple witnesses (interview separately first).</li>
+                                <li>How to handle after the incident (follow-up).</li>
+                                <li>How to work with teams.</li>
+                            </ul>
+                            <strong>Tips for Effective Interviews:</strong>
+                            <ul>
+                                <li>Interview separately.</li>
+                                <li>Interview in an appropriate place.</li>
+                                <li>Put the person at ease.</li>
+                                <li>Ask necessary questions at the right time (open-ended questions first).</li>
+                                <li>Get the person's own version/story.</li>
+                                <li>Provide feedback (on process, not judgment).</li>
+                                <li>Record critical information quickly.</li>
+                                <li>Use visual aids (sketches, photos).</li>
+                                <li>End on a positive note.</li>
+                                <li>Keep the line open for further information.</li>
+                            </ul>
+                        </div>
+                        <div class="evidence-type-box">
+                            <h4>Position Evidence (Slide 156)</h4>
+                            <p>Relates to the location and orientation of people, equipment, and materials before, during, and after the event.</p>
+                            <ul>
+                                <li>Document conditions before, during, and after the contact(s) or event.</li>
+                                <li>Use drawings, sketches, maps.</li>
+                                <li>Take photographs and videotapes (with scale and context).</li>
+                            </ul>
+                        </div>
+                        <div class="evidence-type-box">
+                            <h4>Parts Evidence (Slide 154)</h4>
+                            <p>Involves examining machinery, equipment, tools, materials, and structures involved.</p>
+                            <ul>
+                                <li>Were proper items used for the task?</li>
+                                <li>Evidence of damage (new or pre-existing).</li>
+                                <li>Signs of wear.</li>
+                                <li>Status of safeguards (present, functioning, bypassed).</li>
+                                <li>Labels, signs, and markings.</li>
+                            </ul>
+                        </div>
+                        <div class="evidence-type-box">
+                            <h4>Paper Evidence (Slide 155)</h4>
+                            <p>Refers to documents and records that can provide context or information.</p>
+                            <ul>
+                                <li>Training records.</li>
+                                <li>Maintenance logs/schedules.</li>
+                                <li>Job procedures (e.g., Safe Work Procedures, Job Safety Analyses).</li>
+                                <li>Permits (e.g., hot work, confined space).</li>
+                                <li>Licenses and certifications.</li>
+                                <li>Minutes of Meetings (e.g., safety meetings).</li>
+                                <li>Statements from witnesses or involved parties.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="c15_accident_reenactment">
+                    <h2>15.9 Accident Re-Enactment (Slide 157)</h2>
+                    <div class="callout callout-warning">
+                        <h4>Caution with Re-Enactments</h4>
+                        <p>Re-enactments should be used with extreme caution and only when absolutely necessary, as they can introduce new risks.</p>
+                    </div>
+                    <p>Re-enactment should be used <strong>only</strong>:</p>
+                    <ol>
+                        <li>When information cannot be obtained in another way.</li>
+                        <li>When it is vital to the development of remedial actions.</li>
+                        <li>When it is absolutely necessary to verify critical facts about the incident.</li>
+                    </ol>
+                    <p><strong>Crucial Rule:</strong> "Stop the action <strong>before</strong> the critical (accidental) step." Never fully replicate the conditions that led to the accident.</p>
+                </section>
+
+                <section id="c15_loss_causation_model">
+                    <h2>15.10 The Loss Causation Model (Slides 158, 160, 161, 164-167)</h2>
+                    <p>The Loss Causation Model (often based on Frank E. Bird Jr.'s work) provides a framework for understanding how accidents occur by tracing them back from the loss to underlying management system deficiencies.</p>
+                    <div class="loss-causation-container">
+                         <img src="https://i.imgur.com/0Q7X39k.png" alt="Loss Causation Model Diagram">
+                         <p><em>Conceptual Loss Causation Model (based on Slide 158).</em></p>
+                    </div>
+                    <div class="loss-causation-model-detailed">
+                        <h4>Components of the Model:</h4>
+                        <div class="lcm-column">
+                            <h5>1. Loss (Slide 161)</h5>
+                            <p>The undesired outcome: Unintended harm and/or damage to people, property, process, or environment (e.g., injury, illness, death, property damage, production delays).</p>
+                        </div>
+                        <div class="lcm-column">
+                            <h5>2. Incident (The Accident Event) (Slide 164)</h5>
+                            <p>The event that directly led to the loss. Often described in terms of "Contacts" with sources of energy or substances above the threshold of the body or structure.</p>
+                            <strong>Examples of Contacts:</strong> Struck against, Struck by, Fall to (lower level), Fall on (same level), Caught in, Caught between, Contact with (electricity, heat, cold, radiation, toxics, noise), Overstress/Overexertion/Overload.
+                        </div>
+                        <div class="lcm-column">
+                            <h5>3. Immediate Causes (Direct Causes / Symptoms) (Slide 165)</h5>
+                            <p>The unsafe acts and/or unsafe conditions that directly preceded and caused the incident. These are the symptoms of underlying problems.</p>
+                            <ul>
+                                <li><strong>Substandard Acts or Practices (Unsafe Acts):</strong> e.g., Failure to warn, failure to obey rules, removing safety devices, improper lifting, failure to use PPE, horseplay, servicing operating equipment.</li>
+                                <li><strong>Substandard Conditions (Unsafe Conditions):</strong> e.g., Inadequate guards/barriers, inadequate PPE, defective tools/equipment, congestion, inadequate warning system, disorder, inadequate ventilation/illumination.</li>
+                            </ul>
+                        </div>
+                        <div class="lcm-column">
+                            <h5>4. Basic Causes (Root Causes / Underlying Causes) (Slide 166)</h5>
+                            <p>The fundamental reasons or system failures that allowed the immediate causes to exist. Addressing basic causes is key to preventing recurrence.</p>
+                            <ul>
+                                <li><strong>Personal Factors:</strong> e.g., Inadequate capability (physical/mental), lack of knowledge, lack of skill, stress, improper motivation.</li>
+                                <li><strong>System / Job Factors:</strong> e.g., Inadequate leadership/supervision, inadequate engineering/design, inadequate purchasing, inadequate tools and equipment, inadequate maintenance, wear and tear, abuse and misuse.</li>
+                            </ul>
+                        </div>
+                        <div class="lcm-column">
+                            <h5>5. Lack of Control (Management System Failures) (Slide 167)</h5>
+                            <p>Deficiencies in the safety management system that failed to identify or correct the basic causes. These are the ultimate root causes related to management functions.</p>
+                            <ul>
+                                <li><strong>Inadequate System:</strong> The safety program itself is flawed or incomplete.</li>
+                                <li><strong>Inadequate System Standards:</strong> Standards for safety performance are unclear, insufficient, or not well-defined.</li>
+                                <li><strong>Inadequate Compliance with Standards:</strong> Failure to enforce or follow established safety standards and procedures.</li>
+                            </ul>
+                        </div>
+                        <p>The model suggests asking "Why?" repeatedly (like the "5 Whys" technique) to move from the Loss back to the Lack of Control.</p>
+                    </div>
+                </section>
+
+                <section id="c15_accident_ratios_costs">
+                    <h2>15.11 Accident Ratios and Costs</h2>
+                    <h3>15.11.1 Accident Ratio Study (Slide 162)</h3>
+                    <p>Reiterates the accident pyramid, showing a common ratio: For every 1 Serious or Major Injury, there might be 10 Minor Injuries, 30 Property Damage Accidents, and 600 Incidents with no visible injury or damage (Near Misses).</p>
+                     <div class="accident-pyramid-container">
+                        <img src="https://i.imgur.com/3G3E4uI.png" alt="Accident Pyramid for Ratios">
+                        <!-- Re-using the pyramid image, caption can be adjusted if a different specific ratio image is available -->
+                        <p><em>Typical Accident Ratio Pyramid (based on Slide 162).</em></p>
+                    </div>
+
+                    <h3>15.11.2 Accident Costs Iceberg (Slide 163)</h3>
+                    <p>This model illustrates that the direct, insured costs of an accident (e.g., medical expenses, compensation - the "tip of the iceberg") are often much smaller than the indirect, uninsured costs (the hidden part of the iceberg).</p>
+                    <div class="accident-iceberg-container">
+                         <img src="https://i.imgur.com/q8r1oXU.png" alt="Accident Costs Iceberg">
+                         <p><em>Conceptual Accident Costs Iceberg (based on Slide 163).</em></p>
+                    </div>
+                    <ul>
+                        <li><strong>Direct Costs (Tip - e.g., $1):</strong> Insured medical costs, compensation.</li>
+                        <li><strong>Indirect Costs (Hidden - e.g., $1-$3 to $5-$50 or more for every $1 of direct costs):</strong>
+                            <ul>
+                                <li>Ledger Costs of Property Damage (Uninsured).</li>
+                                <li>Uninsured Miscellaneous Costs:
+                                    <ul>
+                                        <li>Time lost by uninjured workers (e.g., stopping to help, curiosity).</li>
+                                        <li>Time lost by supervisors and executives.</li>
+                                        <li>Cost of hiring/training replacements.</li>
+                                        <li>Damage to tools, equipment, materials.</li>
+                                        <li>Production delays.</li>
+                                        <li>Legal fees.</li>
+                                        <li>Damage to company reputation.</li>
+                                        <li>Lowered employee morale and productivity.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </ul>
+                </section>
+
+                <section id="c15_investigation_example">
+                    <h2>15.12 Accident Investigation Example (Slides 168-174)</h2>
+                    <p>Slides 168-174 walk through an example of applying the Loss Causation Model to a tragic bridge construction accident. Let's summarize the application based on the provided analysis:</p>
+                    <div class="example-case-study">
+                        <h3>Bridge Construction Accident Case Study</h3>
+                        <p><strong>Scenario Overview (Slide 168):</strong> During transportation of steel bars using a tower crane, bars collided with reinforcement mesh, fell on workers, resulting in 7 deaths and 17 serious injuries. Crane operator had no direct visibility. Happened at shift change. Consultant had no safety engineer on site. Contractor's risk assessment was preliminary, not reviewed. No method statement for steel transportation/installation.</p>
+
+                        <h4>Application of Loss Causation Model:</h4>
+                        <p><strong>1. Loss (Slide 170):</strong></p>
+                        <ul>
+                            <li>Death of 7 Workers</li>
+                            <li>Injury of 17 Workers</li>
+                            <li>(Implied: Project delays, property damage, reputational damage, etc.)</li>
+                        </ul>
+
+                        <p><strong>2. Incident (The Accident Event) (Slide 171):</strong></p>
+                        <ul>
+                            <li>The steel reinforcement fell from a big height on the workers standing on the formwork in the Middle Span.</li>
+                        </ul>
+
+                        <p><strong>3. Immediate Causes (Slide 172):</strong></p>
+                        <ul>
+                            <li><strong>Substandard Conditions:</strong>
+                                <ul>
+                                    <li>Absence of a clear line of sight between the Crane operator and the unloading location.</li>
+                                    <li>Performing critical operation at dusk (poor visibility) and end of shift (tired workers).</li>
+                                    <li>Congestion (crowding of many workers from two shifts in a small area).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Substandard Acts or Practices:</strong>
+                                <ul>
+                                    <li>Steel impacted against the reinforcement mesh due to Crane Operator’s Error.</li>
+                                    <li>Reinforcement Steel was not properly attached to the Crane Wire.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p><strong>4. Basic (Root) Causes (Slide 173):</strong></p>
+                        <ul>
+                            <li><strong>System / Job Factors:</strong>
+                                <ul>
+                                    <li>The risk of this accident was not identified and consequently was not avoided or mitigated.</li>
+                                    <li>Method of transporting and fixing the steel reinforcement was not properly studied despite its criticality (No Method Statement).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Personal Factors:</strong>
+                                <ul>
+                                    <li>Absence of the Consultant’s Engineers during this critical operation. (Could also be seen as a system/job factor if their presence was a procedural requirement).</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p><strong>5. Lack of Control (Management System Failures) (Slide 174):</strong></p>
+                        <ul>
+                            <li><strong>Contractor:</strong>
+                                <ul>
+                                    <li>Reliance on a preliminary risk assessment that was not updated to reflect the work criticality.</li>
+                                    <li>Not preparing a method statement for a critical operation.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Consultant:</strong>
+                                <ul>
+                                    <li>Not performing a risk assessment as stipulated in the safety manual.</li>
+                                    <li>Not appointing safety inspectors.</li>
+                                    <li>Not reviewing the contractor’s safety plan.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c15_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 15 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Accident Investigation Purpose:</strong> To find root causes and prevent recurrence, not to assign blame. Includes investigating near misses.</li>
+                            <li><strong>Process:</strong> Initial response, gather evidence (People, Position, Parts, Paper), analyze causes, recommend/implement actions, document, and follow-up.</li>
+                            <li><strong>Loss Causation Model:</strong> Traces incidents from Loss -> Incident Event -> Immediate Causes (Unsafe Acts/Conditions) -> Basic/Root Causes (Personal/Job Factors) -> Lack of Control (Management System Failures).</li>
+                            <li><strong>Accident Costs:</strong> Indirect/uninsured costs (the "iceberg" below the surface) are often far greater than direct/insured costs.</li>
+                            <li><strong>Reporting Culture:</strong> Crucial for learning; fostered by positive responses to reports and focusing on system improvements.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c15_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 15 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. What does the "accident pyramid" primarily illustrate? (Slide 140)</p>
+                            <ul>
+                                <li>a) The increasing cost of accidents over time.</li>
+                                <li>b) That there are many more near misses and minor incidents than major accidents.</li>
+                                <li>c) The steps involved in an accident investigation.</li>
+                                <li>d) The hierarchy of safety controls.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_1"><strong>Answer:</strong> b) That there are many more near misses and minor incidents than major accidents.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. Which of these is a primary purpose of accident investigation? (Slide 142)</p>
+                            <ul>
+                                <li>a) To assign blame to the responsible individual.</li>
+                                <li>b) To fulfill legal requirements only.</li>
+                                <li>c) To determine basic causes and develop controls to prevent recurrence.</li>
+                                <li>d) To calculate the exact financial loss.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_2"><strong>Answer:</strong> c) To determine basic causes and develop controls to prevent recurrence.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. Why are first-line managers often key investigators for most events? (Slide 144)</p>
+                            <ul>
+                                <li>a) They have the most legal expertise.</li>
+                                <li>b) They know the people and conditions well and can initiate action.</li>
+                                <li>c) They are typically external to the project team.</li>
+                                <li>d) They are solely responsible for safety budgets.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_3"><strong>Answer:</strong> b) They know the people and conditions well and can initiate action.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. Which of the following is a reason people might NOT report accidents/incidents? (Slide 147)</p>
+                            <ul>
+                                <li>a) Desire for recognition.</li>
+                                <li>b) Fear of discipline.</li>
+                                <li>c) Eagerness to improve safety.</li>
+                                <li>d) Strong understanding of reporting importance.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_4"><strong>Answer:</strong> b) Fear of discipline.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. Which of the "4 Ps" of evidence gathering involves examining training records and maintenance logs? (Slide 155)</p>
+                            <ul>
+                                <li>a) People</li>
+                                <li>b) Position</li>
+                                <li>c) Parts</li>
+                                <li>d) Paper</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_5"><strong>Answer:</strong> d) Paper.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. In the Loss Causation Model, what directly precedes the "Incident (Accident Event)"? (Slide 158/165)</p>
+                            <ul>
+                                <li>a) Loss</li>
+                                <li>b) Immediate Causes (Substandard Acts/Conditions)</li>
+                                <li>c) Basic Causes (Personal/Job Factors)</li>
+                                <li>d) Lack of Control</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_6"><strong>Answer:</strong> b) Immediate Causes (Substandard Acts/Conditions).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. "Inadequate Leadership" and "Inadequate Design" are examples of which category in the Loss Causation Model? (Slide 166)</p>
+                            <ul>
+                                <li>a) Immediate Causes</li>
+                                <li>b) Personal Factors (Basic Causes)</li>
+                                <li>c) System / Job Factors (Basic Causes)</li>
+                                <li>d) Lack of Control</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_7"><strong>Answer:</strong> c) System / Job Factors (Basic Causes).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. The "Accident Costs Iceberg" illustrates that: (Slide 163)</p>
+                            <ul>
+                                <li>a) Direct costs are usually greater than indirect costs.</li>
+                                <li>b) Indirect (uninsured) costs are often much larger than direct (insured) costs.</li>
+                                <li>c) All accident costs are typically covered by insurance.</li>
+                                <li>d) Property damage is always the most significant cost.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_8"><strong>Answer:</strong> b) Indirect (uninsured) costs are often much larger than direct (insured) costs.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. In the bridge construction example (Slide 172), "Steel impacted against the reinforcement Mesh due to Crane Operator’s Error" is an example of:</p>
+                            <ul>
+                                <li>a) A Basic Cause (System/Job Factor)</li>
+                                <li>b) A Basic Cause (Personal Factor)</li>
+                                <li>c) An Immediate Cause (Substandard Act)</li>
+                                <li>d) Lack of Control</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_9"><strong>Answer:</strong> c) An Immediate Cause (Substandard Act).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. "Reliance on a preliminary risk assessment that was not updated" by the contractor in the example (Slide 174) falls under which category of the Loss Causation Model?</p>
+                            <ul>
+                                <li>a) Loss</li>
+                                <li>b) Incident Event</li>
+                                <li>c) Immediate Cause</li>
+                                <li>d) Lack of Control</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans15_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans15_10"><strong>Answer:</strong> d) Lack of Control (specifically, inadequate system/standards for risk assessment by the contractor).</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling; 
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    

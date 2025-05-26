@@ -1,0 +1,342 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 13: Safety Measures & Loss Measurement - Handbook</title>
+        <style>body {{ font-family: sans-serif; }} /* minimal fallback */</style>
+        <style>
+            .formula-box {
+                padding: 15px;
+                margin: 15px 0;
+                border: 1px solid #fd7e14; /* Orange border */
+                background-color: #fff4ec; /* Light orange background */
+                border-radius: 5px;
+                font-family: 'Courier New', Courier, monospace; /* Monospace for formulas */
+                font-size: 1.1em;
+                overflow-x: auto; /* For long formulas */
+            }
+            .formula-box .numerator, .formula-box .denominator {
+                display: block; /* Stack numerator over denominator */
+                text-align: center;
+            }
+            .formula-box .fraction-line {
+                border-top: 2px solid #333;
+                margin: 5px 0;
+                max-width: 300px; /* Limit line width for aesthetics */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .indicator-table {
+                width: 100%;
+                margin: 20px 0;
+                border-collapse: collapse;
+            }
+            .indicator-table th, .indicator-table td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+            .indicator-table th {
+                background-color: #e9ecef;
+            }
+            .indicator-table ul {
+                padding-left: 20px;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Project Risk Management Handbook</h1>
+                <p style="font-size:1.2em; color:#ccc;">Safety Management Module (Based on Prof. Dr. ENG. Khaled Ahmed Hamdy's Material)</p>
+            </header>
+            <div class="main-content">
+                <section id="chapter13_safety_measures_loss_formulas">
+                    <h1>Chapter 13: Safety Measures and Loss Measurement Formulas</h1>
+                    <p>Effective safety management requires not only implementing controls but also measuring performance to understand effectiveness, identify trends, and drive continuous improvement. This chapter explores different types of safety measures (leading and lagging indicators) and common formulas used for loss measurement in occupational health and safety.</p>
+                </section>
+
+                <section id="c13_types_safety_measures">
+                    <h2>13.1 Types of Safety Measures (Slide 111)</h2>
+                    <p>Safety measures can be broadly categorized into two types, based on when they are measured relative to an incident:</p>
+                    <div class="callout callout-definition">
+                        <h4>Leading Indicators</h4>
+                        <p>Proactive measures that help identify and prevent safety hazards <strong>before</strong> incidents occur. They focus on future safety performance and aim to be predictive.</p>
+                        <p><strong>Purpose:</strong> To monitor activities, conditions, or behaviors that can prevent incidents.</p>
+                    </div>
+                    <div class="callout callout-definition">
+                        <h4>Lagging Indicators</h4>
+                        <p>Reactive measures that track safety performance <strong>after</strong> an incident has already happened. They measure failures and outcomes.</p>
+                        <p><strong>Purpose:</strong> To assess past performance and identify areas where safety efforts failed.</p>
+                    </div>
+                    <div class="callout callout-tip">
+                        <h4>Balanced Approach</h4>
+                        <p>A robust safety management system uses a combination of both leading and lagging indicators. Leading indicators help prevent incidents, while lagging indicators provide data on outcomes and help identify areas needing more attention based on past failures.</p>
+                    </div>
+
+                    <h3>13.1.1 Examples of Leading Indicators (Slide 112)</h3>
+                    <table class="indicator-table">
+                        <caption>Examples of Leading Safety Indicators</caption>
+                        <thead><tr><th>Indicator</th><th>Description</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>Number of safety training sessions conducted</td>
+                                <td>Measures how frequently workers receive safety training. Higher numbers can indicate better preparedness.</td>
+                            </tr>
+                            <tr>
+                                <td>Safety inspections conducted per month</td>
+                                <td>Tracks proactive efforts in identifying hazards. Regular inspections can uncover issues before they cause harm.</td>
+                            </tr>
+                            <tr>
+                                <td>Percentage of workers wearing PPE correctly</td>
+                                <td>Evaluates compliance with safety protocols. High compliance suggests better protection.</td>
+                            </tr>
+                            <tr>
+                                <td>Near-miss reports filed</td>
+                                <td>Indicates potential hazards before they result in accidents. A high reporting culture (for near-misses) is positive as it provides learning opportunities.</td>
+                            </tr>
+                            <tr>
+                                <td>Equipment maintenance checks performed on schedule</td>
+                                <td>Ensures machinery and tools are safe for use. Timely maintenance prevents equipment-related failures.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>13.1.2 Examples of Lagging Indicators (Slide 113)</h3>
+                     <table class="indicator-table">
+                        <caption>Examples of Lagging Safety Indicators</caption>
+                        <thead><tr><th>Indicator</th><th>Description</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Recordable Incident Rate (TRIR)</td>
+                                <td>Tracks the number of recordable incidents per a standard number of work hours (e.g., per 100 workers or 200,000 hours).</td>
+                            </tr>
+                            <tr>
+                                <td>Lost Time Injury (LTI) Rate</td>
+                                <td>Measures the number of workdays lost due to injuries. Indicates severity of incidents.</td>
+                            </tr>
+                            <tr>
+                                <td>Number of worker compensation claims filed</td>
+                                <td>Indicates the financial impact of workplace injuries.</td>
+                            </tr>
+                            <tr>
+                                <td>Fatalities or serious injuries reported</td>
+                                <td>Highlights severe safety failures. (Zero is the only acceptable target).</td>
+                            </tr>
+                            <tr>
+                                <td>Number of safety code violations received</td>
+                                <td>Reflects non-compliance with safety regulations.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="c13_loss_measurement_formulas">
+                    <h2>13.2 Loss Measurement Formulas (Slides 114-117)</h2>
+                    <p>Several standardized formulas are used to calculate lagging indicators, allowing for comparison over time and with industry benchmarks. The factor of 200,000 in many formulas represents the number of hours 100 full-time employees would work in a year (100 employees × 40 hours/week × 50 weeks/year).</p>
+
+                    <div class="callout callout-formula">
+                        <h4>Total Recordable Incident Rate (TRIR) (Slide 114)</h4>
+                        <p><span class="numerator">Total Number of Recordable Incidents × 200,000</span><span class="fraction-line"></span><span class="denominator">Employee Hours of Exposure (Total hours worked by all employees during the period)</span></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Fatal Injury Frequency Rate (Slide 114)</h4>
+                        <p><span class="numerator">Number of Fatal Injuries × 200,000</span><span class="fraction-line"></span><span class="denominator">Employee Hours of Exposure</span></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Disabling Injury Frequency Rate (Slide 115)</h4>
+                        <p><span class="numerator">Number of Disabling Injuries × 200,000</span><span class="fraction-line"></span><span class="denominator">Employee Hours of Exposure</span></p>
+                        <p><em>(Note: "Disabling Injury" typically refers to an injury that results in lost workdays, permanent partial disability, or permanent total disability.)</em></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Lost Time Injury (LTI) Rate (Slide 115)</h4>
+                        <p><span class="numerator">Total Days Lost (due to injury) × 200,000</span><span class="fraction-line"></span><span class="denominator">Employee Hours of Exposure</span></p>
+                        <p><em>(This is sometimes referred to as Lost Workday Rate or Days Away, Restricted, or Transferred - DART rate, depending on the specific definition used.)</em></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Major Property Damage Frequency Rate (Slide 116)</h4>
+                        <p><span class="numerator">Number of Major Property Damage Accidents × 200,000</span><span class="fraction-line"></span><span class="denominator">Operation (non-clerical/office) Hours of Exposure</span></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Major Property Damage Cost Severity Rate (Slide 116)</h4>
+                        <p><span class="numerator">Costs of Major Property Damage Accidents × 200,000</span><span class="fraction-line"></span><span class="denominator">Operation (non-clerical/office) Hours Worked</span></p>
+                    </div>
+                    <div class="callout callout-formula">
+                        <h4>Total Property Damage Cost Severity Rate (Slide 117)</h4>
+                        <p><span class="numerator">Total Costs of Property Damage Accidents × 200,000</span><span class="fraction-line"></span><span class="denominator">Operation (non-clerical/office) Man-hours Worked</span></p>
+                    </div>
+                </section>
+
+                <section id="c13_trir_example">
+                    <h2>13.3 Example: Calculating TRIR (Slide 118)</h2>
+                    <div class="callout callout-example">
+                        <h4>Scenario:</h4>
+                        <p>A company employs 400 workers on a site. In the first half of 2024 (assuming 1,000 hours per worker in this period), the site reported a total of 5 recordable incidents.</p>
+                        <h4>Calculation:</h4>
+                        <ol>
+                            <li><strong>Total Number of Recordable Incidents:</strong> 5</li>
+                            <li><strong>Employee Hours of Exposure:</strong> 400 workers × 1,000 hours/worker = 400,000 hours</li>
+                            <li><strong>TRIR Formula:</strong> (Total Incidents × 200,000) / Employee Hours of Exposure</li>
+                            <li><strong>TRIR:</strong> (5 × 200,000) / 400,000 = 1,000,000 / 400,000 = <strong>2.5</strong></li>
+                        </ol>
+                        <p><strong>Interpretation:</strong> The TRIR is 2.5. This means that for every 100 full-time equivalent employees working for a year, the company could expect 2.5 recordable incidents based on performance in that period.</p>
+                    </div>
+                </section>
+
+                <section id="c13_summary">
+                    <div class="callout callout-summary">
+                        <h4>Chapter 13 Summary: Key Concepts</h4>
+                        <ul>
+                            <li><strong>Leading Indicators:</strong> Proactive safety measures focusing on prevention (e.g., training completion, inspections, near-miss reporting).</li>
+                            <li><strong>Lagging Indicators:</strong> Reactive safety measures tracking past failures (e.g., TRIR, LTI rate, fatalities).</li>
+                            <li><strong>Loss Measurement Formulas:</strong> Standardized calculations for lagging indicators like TRIR, LTI Rate, and property damage rates, often normalized per 200,000 exposure hours.</li>
+                            <li><strong>Importance of Measurement:</strong> Safety metrics help track performance, identify areas for improvement, and demonstrate commitment to safety.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="c13_quiz">
+                    <div class="quiz-box">
+                        <h3>Chapter 13 Quiz: Test Your Understanding</h3>
+                        <div class="quiz-question">
+                            <p>1. Measures that track safety performance AFTER an incident has already happened are called: (Slide 111)</p>
+                            <ul>
+                                <li>a) Leading Indicators</li>
+                                <li>b) Lagging Indicators</li>
+                                <li>c) Predictive Measures</li>
+                                <li>d) Proactive Controls</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_1')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_1"><strong>Answer:</strong> b) Lagging Indicators.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>2. Which of the following is an example of a LEADING indicator? (Slide 112)</p>
+                            <ul>
+                                <li>a) Number of fatalities</li>
+                                <li>b) Lost Time Injury (LTI) Rate</li>
+                                <li>c) Percentage of workers wearing PPE correctly</li>
+                                <li>d) Total Recordable Incident Rate (TRIR)</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_2')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_2"><strong>Answer:</strong> c) Percentage of workers wearing PPE correctly.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>3. The Total Recordable Incident Rate (TRIR) typically tracks incidents per: (Slide 113, 114)</p>
+                            <ul>
+                                <li>a) 1,000 employee hours</li>
+                                <li>b) 10,000 employee hours</li>
+                                <li>c) 100,000 employee hours</li>
+                                <li>d) 200,000 employee hours (or 100 full-time employees per year)</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_3')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_3"><strong>Answer:</strong> d) 200,000 employee hours (or 100 full-time employees per year).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>4. What does the "Lost Time Injury (LTI) Rate" primarily measure? (Slide 113, 115)</p>
+                            <ul>
+                                <li>a) The number of near misses.</li>
+                                <li>b) The cost of property damage.</li>
+                                <li>c) The number of workdays lost due to injuries.</li>
+                                <li>d) The frequency of safety inspections.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_4')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_4"><strong>Answer:</strong> c) The number of workdays lost due to injuries.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>5. If a company had 2 disabling injuries and 500,000 employee hours of exposure, what is their Disabling Injury Frequency Rate? (Formula from Slide 115)</p>
+                            <ul>
+                                <li>a) 0.4</li>
+                                <li>b) 0.8</li>
+                                <li>c) 4.0</li>
+                                <li>d) 8.0</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_5')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_5"><strong>Answer:</strong> b) 0.8  [(2 * 200,000) / 500,000 = 400,000 / 500,000 = 0.8].</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>6. Proactive safety measures that help identify and prevent hazards BEFORE incidents occur are: (Slide 111)</p>
+                            <ul>
+                                <li>a) Lagging Indicators</li>
+                                <li>b) Consequence Metrics</li>
+                                <li>c) Leading Indicators</li>
+                                <li>d) Impact Assessments</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_6')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_6"><strong>Answer:</strong> c) Leading Indicators.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>7. The number of near-miss reports filed is considered a: (Slide 112)</p>
+                            <ul>
+                                <li>a) Lagging indicator because it reports an event.</li>
+                                <li>b) Leading indicator because it indicates potential hazards and learning opportunities before loss occurs.</li>
+                                <li>c) Neither a leading nor a lagging indicator.</li>
+                                <li>d) A financial performance metric.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_7')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_7"><strong>Answer:</strong> b) Leading indicator because it indicates potential hazards and learning opportunities before loss occurs.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>8. The "Major Property Damage Cost Severity Rate" (Slide 116) normalizes the cost of damage against:</p>
+                            <ul>
+                                <li>a) Total project budget.</li>
+                                <li>b) Total number of employees.</li>
+                                <li>c) Operation (non-clerical/office) hours worked.</li>
+                                <li>d) Total number of property damage incidents.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_8')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_8"><strong>Answer:</strong> c) Operation (non-clerical/office) hours worked.</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>9. In the TRIR calculation example on Slide 118, if the company had 800 workers (instead of 400) working the same 1,000 hours each in the period with 5 incidents, how would the TRIR change?</p>
+                            <ul>
+                                <li>a) TRIR would double.</li>
+                                <li>b) TRIR would halve.</li>
+                                <li>c) TRIR would remain the same.</li>
+                                <li>d) TRIR would become zero.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_9')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_9"><strong>Answer:</strong> b) TRIR would halve. (New hours = 800,000. TRIR = (5*200,000)/800,000 = 1.25, which is half of 2.5).</div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p>10. Why is it important to use standardized formulas for loss measurement?</p>
+                            <ul>
+                                <li>a) To make the calculations more complex.</li>
+                                <li>b) To allow for comparison over time and with industry benchmarks.</li>
+                                <li>c) To ensure that only lagging indicators are used.</li>
+                                <li>d) To replace the need for safety inspections.</li>
+                            </ul>
+                            <span class="toggle-answer" onclick="toggleAnswer('ans13_10')">Show/Hide Answer</span>
+                            <div class="quiz-answer" id="ans13_10"><strong>Answer:</strong> b) To allow for comparison over time and with industry benchmarks.</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        function toggleAnswer(elementId) {
+            var answer = document.getElementById(elementId);
+            var button = answer.previousElementSibling; 
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+        </script>
+    </body>
+    </html>
+    
