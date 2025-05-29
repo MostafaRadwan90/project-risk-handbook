@@ -1,67 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Risk Management Handbook - Index</title>
+  <title>Project Risk Management & Safety - Study Hub</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background-color: #f4f4f4;
-      color: #333;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #f8f9fa; /* Light gray background */
     }
-    h1 {
-      color: #004085;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .toc {
-      background-color: #fff;
-      padding: 20px;
+    .container {
+      max-width: 960px;
+      background-color: #ffffff; /* White background for content */
+      padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .header-main {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #007bff; /* Primary blue accent */
+    }
+    .header-main h1 {
+      font-size: 2.8em;
+      color: #0056b3; /* Darker blue for main title */
+      margin-bottom: 0.2em;
+    }
+    .header-main p {
+        font-size: 1.1em;
+        color: #6c757d; /* Muted text color */
+    }
+    .section-title {
+      font-size: 1.8em;
+      color: #007bff; /* Primary blue for section titles */
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dee2e6; /* Light border */
+    }
+    .list-group-item {
+      border-color: #e9ecef; /* Lighter border for list items */
+      transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+      font-size: 1.05em;
+    }
+    .list-group-item:hover {
+      background-color: #e7f3ff; /* Light blue hover */
+      transform: translateX(5px);
+    }
+    .list-group-item a {
+      text-decoration: none;
+      color: #0056b3; /* Darker blue for links */
+      font-weight: 500;
+    }
+    .list-group-item a:hover {
+      color: #003875;
+    }
+    .list-group-item .fas { /* Font Awesome icons */
+        margin-right: 10px;
+        color: #007bff;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #dee2e6;
+        font-size: 0.9em;
+        color: #6c757d;
     }
   </style>
 </head>
 <body>
-  <div class="toc">
-    <h1>📘 Project Risk Management Handbook</h1>
-    <h2>📑 Table of Contents</h2>
-    <ul>
-      <li><a href="00_handbook_cover_outline.html">00 - Cover & Outline</a></li>
-      <li><a href="01_fundamental_concepts.html">01 - Fundamental Concepts</a></li>
-      <li><a href="02_intro_to_prm_and_planning.html">02 - Introduction to Project Risk Management</a></li>
-      <li><a href="03_essential_tools_rbs_pi_matrix.html">03 - Essential Tools (RBS, PI Matrix)</a></li>
-      <li><a href="04_risk_identification_process.html">04 - Risk Identification Process</a></li>
-      <li><a href="05_qualitative_risk_analysis.html">05 - Qualitative Risk Analysis</a></li>
-      <li><a href="06_quantitative_risk_analysis.html">06 - Quantitative Risk Analysis</a></li>
-      <li><a href="07_plan_risk_responses_part1.html">07 - Plan Risk Responses (Part 1)</a></li>
-      <li><a href="08_plan_risk_responses_part2_control_intro.html">08 - Plan Risk Responses (Part 2 & Control Intro)</a></li>
-      <li><a href="09_control_risk.html">09 - Control Risk</a></li>
-      <li><a href="10_health_safety_fundamentals.html">10 - Health & Safety Fundamentals</a></li>
-      <li><a href="11_safety_management_principles.html">11 - Safety Management Principles</a></li>
-      <li><a href="12_safety_hazard_id_risk_assessment.html">12 - Hazard ID & Risk Assessment</a></li>
-      <li><a href="13_safety_measures_loss_formulas.html">13 - Safety Measures & Loss Formulas</a></li>
-      <li><a href="14_safety_inspections.html">14 - Safety Inspections</a></li>
-      <li><a href="15_accident_investigation.html">15 - Accident Investigation</a></li>
-      <li><a href="16_crisis_management.html">16 - Crisis Management</a></li>
-      <li><a href="Project_Risk_Management_Handbook.html">📄 Full Handbook (All-in-One)</a></li>
-    </ul>
-  </div>
+  <div class="container">
+    <div class="header-main">
+      <h1><i class="fas fa-shield-alt"></i> Project Risk Management & Safety</h1>
+      <p>Your Comprehensive Study Hub</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="section-title"><i class="fas fa-book-open"></i> Course Handbook</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="00_handbook_cover_outline.html"><i class="fas fa-file-alt"></i> 00 - Cover & Outline</a></li>
+          <li class="list-group-item"><a href="01_fundamental_concepts.html"><i class="fas fa-lightbulb"></i> 01 - Fundamental Concepts</a></li>
+          <li class="list-group-item"><a href="02_intro_to_prm_and_planning.html"><i class="fas fa-cogs"></i> 02 - Introduction to Project Risk Management & Planning</a></li>
+          <li class="list-group-item"><a href="03_essential_tools_rbs_pi_matrix.html"><i class="fas fa-tools"></i> 03 - Essential Tools (RBS, PI Matrix)</a></li>
+          <li class="list-group-item"><a href="04_risk_identification_process.html"><i class="fas fa-search"></i> 04 - Risk Identification Process</a></li>
+          <li class="list-group-item"><a href="05_qualitative_risk_analysis.html"><i class="fas fa-sliders-h"></i> 05 - Qualitative Risk Analysis</a></li>
+          <li class="list-group-item"><a href="06_quantitative_risk_analysis.html"><i class="fas fa-calculator"></i> 06 - Quantitative Risk Analysis</a></li>
+          <li class="list-group-item"><a href="07_plan_risk_responses_part1.html"><i class="fas fa-directions"></i> 07 - Plan Risk Responses (Part 1)</a></li>
+          <li class="list-group-item"><a href="08_plan_risk_responses_part2_control_intro.html"><i class="fas fa-random"></i> 08 - Plan Risk Responses (Part 2 & Control Intro)</a></li>
+          <li class="list-group-item"><a href="09_control_risk.html"><i class="fas fa-chart-line"></i> 09 - Control Risk</a></li>
+          <li class="list-group-item"><a href="10_health_safety_fundamentals.html"><i class="fas fa-hard-hat"></i> 10 - Health & Safety Fundamentals</a></li>
+          <li class="list-group-item"><a href="11_safety_management_principles.html"><i class="fas fa-balance-scale"></i> 11 - Safety Management Principles</a></li>
+          <li class="list-group-item"><a href="12_safety_hazard_id_risk_assessment.html"><i class="fas fa-exclamation-triangle"></i> 12 - Hazard ID & Risk Assessment</a></li>
+          <li class="list-group-item"><a href="13_safety_measures_loss_formulas.html"><i class="fas fa-percentage"></i> 13 - Safety Measures & Loss Formulas</a></li>
+          <li class="list-group-item"><a href="14_safety_inspections.html"><i class="fas fa-clipboard-check"></i> 14 - Safety Inspections</a></li>
+          <li class="list-group-item"><a href="15_accident_investigation.html"><i class="fas fa-search-plus"></i> 15 - Accident Investigation</a></li>
+          <li class="list-group-item"><a href="16_crisis_management.html"><i class="fas fa-fire-extinguisher"></i> 16 - Crisis Management</a></li>
+          <li class="list-group-item list-group-item-success"><a href="Project_Risk_Management_Handbook.html" class="text-success"><i class="fas fa-book"></i> 📄 Full Handbook (All-in-One)</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Past Exams</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="ces665_spring2019_all_pages.html"><i class="far fa-calendar-alt"></i> CES665 - Spring 2019 Exam</a></li>
+          <li class="list-group-item"><a href="ces665_spring2022_all_pages.html"><i class="far fa-calendar-alt"></i> CES665 - Spring 2022 Exam</a></li>
+        </ul>
+
+        <h2 class="section-title"><i class="fas fa-pencil-alt"></i> Mock Exams</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="mock_exam_1.html"><i class="fas fa-file-signature"></i> Mock Exam 1</a></li>
+          <li class="list-group-item"><a href="mock_exam_2.html"><i class="fas fa-file-signature"></i> Mock Exam 2</a></li>
+          <li class="list-group-item"><a href="mock_exam_3.html"><i class="fas fa-file-signature"></i> Mock Exam 3</a></li>
+          <li class="list-group-item"><a href="mock_exam_4.html"><i class="fas fa-file-signature"></i> Mock Exam 4</a></li>
+          <li class="list-group-item"><a href="mock_exam_5.html"><i class="fas fa-file-signature"></i> Mock Exam 5</a></li>
+          <li class="list-group-item"><a href="mock_exam_6.html"><i class="fas fa-file-signature"></i> Mock Exam 6</a></li>
+          <li class="list-group-item"><a href="mock_exam_7.html"><i class="fas fa-file-signature"></i> Mock Exam 7</a></li>
+          <li class="list-group-item"><a href="mock_exam_8.html"><i class="fas fa-file-signature"></i> Mock Exam 8</a></li>
+          <li class="list-group-item"><a href="mock_exam_9.html"><i class="fas fa-file-signature"></i> Mock Exam 9</a></li>
+          <li class="list-group-item"><a href="mock_exam_10.html"><i class="fas fa-file-signature"></i> Mock Exam 10</a></li>
+          <li class="list-group-item"><a href="mock_exam_11.html"><i class="fas fa-file-signature"></i> Mock Exam 11</a></li>
+          <li class="list-group-item"><a href="mock_exam_12.html"><i class="fas fa-file-signature"></i> Mock Exam 12</a></li>
+        
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 - Project Risk Management & Safety Study Materials. For educational purposes.</p>
+    </div>
+
+  </div> <!-- /container -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
