@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Handbook - Part 1: Foundations & Planning</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3; /* Bootstrap primary blue */
+        }
+        h1 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #007bff; /* Lighter blue */
+            padding-bottom: 8px;
+        }
+        .callout {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #eee;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+        }
+        .callout-info {
+            border-left-color: #5bc0de; /* Bootstrap info color */
+        }
+        .callout-warning {
+            border-left-color: #f0ad4e; /* Bootstrap warning color */
+        }
+        .callout-success {
+            border-left-color: #5cb85c; /* Bootstrap success color */
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .img-fluid {
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        .nav-pills .nav-link {
+            margin-bottom: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CES665: Risk Management & Safety - Exam Preparation Handbook<br><small>Part 1: Foundations of Risk Management & Planning</small></h1>
+
+        <div id="toc" class="mb-4">
+            <h2>Table of Contents</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#ch1">Chapter 1: Introduction to Risk</a></li>
+                <li class="list-group-item"><a href="#ch2">Chapter 2: Overview of Project Risk Management</a></li>
+                <li class="list-group-item"><a href="#ch3">Chapter 3: Plan Risk Management</a></li>
+            </ul>
+        </div>
+
+        <!-- Chapter 1: Introduction to Risk -->
+        <section id="ch1">
+            <h2>Chapter 1: Introduction to Risk</h2>
+            
+            <div class="callout callout-info">
+                <h4>Core Concept</h4>
+                <p>Understanding the fundamental definitions of risk and related terms is crucial for the entire course. These concepts will appear in various contexts throughout your exam.</p>
+            </div>
+
+            <h3>1.1 What is Risk?</h3>
+            <p>Risk is a fundamental concept in project management and safety. It stems from uncertainty and can have significant consequences.</p>
+            
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    Key Definition: Risk
+                </div>
+                <div class="card-body">
+                    <p>Risk is defined as a probability or threat of damage, injury, liability, loss, or any other negative occurrence that is caused by external or internal weaknesses, and that may be avoided through preventive action.</p>
+                    <p>In the context of projects, risk is an <strong>uncertain event or condition</strong> that, if it occurs, has an effect (impact) on one or more project objectives such as time, cost, quality, or scope.</p>
+                    <p class="font-weight-bold">Risk has two primary parameters:</p>
+                    <ul>
+                        <li><strong>Probability:</strong> The likelihood of the risk event occurring.</li>
+                        <li><strong>Impact:</strong> The consequence or effect on project objectives if the risk event occurs.</li>
+                    </ul>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 5; Slide 6)</em></p>
+
+            <h3>1.2 Risk in Projects: Opportunities and Threats</h3>
+            <p>It's important to recognize that risk isn't always negative. The impact of an uncertain event can be either positive or negative:</p>
+            <ul>
+                <li><strong>Negative Impact (Threat):</strong> An uncertain event that could hinder project objectives. These are the risks we typically try to avoid, mitigate, or transfer.</li>
+                <li><strong>Positive Impact (Opportunity):</strong> An uncertain event that could benefit project objectives. These are risks we might try to exploit, enhance, or share.</li>
+            </ul>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 6)</em></p>
+
+            <h3>1.3 Key Terminology</h3>
+            <p>Several terms are closely related to risk and are essential for understanding risk management:</p>
+
+            <h4>1.3.1 Risk Tolerance</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <p><strong>Risk Tolerance</strong> is the degree, amount, or volume of acceptable risk. It defines the specified range of acceptable variation or deviation an entity is willing to accept around specific objectives.</p>
+                    <p>For example, a project might have a cost tolerance of +/- 10% of the budget. Risks causing deviations beyond this tolerance would be considered more significant.</p>
+                    <div class="text-center">
+                        <img src="risk_tolerance_concept.png" alt="Risk Tolerance Curve Concept" class="img-fluid" style="max-width: 400px;"/>
+                        <p class="small text-muted">Conceptual representation: Higher probability risks are only tolerated if their impact is low, and vice-versa. The curve defines the boundary of acceptable risk.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 7)</em></p>
+
+            <h4>1.3.2 Risk Appetite</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <p><strong>Risk Appetite</strong> is the level of risk a project manager or a key stakeholder (or organization) is willing to take when money at stake is compared to the potential reward. It's a higher-level, strategic guideline reflecting the general attitude toward risk-taking.</p>
+                    <p>Individuals and organizations can be categorized based on their risk appetite:</p>
+                    <ul>
+                        <li><strong>Risk Seeker:</strong> Comfortable with high levels of risk for potentially high rewards. Their utility curve shows increasing marginal utility for money/reward.</li>
+                        <li><strong>Risk Averter (Risk Averse):</strong> Prefers to avoid uncertainty even for lower potential rewards. Their utility curve shows diminishing marginal utility.</li>
+                        <li><strong>Risk Neutral:</strong> Focuses on expected outcomes regardless of uncertainty. Their utility curve is linear.</li>
+                    </ul>
+                     <div class="text-center">
+                        <img src="risk_appetite_curves.png" alt="Risk Appetite Utility Curves" class="img-fluid" style="max-width: 600px;"/>
+                        <p class="small text-muted">Utility curves illustrating Risk Seeker, Risk Averter, and Risk Neutral profiles.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 8)</em></p>
+
+            <div class="callout callout-warning">
+                <h4>Distinction: Appetite vs. Tolerance</h4>
+                <p><strong>Risk Appetite</strong> is broad and strategic (<em>"How much risk are we willing to take on to achieve our goals?"</em>).</p>
+                <p><strong>Risk Tolerance</strong> is specific and operational, defining acceptable deviations for particular objectives (<em>"How much variation from our planned budget of $X are we willing to accept?"</em>). Tolerance operates within the appetite.</p>
+            </div>
+
+            <h4>1.3.3 Risk Exposure</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <p><strong>Risk Exposure</strong> is a quantified loss potential (or gain potential for opportunities) of a project. It is often calculated by multiplying the probability of a risk occurring by its potential impact.</p>
+                    <p><code>Risk Exposure = Probability of Occurrence × Potential Loss/Gain</code></p>
+                    <p>This is also commonly referred to as the Expected Monetary Value (EMV) when dealing with financial impacts.</p>
+                     <div class="text-center">
+                        <img src="risk_exposure_concept.png" alt="Risk Exposure Concept" class="img-fluid" style="max-width: 500px;"/>
+                        <p class="small text-muted">Visual representation of risk exposure based on probability and impact.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 9)</em></p>
+        </section>
+
+        <!-- Chapter 2: Overview of Project Risk Management -->
+        <section id="ch2">
+            <h2>Chapter 2: Overview of Project Risk Management</h2>
+            
+            <h3>2.1 Definition and Purpose</h3>
+            <div class="card mb-3">
+                <div class="card-header bg-info text-white">
+                    Key Definition: Project Risk Management
+                </div>
+                <div class="card-body">
+                    <p><strong>Project Risk Management</strong> is the process of identifying, analyzing, and then responding to any risk that arises over the life cycle of a project to help the project remain on track and meet its goals.</p>
+                    <p>The <strong>purpose</strong> of risk management is to:</p>
+                    <ul>
+                        <li>Predict risks.</li>
+                        <li>Assess their likelihood and impact.</li>
+                        <li>Actively plan what should be done ahead of time to best deal with situations when they occur.</li>
+                    </ul>
+                    <p>Managing risk is not just reactive; it should be an integral part of the planning process to anticipate potential issues and plan how to control them if they materialize.</p>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 11)</em></p>
+
+            <h3>2.2 Core Risk Management Processes</h3>
+            <p>The general risk management process involves several key stages, often depicted cyclically:</p>
+            <ol>
+                <li><strong>Identify Risk:</strong> Determining which risks might affect the project and documenting their characteristics.</li>
+                <li><strong>Assess Risk (Analyze):</strong> Evaluating the probability and impact of identified risks. This includes both qualitative and quantitative analysis.</li>
+                <li><strong>Control Risk (Treat/Respond):</strong> Developing and implementing plans to enhance opportunities and reduce threats.</li>
+                <li><strong>Review Controls (Monitor):</strong> Tracking identified risks, monitoring residual risks, identifying new risks, and evaluating the effectiveness of risk responses and the overall risk management process.</li>
+            </ol>
+            <div class="text-center">
+                <img src="risk_management_process_cycle.png" alt="Risk Management Process Cycle" class="img-fluid" style="max-width: 450px;"/>
+                <p class="small text-muted">A typical risk management process cycle.</p>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 12 - conceptual diagram)</em></p>
+        </section>
+
+        <!-- Chapter 3: Plan Risk Management -->
+        <section id="ch3">
+            <h2>Chapter 3: Plan Risk Management</h2>
+
+            <div class="callout callout-success">
+                <h4>Exam Tip</h4>
+                <p>The Risk Management Plan is a foundational document. Understand its purpose and key components, as questions often revolve around what it contains (and what it doesn't - e.g., it doesn't list actual risks).</p>
+            </div>
+
+            <h3>3.1 Purpose and Importance</h3>
+            <p><strong>Plan Risk Management</strong> is the process of defining how to conduct risk management activities for a project. It ensures that the level, type, and visibility of risk management are commensurate with both the risks and the importance of the project to the organization.</p>
+            <p>This planning is done early in the project lifecycle and sets the stage for all subsequent risk management activities.</p>
+
+            <h3>3.2 Inputs, Tools & Techniques, Outputs (ITTOs)</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Inputs</th>
+                            <th>Tools & Techniques</th>
+                            <th>Outputs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Project scope statement (or Project Charter)</li>
+                                    <li>Cost management plan</li>
+                                    <li>Schedule management plan</li>
+                                    <li>Communication management plan</li>
+                                    <li>Enterprise environmental factors</li>
+                                    <li>Organizational process assets</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Planning meetings and analysis</li>
+                                    <li>Expert judgment</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><strong>Risk Management Plan</strong></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 13. Note: Slide 13 has a slightly different ITTO list than standard PMBOK, focusing on key elements. The provided list is a blend for comprehensiveness based on course context.)</em></p>
+            
+            <h3>3.3 Components of a Risk Management Plan</h3>
+            <p>The Risk Management Plan is a component of the overall project management plan. It describes how risk management activities will be structured and performed. Key components include:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Methodology:</strong> Defines the approaches, tools, and data sources for risk management.</li>
+                <li class="list-group-item"><strong>Roles and Responsibilities:</strong> Assigns who is responsible for each risk management activity (e.g., risk owners, risk action owners).</li>
+                <li class="list-group-item"><strong>Budgeting:</strong> Estimates funds needed for risk management, including contingency and management reserves.</li>
+                <li class="list-group-item"><strong>Timing:</strong> Defines when and how often risk management processes will be performed throughout the project lifecycle.</li>
+                <li class="list-group-item"><strong>Risk Categories:</strong> Provides a structure for categorizing risks, often using a Risk Breakdown Structure (RBS). This helps in systematic identification and analysis.</li>
+                <li class="list-group-item"><strong>Definitions of Risk Probability and Impact:</strong> Standardized scales (qualitative or quantitative) for assessing the likelihood and consequence of risks. These must be defined clearly for consistent evaluation.</li>
+                <li class="list-group-item"><strong>Probability and Impact Matrix:</strong> A predefined grid that combines probability and impact scales to assign a risk rating or score, helping to prioritize risks.</li>
+                <li class="list-group-item"><strong>Stakeholder Risk Appetite and Tolerance:</strong> Documents the acceptable levels of risk exposure for key stakeholders and the project.</li>
+                <li class="list-group-item"><strong>Reporting Formats:</strong> Defines how risk information will be documented, maintained, and communicated to stakeholders (e.g., content and format of the Risk Register, risk reports).</li>
+                <li class="list-group-item"><strong>Tracking:</strong> Describes how risk activities will be documented, how risk responses will be audited, and how lessons learned from risk management will be captured and disseminated.</li>
+            </ul>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slides 14-15; CES665 Final Exam 2022, Q1)</em></p>
+
+            <h3>3.4 Risk Breakdown Structure (RBS)</h3>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Risk Breakdown Structure (RBS)
+                </div>
+                <div class="card-body">
+                    <p>The <strong>Risk Breakdown Structure (RBS)</strong> is a hierarchical representation of potential risk sources or categories for a project. It helps in systematically identifying and categorizing risks.</p>
+                    <p><strong>Utility of RBS:</strong></p>
+                    <ul>
+                        <li><strong>Comprehensive Identification:</strong> Ensures a more thorough risk identification process by prompting consideration of various risk areas.</li>
+                        <li><strong>Organization:</strong> Helps in structuring and categorizing identified risks within the Risk Register.</li>
+                        <li><strong>Communication:</strong> Provides a common framework for discussing risks among stakeholders.</li>
+                        <li><strong>Focus:</strong> Helps to concentrate risk identification efforts on specific areas (e.g., technical, external, organizational, project management).</li>
+                        <li><strong>Checklist Basis:</strong> The lowest levels of an RBS can serve as a checklist for risk identification.</li>
+                    </ul>
+                    <p>Common high-level categories in an RBS might include Technical, External, Organizational, and Project Management risks. These are then broken down into more specific sub-categories.</p>
+                    <div class="text-center">
+                        <img src="rbs_example.png" alt="Example of a Risk Breakdown Structure" class="img-fluid" style="max-width: 500px;"/>
+                        <p class="small text-muted">Conceptual example of an RBS hierarchy.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 16)</em></p>
+
+            <h3>3.5 Probability and Impact Matrix (Introduction)</h3>
+             <div class="card mb-3">
+                <div class="card-header">
+                    Probability and Impact (P&I) Matrix
+                </div>
+                <div class="card-body">
+                    <p>The <strong>Probability and Impact Matrix</strong> is a grid used for mapping the probability of each risk occurrence against its impact on project objectives if that risk occurs. It's a key tool in Qualitative Risk Analysis for prioritizing risks.</p>
+                    <p>The matrix typically defines zones for low, moderate, and high risks based on the combination of probability and impact levels. The specific scales for probability and impact, and the matrix itself, are defined in the Risk Management Plan.</p>
+                    <div class="text-center">
+                        <img src="pi_matrix_example.png" alt="Example of a Probability and Impact Matrix" class="img-fluid" style="max-width: 450px;"/>
+                        <p class="small text-muted">A typical P&I Matrix showing risk ratings based on likelihood and impact.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 17)</em></p>
+
+        </section>
+        
+        <div class="footer">
+            End of Part 1: Foundations of Risk Management & Planning
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Handbook - Part 3: Perform Quantitative Risk Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #0056b3; /* Bootstrap primary blue */
+        }
+        h1 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #007bff; /* Lighter blue */
+            padding-bottom: 8px;
+        }
+        h3 {
+            margin-top: 25px;
+        }
+        .callout {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #eee;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+        }
+        .callout-info {
+            border-left-color: #5bc0de; /* Bootstrap info color */
+        }
+        .callout-warning {
+            border-left-color: #f0ad4e; /* Bootstrap warning color */
+        }
+        .callout-success {
+            border-left-color: #5cb85c; /* Bootstrap success color */
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .img-fluid {
+            margin: 15px auto; /* Centered */
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            max-width: 90%; /* Responsive image size */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .list-group-item-action:hover {
+            background-color: #f8f9fa;
+        }
+        .equation {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CES665: Risk Management & Safety - Exam Preparation Handbook<br><small>Part 3: Perform Quantitative Risk Analysis</small></h1>
+
+        <div id="toc" class="mb-4">
+            <h2>Table of Contents</h2>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action"><a href="#ch6">Chapter 6: Perform Quantitative Risk Analysis</a></li>
+            </ul>
+        </div>
+
+        <!-- Chapter 6: Perform Quantitative Risk Analysis -->
+        <section id="ch6">
+            <h2>Chapter 6: Perform Quantitative Risk Analysis</h2>
+            
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    Definition and Purpose
+                </div>
+                <div class="card-body">
+                    <p><strong>Perform Quantitative Risk Analysis</strong> is the process of numerically analyzing the effect of identified individual project risks (usually those prioritized by qualitative analysis) on overall project objectives. It produces quantitative risk information to support decision-making in order to reduce project uncertainty.</p>
+                    <p>The key goals are to:</p>
+                    <ul>
+                        <li>Assign a numerical value to the impact of each risk.</li>
+                        <li>Quantify the possible outcomes for the project and their probabilities.</li>
+                        <li>Assess the probability of achieving specific project objectives (e.g., cost and schedule targets).</li>
+                        <li>Identify the most influential risks on the project and their relative impact.</li>
+                        <li>Determine how much contingency reserve (time or money) might be needed.</li>
+                    </ul>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 7; Slides: Project Risk Management - Part 1, Slide 42)</em></p>
+
+            <div class="callout callout-info">
+                <h4>When to Perform Quantitative Analysis</h4>
+                <p>Quantitative analysis is not always performed on all projects or for all risks. It is most likely to be used when:</p>
+                <ul>
+                    <li>Projects are large, complex, or strategically important.</li>
+                    <li>There is a need for more robust, numerical justification for risk responses or contingency reserves.</li>
+                    <li>Stakeholders require a more detailed understanding of overall project risk exposure.</li>
+                    <li>High-priority risks identified through qualitative analysis need further investigation.</li>
+                </ul>
+            </div>
+
+            <h3>6.1 Qualitative vs. Quantitative Risk Analysis</h3>
+            <p>Understanding the distinctions and similarities between these two analysis types is crucial.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Feature</th>
+                            <th>Qualitative Risk Analysis</th>
+                            <th>Quantitative Risk Analysis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Nature of Evaluation</strong></td>
+                            <td>Subjective evaluation</td>
+                            <td>Objective and numerical evaluation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result Format</strong></td>
+                            <td>Descriptive (e.g., High, Medium, Low risk)</td>
+                            <td>Numerical (e.g., $10,000 impact, 70% probability of success)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Application</strong></td>
+                            <td>Typically required for all identified risks</td>
+                            <td>Not required for all risks; often applied to high-priority risks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Precision</strong></td>
+                            <td>Less precise analysis</td>
+                            <td>More precise analysis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ease of Performance</strong></td>
+                            <td>Easier to perform</td>
+                            <td>More difficult to perform; may require specialized tools/skills</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primary Purpose</strong></td>
+                            <td>Prioritize risks for further action or monitoring</td>
+                            <td>Numerically analyze the effect of risks on project objectives</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Similarities:</strong> Both aim to understand and manage risks, use the Risk Register as input, assess probability and impact (though differently), support decision-making, can be iterative, and are part of the overall risk management framework.</p>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 9; CES665 Final Exam 2022, Q3)</em></p>
+
+            <h3>6.2 Critical Success Factors for Quantitative Analysis</h3>
+            <ul>
+                <li>Prior risk identification and qualitative analysis (to focus efforts).</li>
+                <li>An appropriate project model (e.g., schedule, cost estimate).</li>
+                <li>Commitment to collecting high-quality risk data.</li>
+                <li>Unbiased data.</li>
+                <li>Overall project risk derived from individual risks.</li>
+                <li>Consideration of interrelationships between risks.</li>
+            </ul>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 10)</em></p>
+
+            <h3>6.3 Inputs, Tools & Techniques, Outputs (ITTOs)</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Inputs</th>
+                            <th>Tools & Techniques</th>
+                            <th>Outputs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Risk management plan</li>
+                                    <li>Cost management plan</li>
+                                    <li>Schedule management plan</li>
+                                    <li>Risk register (from qualitative analysis)</li>
+                                    <li>Enterprise environmental factors (EEFs) (e.g., industry studies, risk databases)</li>
+                                    <li>Organizational process assets (OPAs) (e.g., historical data from similar projects)</li>
+                                    <li>(Also: Assumption Log, Basis of Estimates, Cost/Duration Estimates, Schedule Network Diagrams)</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><strong>Data Gathering and Representation Techniques:</strong>
+                                        <ul>
+                                            <li>Interviewing (for expert opinions on ranges, distributions)</li>
+                                            <li>Probability distributions (e.g., Beta, Triangular, Normal, Uniform, Lognormal)</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Quantitative Risk Analysis and Modeling Techniques:</strong>
+                                        <ul>
+                                            <li>Sensitivity analysis (e.g., Tornado diagrams)</li>
+                                            <li>Expected Monetary Value (EMV) analysis</li>
+                                            <li>Decision tree analysis</li>
+                                            <li>Modeling and simulation (e.g., Monte Carlo technique)</li>
+                                            <li>Influence diagrams</li>
+                                        </ul>
+                                    </li>
+                                    <li>Expert judgment</li>
+                                    <li>Interpersonal and Team Skills (e.g., Facilitation)</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><strong>Project documents updates:</strong>
+                                        <ul>
+                                            <li>Risk Register updates (e.g., probabilistic analysis of the project, probability of achieving cost/time objectives, prioritized list of quantified individual risks, trends)</li>
+                                            <li>Risk Report updates</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 11; Slides: Project Risk Management - Part 1, Slide 36; Mock Exam 7, Q2 SA)</em></p>
+            
+            <div class="text-center my-4">
+                <img src="quantitative_risk_analysis_structure.png" alt="Quantitative Risk Analysis Structure Flowchart" class="img-fluid" style="max-width: 700px;"/>
+                <p class="small text-muted">Flowchart illustrating the structure of Quantitative Risk Analysis, from risk prioritization to results.</p>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 12)</em></p>
+
+            <h3>6.4 Key Tools & Techniques Explained</h3>
+
+            <h4>6.4.1 Data Gathering and Representation</h4>
+            <p>Quantitative analysis often requires representing uncertainty using probability distributions. Common distributions include:</p>
+            <ul>
+                <li><strong>Triangular Distribution:</strong> Uses three estimates: Optimistic (O), Most Likely (M), Pessimistic (P). Often used when data is limited.</li>
+                <li><strong>Beta Distribution:</strong> Also uses O, M, P estimates but allows for more skewed distributions. Commonly used in PERT analysis.</li>
+                <li><strong>Normal Distribution (Gaussian):</strong> Bell-shaped curve, defined by mean and standard deviation. Assumes data is symmetrically distributed around the mean.</li>
+                <li><strong>Uniform Distribution:</strong> All values within a range are equally likely. Used when there's no obvious most likely value.</li>
+                <li><strong>Lognormal Distribution:</strong> Skewed distribution often used for variables that cannot be negative, like durations or costs.</li>
+            </ul>
+            <p>Data for these distributions can be gathered through expert interviews, historical data, or commercial databases.</p>
+            <div class="text-center">
+                <img src="probability_distributions_example.png" alt="Examples of Probability Distributions" class="img-fluid" style="max-width: 700px;"/>
+                <p class="small text-muted">Visual examples of Normal, Beta, and Triangular distributions.</p>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slides 39-41, 45)</em></p>
+
+            <h4>6.4.2 Expected Monetary Value (EMV) Analysis</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p><strong>EMV</strong> is a statistical concept that calculates the average outcome when the future includes scenarios that may or may not happen (analysis under uncertainty). It's calculated by multiplying the value (impact) of each possible outcome by its probability of occurrence and summing the products.</p>
+                    <span class="equation">EMV = Σ (Probability × Impact)</span>
+                    <p>EMV for opportunities is generally expressed as positive values, while EMV for threats is expressed as negative values.</p>
+                    <p><strong>Example:</strong> A risk has a 30% chance of causing a $12,000 cost (threat) and a 20% chance of a $5,000 saving (opportunity).</p>
+                    <p>EMV(Threat) = 0.30 × (-$12,000) = -$3,600</p>
+                    <p>EMV(Opportunity) = 0.20 × (+$5,000) = +$1,000</p>
+                    <p>Total EMV for these two = -$3,600 + $1,000 = -$2,600</p>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slide 13; CES665 Final Exam 2022, Q8.MCQ1, Q8.MCQ6, Q8.MCQ7, Q8.MCQ14; Mock Exam 10, Q3 SA, Q8 MCQ)</em></p>
+
+            <h4>6.4.3 Decision Tree Analysis</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p>A <strong>Decision Tree</strong> is a diagramming and calculation technique for evaluating the implications of a chain of multiple options in the presence of uncertainty. It helps to choose between different courses of action by calculating the EMV for each branch.</p>
+                    <p>Key components:</p>
+                    <ul>
+                        <li><strong>Decision Nodes (Squares):</strong> Represent points where a choice is made.</li>
+                        <li><strong>Chance Nodes (Circles):</strong> Represent points where uncertain outcomes occur, with associated probabilities.</li>
+                        <li><strong>Branches:</strong> Represent different choices or outcomes.</li>
+                        <li><strong>End Nodes (Triangles or values):</strong> Represent the final outcome or payoff of a path.</li>
+                    </ul>
+                    <p>The tree is "solved" by calculating the EMV at each chance node and then selecting the decision at each decision node that yields the most favorable EMV (highest profit or lowest cost).</p>
+                    <div class="text-center">
+                        <img src="decision_tree_example_emv.png" alt="Decision Tree Example with EMV Calculation" class="img-fluid" style="max-width: 750px;"/>
+                        <p class="small text-muted">Example of a decision tree for "Build or Upgrade" decision, showing EMV calculations. The decision with the higher EMV (e.g., $46M for Upgrade vs. $36M for Build in this example) would be chosen.</p>
+                    </div>
+                    <p><em>(Source: Slides: Project Risk Management - Part 2 (Qualitative/Quantitative), Slides 14-17; CES665 Final Exam 2022, Q8.MCQ11)</em></p>
+                </div>
+            </div>
+
+            <h4>6.4.4 Sensitivity Analysis</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p><strong>Sensitivity Analysis</strong> helps to determine which individual project risks or other sources of uncertainty have the most potential impact on project objectives. It examines the extent to which the uncertainty of each project element affects the objective being studied when all other uncertain elements are held at their baseline values.</p>
+                    <p>A common way to display the results of sensitivity analysis is a <strong>Tornado Diagram</strong>. In a tornado diagram:</p>
+                    <ul>
+                        <li>The Y-axis lists the uncertain variables or risks.</li>
+                        <li>The X-axis shows the spread or correlation of the uncertainty to the studied output (e.g., project cost or completion date).</li>
+                        <li>Bars are ordered by impact, with the largest impact at the top, resembling a tornado.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="tornado_diagram_example.png" alt="Example of a Tornado Diagram" class="img-fluid" style="max-width: 600px;"/>
+                        <p class="small text-muted">Tornado diagram illustrating the relative impact of different risks on a project objective. Risks at the top have the highest sensitivity.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slides 49-50; Mock Exam 8, MCQ7; Mock Exam 2, MCQ5)</em></p>
+
+            <h4>6.4.5 Modeling and Simulation (Monte Carlo Technique)</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p><strong>Simulation</strong> uses a project model that translates the uncertainties specified at a detailed level into their potential impact on project objectives as a whole. Simulations are typically performed using the <strong>Monte Carlo technique</strong>.</p>
+                    <p><strong>Monte Carlo Technique:</strong></p>
+                    <ul>
+                        <li>A model of the project (e.g., cost estimate or schedule network) is created.</li>
+                        <li>For variables with uncertainty (e.g., activity durations, cost items), probability distributions are defined.</li>
+                        <li>The model is computed many times (iterated), with input values for each iteration randomly selected from their probability distributions.</li>
+                        <li>The results form a probability distribution of possible outcomes for the project (e.g., total cost or completion date).</li>
+                    </ul>
+                    <p><strong>Outputs can include:</strong></p>
+                    <ul>
+                        <li>An S-curve showing the probability of achieving different cost or schedule targets.</li>
+                        <li>Histograms of possible project outcomes.</li>
+                        <li>Probability of any activity being on the critical path.</li>
+                        <li>Overall risk assessment of the project.</li>
+                    </ul>
+                    <div class="text-center">
+                        <img src="monte_carlo_s_curve_example.png" alt="Example of Monte Carlo Simulation S-Curve" class="img-fluid" style="max-width: 500px;"/>
+                        <p class="small text-muted">Example S-curve from Monte Carlo simulation, showing cumulative probability of project completion by a certain cost/date.</p>
+                    </div>
+                </div>
+            </div>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slides 46-48; Mock Exam 6, MCQ2; Mock Exam 9, MCQ5)</em></p>
+
+            <h3>6.5 Outputs of Perform Quantitative Risk Analysis</h3>
+            <p>The main output is updates to <strong>Project Documents</strong>, primarily the Risk Register and Risk Report. These updates include:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Probabilistic analysis of the project:</strong> e.g., range of possible completion dates and costs, with associated confidence levels.</li>
+                <li class="list-group-item"><strong>Probability of achieving cost and time objectives:</strong> e.g., "There is an 80% chance of completing the project within $X budget."</li>
+                <li class="list-group-item"><strong>Prioritized list of quantified individual project risks:</strong> Showing which risks pose the greatest threat or offer the greatest opportunity to the project in numerical terms.</li>
+                <li class="list-group-item"><strong>Trends in quantitative risk analysis results:</strong> If analysis is repeated, trends can indicate if overall risk is increasing or decreasing.</li>
+            </ul>
+            <p><em>(Source: Slides: Project Risk Management - Part 1, Slide 51)</em></p>
+
+        </section>
+
+        <div class="footer">
+            End of Part 3: Perform Quantitative Risk Analysis
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

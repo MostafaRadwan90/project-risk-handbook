@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Handbook - Part 6: Mock Exam Questions & Case Studies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #0056b3; /* Bootstrap primary blue */
+        }
+        h1 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #007bff; /* Lighter blue */
+            padding-bottom: 8px;
+        }
+        h3 {
+            margin-top: 25px;
+            color: #0069d9; 
+        }
+        .question-block, .case-study-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text, .case-study-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .options-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .options-list li {
+            margin-bottom: 8px;
+        }
+        .btn-show-answer {
+            margin-top: 10px;
+        }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong.answer-label {
+            color: #28a745; /* Bootstrap success color for "Answer:" */
+        }
+        .rationale-text {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .callout {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #eee;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+        }
+        .callout-info {
+            border-left-color: #5bc0de; 
+        }
+        .img-fluid {
+            margin: 15px auto; 
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            max-width: 70%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CES665: Risk Management & Safety - Exam Preparation Handbook<br><small>Part 6: Mock Exam Questions & Case Studies</small></h1>
+
+        <div class="callout callout-info">
+            <h4>Practice Makes Perfect!</h4>
+            <p>This section provides mock exam-style questions and case studies based on your course materials. Work through these to test your understanding and identify areas for further review. Pay attention to how concepts from different chapters are integrated.</p>
+        </div>
+
+        <!-- Section 1: Multiple Choice Questions -->
+        <section id="mcq">
+            <h2>Section 1: Multiple Choice Questions (MCQs)</h2>
+            <p>These questions reflect the style and topics covered in your mock exams and lecture slides.</p>
+
+            <div class="question-block" id="mcq1">
+                <div class="question-text">1. Which of the following best describes the primary purpose of a Risk Management Plan?</div>
+                <ul class="options-list">
+                    <li>A. To list all identified project risks and their potential impacts.</li>
+                    <li>B. To define how risk management activities will be structured and performed.</li>
+                    <li>C. To detail the specific responses for high-priority risks.</li>
+                    <li>D. To track the status of implemented risk responses.</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq1_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq1_ans">
+                    <p><strong class="answer-label">Answer: B</strong></p>
+                    <p class="rationale-text">Rationale: The Risk Management Plan outlines the methodology, roles, responsibilities, budget, timing, and procedures for conducting risk management, not the risks themselves or specific responses. (Ref: Handbook Part 1, Ch 3; Slides: Project Risk Management - Part 1, Slide 14)</p>
+                </div>
+            </div>
+
+            <div class="question-block" id="mcq2">
+                <div class="question-text">2. A project team decides to use a less complex, proven technology instead of a new, innovative one to avoid potential integration issues and delays. This is an example of which risk response strategy for threats?</div>
+                <ul class="options-list">
+                    <li>A. Mitigate</li>
+                    <li>B. Transfer</li>
+                    <li>C. Avoid</li>
+                    <li>D. Accept</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq2_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq2_ans">
+                    <p><strong class="answer-label">Answer: C</strong></p>
+                    <p class="rationale-text">Rationale: Avoidance involves changing the project plan to eliminate the threat or protect objectives from its impact. Switching technologies to remove the risk source is a form of avoidance. (Ref: Handbook Part 4, Ch 7.1; Slides: Project Risk Management - Part 1, Slide 56)</p>
+                </div>
+            </div>
+
+            <div class="question-block" id="mcq3">
+                <div class="question-text">3. In a normal distribution used for quantitative risk analysis, approximately what percentage of outcomes fall within +/- 2 standard deviations (sigma) from the mean?</div>
+                <ul class="options-list">
+                    <li>A. 68.27%</li>
+                    <li>B. 95.45%</li>
+                    <li>C. 99.73%</li>
+                    <li>D. 50.00%</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq3_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq3_ans">
+                    <p><strong class="answer-label">Answer: B</strong></p>
+                    <p class="rationale-text">Rationale: Standard statistical values for a normal distribution: +/- 1 sigma ≈ 68.27%, +/- 2 sigma ≈ 95.45%, +/- 3 sigma ≈ 99.73%. (Ref: Handbook Part 3, Ch 6.4.1; Mock Exam 7, MCQ5)</p>
+                </div>
+            </div>
+
+            <div class="question-block" id="mcq4">
+                <div class="question-text">4. Which document is the primary output of the "Identify Risks" process and is continuously updated throughout the risk management lifecycle?</div>
+                <ul class="options-list">
+                    <li>A. Risk Management Plan</li>
+                    <li>B. Risk Breakdown Structure</li>
+                    <li>C. Risk Register</li>
+                    <li>D. Stakeholder Register</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq4_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq4_ans">
+                    <p><strong class="answer-label">Answer: C</strong></p>
+                    <p class="rationale-text">Rationale: The Risk Register is initiated in Identify Risks and serves as the central repository for all identified risks and their characteristics, being updated in subsequent processes. (Ref: Handbook Part 2, Ch 4.5; Mock Exam 5, MCQ7)</p>
+                </div>
+            </div>
+
+            <div class="question-block" id="mcq5">
+                <div class="question-text">5. A "Near Miss" in safety management is best defined as:</div>
+                <ul class="options-list">
+                    <li>A. An event that results in minor injury or damage.</li>
+                    <li>B. Any unplanned event that disrupts work.</li>
+                    <li>C. An unplanned single event, without loss, that had the potential to result in harm or damage.</li>
+                    <li>D. A hazard that has been identified but not yet controlled.</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq5_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq5_ans">
+                    <p><strong class="answer-label">Answer: C</strong></p>
+                    <p class="rationale-text">Rationale: A near miss is an incident where no actual harm or damage occurred, but it easily could have under slightly different circumstances. (Ref: Handbook Part 5, Ch 11.1; Slides: Safety Management (Lec 11), Slide 3 (renumbered 86))</p>
+                </div>
+            </div>
+             <div class="question-block" id="mcq6">
+                <div class="question-text">6. The number of safety training sessions conducted per month is an example of a:</div>
+                <ul class="options-list">
+                    <li>A. Lagging Indicator</li>
+                    <li>B. Leading Indicator</li>
+                    <li>C. Risk Trigger</li>
+                    <li>D. Corrective Action</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mcq6_ans')">Show Answer</button>
+                <div class="answer-block" id="mcq6_ans">
+                    <p><strong class="answer-label">Answer: B</strong></p>
+                    <p class="rationale-text">Rationale: Leading indicators are proactive measures that aim to prevent incidents. Tracking training sessions is a measure of proactive safety efforts. (Ref: Handbook Part 5, Ch 13 (Safety Measures); Slides: Safety Management (Lec 11), Slide 29 (renumbered 112))</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section 2: Short Answer Questions -->
+        <section id="saq">
+            <h2>Section 2: Short Answer Questions</h2>
+            <p>These questions require concise explanations of key concepts.</p>
+
+            <div class="question-block" id="saq1">
+                <div class="question-text">1. Explain the difference between Residual Risk and Secondary Risk. Provide a brief example for each. (5 Marks)</div>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('saq1_ans')">Show Answer</button>
+                <div class="answer-block" id="saq1_ans">
+                    <p><strong class="answer-label">Answer:</strong></p>
+                    <p><strong>Residual Risk:</strong> This is the risk that remains *after* a risk response has been implemented. It's the "leftover" risk because responses are rarely 100% effective (unless it's avoidance).</p>
+                    <p><em>Example:</em> To mitigate the risk of a supplier delay, the project orders materials two weeks earlier than needed. The residual risk is that the supplier could still be delayed by more than two weeks.</p>
+                    <p><strong>Secondary Risk:</strong> This is a new risk that arises as a *direct consequence* of implementing a risk response to an original risk.</p>
+                    <p><em>Example:</em> To transfer the risk of in-house software development delays, the project outsources the work to a vendor. A secondary risk created is "the vendor might deliver poor quality software."</p>
+                    <p class="rationale-text">Rationale: These are distinct types of risks that emerge during or after response planning. (Ref: Handbook Part 4, Key Response Planning Concepts; Slides: Project Risk Management - Part 1, Slide 52; Mock Exam 3, Q1 SA)</p>
+                </div>
+            </div>
+
+            <div class="question-block" id="saq2">
+                <div class="question-text">2. List and briefly describe the five stages of the Loss Causation Model. (5 Marks)</div>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('saq2_ans')">Show Answer</button>
+                <div class="answer-block" id="saq2_ans">
+                    <p><strong class="answer-label">Answer:</strong></p>
+                    <p>The five stages of the Loss Causation Model are:</p>
+                    <ol>
+                        <li><strong>Lack of Control:</strong> Deficiencies in the management system (e.g., inadequate programs, standards, or compliance). These are the ultimate root causes.</li>
+                        <li><strong>Basic Causes (Root Causes):</strong> Underlying reasons why immediate causes exist. Categorized as Personal Factors (e.g., lack of skill, improper motivation) and System/Job Factors (e.g., poor design, inadequate leadership).</li>
+                        <li><strong>Immediate Causes (Direct Causes/Symptoms):</strong> Unsafe acts and/or unsafe conditions that directly preceded the incident (e.g., operating without authority, defective equipment).</li>
+                        <li><strong>Incident (The Accident Event):</strong> The actual event where contact is made with a source of energy or substance above a threshold limit (e.g., struck by, fall).</li>
+                        <li><strong>Loss:</strong> The undesired outcome of the incident (e.g., injury, property damage, environmental damage).</li>
+                    </ol>
+                    <p class="rationale-text">Rationale: This model provides a framework for accident investigation to identify root causes. (Ref: Handbook Part 5, Ch 15 (Accident Investigation); Slides: Accident Investigation (Lec 15), Slides 20-29 (renumbered 158, 160-161, 164-167); Mock Exam 10, Q2 SA)</p>
+                </div>
+            </div>
+            
+            <div class="question-block" id="saq3">
+                <div class="question-text">3. What are the main Inputs, Tools & Techniques, and Outputs (ITTOs) for the "Perform Qualitative Risk Analysis" process? (5 Marks)</div>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('saq3_ans')">Show Answer</button>
+                <div class="answer-block" id="saq3_ans">
+                    <p><strong class="answer-label">Answer:</strong></p>
+                    <p><strong>Inputs:</strong></p>
+                    <ul>
+                        <li>Risk management plan</li>
+                        <li>Scope baseline</li>
+                        <li>Risk register</li>
+                        <li>Enterprise environmental factors</li>
+                        <li>Organizational process assets</li>
+                    </ul>
+                    <p><strong>Tools & Techniques:</strong></p>
+                    <ul>
+                        <li>Risk probability and impact assessment</li>
+                        <li>Probability and impact matrix</li>
+                        <li>Risk data quality assessment</li>
+                        <li>Risk categorization</li>
+                        <li>Risk urgency assessment</li>
+                        <li>Expert judgment</li>
+                    </ul>
+                    <p><strong>Outputs:</strong></p>
+                    <ul>
+                        <li>Project documents updates (primarily Risk Register updates, including prioritized list of risks, watchlist, risks grouped by categories, risks for further action).</li>
+                    </ul>
+                    <p class="rationale-text">Rationale: Understanding ITTOs is fundamental for process-based questions. (Ref: Handbook Part 2, Ch 5.2; Slides: Project Risk Management - Part 1, Slide 32)</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section 3: Case Studies -->
+        <section id="case-studies">
+            <h2>Section 3: Case Studies</h2>
+            <p>These case studies require applying risk management and safety principles to practical scenarios.</p>
+
+            <div class="case-study-block" id="cs1">
+                <div class="case-study-title">Case Study 1: The Delayed Software Project</div>
+                <p>A software development project is experiencing significant delays. The initial risk assessment identified "potential for key developer to leave mid-project" as a medium risk, but no specific contingency plan was developed beyond "try to retain staff." The lead developer has now resigned. The project is 30% over budget and 2 months behind schedule. New, unanticipated technical challenges with a third-party API have also surfaced.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li>What risk management process seems to have been inadequately performed or is now urgently needed? Explain. (3 Marks)</li>
+                    <li>What type of risk does the developer's resignation represent now that it has occurred? (1 Mark)</li>
+                    <li>Suggest two immediate actions the project manager should take regarding the new API challenges. (2 Marks)</li>
+                    <li>What type of reserve might have been useful for the developer leaving, and what type for the API issues? (2 Marks)</li>
+                    <li>What risk response strategy was implicitly chosen for the developer risk, and was it appropriate? (2 Marks)</li>
+                </ol>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('cs1_ans')">Show Answer</button>
+                <div class="answer-block" id="cs1_ans">
+                    <p><strong class="answer-label">Model Solution:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Inadequately Performed/Urgently Needed Process:</strong> "Plan Risk Responses" was inadequately performed for the developer risk, as no specific contingency plan was developed. "Control Risks" is now urgently needed. This includes identifying the new API challenges (new risks), reassessing existing risks (like the impact of the developer leaving), and potentially developing workarounds or new response plans. (Ref: Handbook Part 4 & 5)</p>
+                        </li>
+                        <li>
+                            <p><strong>Developer's Resignation:</strong> Now that the developer has resigned, this risk has materialized and become an "Issue" or a "Problem" that needs immediate management, rather than a future uncertainty. (General PM concept)</p>
+                        </li>
+                        <li>
+                            <p><strong>Immediate Actions for API Challenges:</strong></p>
+                            <ul>
+                                <li><strong>Identify and Analyze:</strong> Formally identify the API challenges as new risks (or issues if they are already causing problems). Perform a quick qualitative (and possibly quantitative if impact is severe) analysis to understand their probability and impact.</li>
+                                <li><strong>Develop Workaround/Response:</strong> Brainstorm potential solutions or workarounds for the API issues. This might involve seeking expert help, exploring alternative APIs, or adjusting project scope/functionality. (Ref: Handbook Part 4, Workaround definition)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Reserves:</strong></p>
+                            <ul>
+                                <li><strong>Developer Leaving:</strong> A <strong>Contingency Reserve</strong> (time/budget) could have been allocated if this "known-unknown" risk had a more robust contingency plan (e.g., budget for a contractor, time buffer for handover).</li>
+                                <li><strong>API Issues (Unanticipated):</strong> If truly unanticipated, these "unknown-unknowns" would typically be addressed from the <strong>Management Reserve</strong>. (Ref: Handbook Part 4, Reserve definitions)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Response Strategy for Developer Risk:</strong> The implicit strategy was likely "Acceptance" (possibly active if "try to retain staff" involved minor actions, or passive if no real plan was made). Given it was identified as a medium risk, passive acceptance or a very weak active acceptance was likely inappropriate. A more robust "Mitigation" (e.g., cross-training, documentation) or "Active Acceptance" with a clear contingency plan (e.g., pre-identified contractor) would have been better. (Ref: Handbook Part 4, Ch 7.4)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="case-study-block" id="cs2">
+                <div class="case-study-title">Case Study 2: Construction Site Safety Lapses</div>
+                <p>A construction company is building a multi-story office complex. A recent safety inspection revealed the following:</p>
+                <ul>
+                    <li>Several workers on upper floors were not using fall arrest systems (harnesses).</li>
+                    <li>Scaffolding in one section was missing some guardrails.</li>
+                    <li>A pre-tender H&S plan was provided, but the construction phase H&S plan seems poorly communicated to subcontractors.</li>
+                    <li>There have been 3 near-miss incidents involving falling tools in the past month, but only one was formally reported.</li>
+                </ul>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li>Identify two "Unsafe Acts" and one "Unsafe Condition" from the scenario. (3 Marks)</li>
+                    <li>What key principle for developing a construction phase H&S plan is being violated regarding fall protection? (2 Marks)</li>
+                    <li>Why is the underreporting of near misses a significant concern for safety management? (2 Marks)</li>
+                    <li>What are two "Leading Indicators" and one "Lagging Indicator" relevant to this scenario that the company should track? (3 Marks)</li>
+                </ol>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('cs2_ans')">Show Answer</button>
+                <div class="answer-block" id="cs2_ans">
+                    <p><strong class="answer-label">Model Solution:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Unsafe Acts & Condition:</strong></p>
+                            <ul>
+                                <li><strong>Unsafe Acts:</strong> 1) Workers not using fall arrest systems. 2) Failure to formally report all near-miss incidents.</li>
+                                <li><strong>Unsafe Condition:</strong> Scaffolding missing guardrails.</li>
+                            </ul>
+                            <p>(Ref: Handbook Part 5, Ch 10.2; Slides: Project Risk Management - Part 1, Slide 78)</p>
+                        </li>
+                        <li>
+                            <p><strong>Violated H&S Plan Principle:</strong> The principle of "Give priority to solutions protecting the whole workplace (collective protection) rather than individuals (personal protection)" is relevant. Missing guardrails (a collective measure) forces reliance on harnesses (personal measure), and even those are not being used. Also, "Ensure everyone knows what they need to do to remain safe and healthy" is violated by poor communication of the H&S plan. (Ref: Handbook Part 5, Ch 10.2; Slides: Project Risk Management - Part 1, Slide 83)</p>
+                        </li>
+                        <li>
+                            <p><strong>Concern of Underreporting Near Misses:</strong> Near misses are "free lessons" that indicate underlying hazards and unsafe conditions. If unaddressed, these same conditions could lead to more severe accidents. Underreporting prevents analysis of trends, identification of root causes, and implementation of preventive actions. (Ref: Handbook Part 5, Ch 15 (Accident Investigation); Slides: Accident Investigation (Lec 15), Slide 3 (renumbered 140))</p>
+                        </li>
+                        <li>
+                            <p><strong>Indicators:</strong></p>
+                            <ul>
+                                <li><strong>Leading Indicators:</strong> 1) Percentage of workers correctly using PPE (fall arrest systems). 2) Number of safety inspections completed with findings addressed.</li>
+                                <li><strong>Lagging Indicator:</strong> Number of reported near-miss incidents (though the goal is to increase reporting and then reduce actual near misses). Number of actual fall incidents (if any occur).</li>
+                            </ul>
+                            <p>(Ref: Handbook Part 5, Ch 13 (Safety Measures); Slides: Safety Management (Lec 11), Slides 29-30 (renumbered 112-113))</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="case-study-block" id="cs3">
+                <div class="case-study-title">Case Study 3: Toll Road Project Risk Perceptions (Based on Assignment 3)</div>
+                <p>A study on a toll road project in Indonesia (Semarang-Solo Section I) examined risk perceptions from multiple stakeholders: contractor, owner, design consultant, supervisory consultant, and the local community. Construction risks were consistently ranked high by all, but the specific nature differed (e.g., "Work is late" for contractor, "Land acquisition is late" for owner, "Pavement damage" for community).</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li>Why is it important for a project manager to understand that different stakeholders perceive risks differently? (2 Marks)</li>
+                    <li>The owner's top risk was "Land acquisition is late (Risk Level 20)". What category of risk (e.g., Technical, External, Project Management, Organizational) would this primarily fall under from the owner's perspective? (1 Mark)</li>
+                    <li>The community's top risk was "Pavement in this area becomes damaged (Risk Level 15)". What does this highlight about the impact of construction projects on local populations? (2 Marks)</li>
+                    <li>The study found that Society (community) and the Owner had the highest propensity towards risk mitigation. Why might this be the case for these two groups? (2 Marks)</li>
+                    <li>What is a key implication for risk management practice from the finding that "Construction Risks consistently emerged as highly significant across all stakeholder groups"? (3 Marks)</li>
+                </ol>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('cs3_ans')">Show Answer</button>
+                <div class="answer-block" id="cs3_ans">
+                    <p><strong class="answer-label">Model Solution:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Importance of Understanding Different Perceptions:</strong> Different stakeholders have different interests, responsibilities, and potential exposures. Understanding these varying perceptions allows the PM to:
+                                <ul>
+                                    <li>Develop tailored communication strategies.</li>
+                                    <li>Implement more effective and targeted risk responses.</li>
+                                    <li>Proactively address concerns, preventing conflicts and delays.</li>
+                                    <li>Ensure a more holistic and comprehensive risk identification and management approach.</li>
+                                </ul>
+                            (Ref: Assignment 3 Summary - Heterogeneity of Risk Perception)
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Category for "Land Acquisition is Late":</strong> From the owner's perspective, this would primarily be an <strong>External Risk</strong> (dealing with landowners, legal processes, government agencies) and potentially a <strong>Project Management Risk</strong> (if due to poor planning or execution of the acquisition process by the project team/owner). (General PM knowledge, RBS categories from Handbook Part 1, Ch 3.4)</p>
+                        </li>
+                        <li>
+                            <p><strong>Impact of "Pavement Damage" on Community:</strong> This highlights the direct, tangible, and often immediate negative impacts that construction activities can have on the daily lives and quality of life of local populations. It underscores the importance of considering social and environmental risks, not just technical or financial ones. (Ref: Assignment 3 Summary - Significance of Contextual Factors)</p>
+                        </li>
+                        <li>
+                            <p><strong>Propensity for Mitigation (Society & Owner):</strong>
+                                <ul>
+                                    <li><strong>Society (Community):</strong> They directly bear the negative consequences of unmitigated risks (e.g., pollution, damage, disruption) and have a strong interest in seeing these impacts reduced or prevented.</li>
+                                    <li><strong>Owner:</strong> The owner has a long-term stake in the project's success and reputation. Unmitigated risks can lead to significant financial losses, delays, legal issues, and damage to their image, making mitigation a preferred strategy to protect their investment and objectives.</li>
+                                </ul>
+                            (Ref: Assignment 3 Summary - Risk Response Profile)
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Implication of High Construction Risk Significance:</strong> This underscores that construction execution is inherently complex and uncertain. A key implication for risk management practice is the need for robust and detailed risk identification, analysis, and response planning specifically focused on construction-phase activities. This includes technical challenges, site conditions, logistics, H&S, and quality control. It reinforces the need for experienced construction management and diligent oversight. (Ref: Assignment 3 Summary - Primacy of Construction Risks)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="case-study-block" id="cs4">
+                <div class="case-study-title">Case Study 4: The Boeing 737 MAX Crisis (Based on Assignment - Crisis Management)</div>
+                <p>The Boeing 737 MAX crisis involved two fatal crashes linked to the Maneuvering Characteristics Augmentation System (MCAS). Initial responses from the company were criticized.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li>List two mistakes Boeing made in the initial handling of the 737 MAX crisis. (2 Marks)</li>
+                    <li>Describe two actions Boeing could have taken immediately after the first crash to respond more effectively and begin restoring trust. (4 Marks)</li>
+                    <li>What is the primary aim of a Crisis Management System (CMS) in an organization like Boeing? (2 Marks)</li>
+                    <li>In the context of the "Phases of Developing a CM System," which phase involves "Evaluating Crises and Planning Response"? (2 Marks)</li>
+                </ol>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('cs4_ans')">Show Answer</button>
+                <div class="answer-block" id="cs4_ans">
+                    <p><strong class="answer-label">Model Solution:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Mistakes by Boeing:</strong></p>
+                            <ul>
+                                <li><strong>Initial Denial and Blame Shifting:</strong> Suggesting pilot error rather than immediately acknowledging potential design flaws with MCAS.</li>
+                                <li><strong>Insufficient Transparency about MCAS:</strong> The existence and operational details of MCAS were not adequately communicated to pilots or included comprehensively in training manuals.</li>
+                                <li>(Other valid answers: Delayed Grounding and Action, Underestimation of the Problem, Poor Communication Strategy).</li>
+                            </ul>
+                            <p>(Ref: Assignment - Crisis Management, "Mistakes Boeing made...")</p>
+                        </li>
+                        <li>
+                            <p><strong>More Effective Actions After First Crash:</strong></p>
+                            <ul>
+                                <li><strong>Immediate Transparency and Accountability:</strong> Proactively disclose all known information about MCAS, acknowledge the potential for a systemic issue, and take full responsibility for investigating thoroughly.</li>
+                                <li><strong>Proactive Safety Measures:</strong> Recommend a voluntary, temporary global grounding of the 737 MAX fleet for a thorough investigation, demonstrating that safety was the absolute highest priority, rather than waiting for regulatory bodies to mandate it.</li>
+                                <li>(Other valid answers: Empathy and Victim Focus, Open Collaboration with regulators/airlines/pilots).</li>
+                            </ul>
+                            <p>(Ref: Assignment - Crisis Management, "How Boeing could have responded more effectively...")</p>
+                        </li>
+                        <li>
+                            <p><strong>Primary Aim of CMS:</strong> To ensure proper Management of Crises and enable Business Continuity. Also, to allow the company to respond to unexpected events or situations with potentially negative effects that threaten resources, people, or the success and continued operation of its facilities/products. (Ref: Slides: Crisis Management (Lec 16), Slide 2 (renumbered 176); Mock Exam 10, Q1 SA)</p>
+                        </li>
+                        <li>
+                            <p><strong>Phase for "Evaluating Crises and Planning Response":</strong> This is <strong>Phase 2</strong> of Developing a CM System. (Ref: Slides: Crisis Management (Lec 16), Slide 3 & 9 (renumbered 177 & 183))</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="case-study-block" id="cs5">
+                <div class="case-study-title">Case Study 5: Small Construction Project Risk Implementation (Based on Assignment 1)</div>
+                <p>A study on small construction projects in Singapore found that the average Risk Management Implementation Index (RMII) was relatively low (around 45%). Key barriers to RM implementation included lack of time, lack of budget, and low profit margins. However, respondents still recognized RM's importance for cost and schedule performance.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li>What does a low RMII (Risk Management Implementation Index) indicate about the adoption of risk management in these small projects? (2 Marks)</li>
+                    <li>Identify two of the top barriers to RM implementation mentioned for small construction projects. (2 Marks)</li>
+                    <li>Despite the barriers, for which two project performance areas did respondents recognize the importance of RM? (2 Marks)</li>
+                    <li>The study suggested government incentives (e.g., grants, tax rebates) to address implementation barriers. Which specific barrier(s) would such incentives most directly help overcome? (2 Marks)</li>
+                    <li>If a small contractor perceives RM as "not economical," what fundamental misunderstanding about risk management might they have? (2 Marks)</li>
+                </ol>
+                <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('cs5_ans')">Show Answer</button>
+                <div class="answer-block" id="cs5_ans">
+                    <p><strong class="answer-label">Model Solution:</strong></p>
+                    <ol>
+                        <li>
+                            <p><strong>Low RMII Indication:</strong> A low RMII indicates that formal risk management processes and practices are not being widely or consistently adopted or applied in these small construction projects. Fewer than half of the surveyed projects employed RM. (Ref: Assignment 1 Summary - Key Findings on Implementation Status)</p>
+                        </li>
+                        <li>
+                            <p><strong>Top Barriers to RM Implementation:</strong></p>
+                            <ul>
+                                <li>Lack of time</li>
+                                <li>Lack of budget</li>
+                                <li>(Also: Low profit margin, Not economical)</li>
+                            </ul>
+                            <p>(Ref: Assignment 1 Summary - Barriers to Implementation)</p>
+                        </li>
+                        <li>
+                            <p><strong>Performance Areas Recognizing RM Importance:</strong></p>
+                            <ul>
+                                <li>Cost performance</li>
+                                <li>Schedule performance</li>
+                            </ul>
+                            <p>(Ref: Assignment 1 Summary - Perceived Importance of Risk Management)</p>
+                        </li>
+                        <li>
+                            <p><strong>Impact of Government Incentives:</strong> Government incentives like grants and tax rebates would most directly help overcome the barriers of <strong>lack of budget</strong> and the perception that RM is <strong>not economical</strong>. They provide financial resources or reduce the financial burden of implementing RM. (Ref: Assignment 1 Summary - Conclusions and Recommendations)</p>
+                        </li>
+                        <li>
+                            <p><strong>Misunderstanding if RM is "Not Economical":</strong> They might be focusing only on the upfront costs of implementing RM (e.g., time for meetings, cost of software/consultants) without fully appreciating the potential long-term cost savings from preventing or mitigating risks. Effective RM aims to reduce overall project costs by avoiding expensive problems, rework, delays, and disputes, which often far outweigh the initial investment in RM. They may not be considering the cost of *not* doing risk management. (General RM principle)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="footer">
+            End of Part 6: Mock Exam Questions & Case Studies. Good luck with your exam!
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answerBlock = document.getElementById(answerId);
+            var button = answerBlock.previousElementSibling; // The button is the preceding sibling
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
