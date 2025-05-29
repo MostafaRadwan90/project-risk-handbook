@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Final Exam 2022</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>Structural Engineering Department</h3>
+            <p>Course Code: 665 - Risk Management and Safety<br>
+            Final Exam 2022 | Time allowed: 2 Hrs. | Maximum Marks: 70 Marks</p>
+            <p class="text-muted small">The Exam Consists of Eight Questions in five pages.</p>
+        </div>
+
+        <div class="question-block" id="q1">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 1 (5 Marks)<br>Define the risk management plan and mention its components.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>The Risk Management Plan is a component of the project management plan that describes how risk management activities will be structured and performed on the project. It does not define actual risks or responses, but rather outlines the strategy and approach to managing risk throughout the project lifecycle.</p>
+                <p><strong>Key Components of a Risk Management Plan include:</strong></p>
+                <ul>
+                    <li><strong>Methodology:</strong> Defines the approaches, tools, and data sources for risk management.</li>
+                    <li><strong>Roles and Responsibilities:</strong> Assigns who is responsible for each risk management activity.</li>
+                    <li><strong>Budgeting:</strong> Estimates funds needed for risk management activities, including contingency and management reserves.</li>
+                    <li><strong>Timing:</strong> Defines when and how often risk management processes will be performed.</li>
+                    <li><strong>Risk Categories:</strong> A framework (often a Risk Breakdown Structure - RBS) for categorizing risks.</li>
+                    <li><strong>Definitions of Risk Probability and Impact:</strong> Standardized scales for assessing probability and impact.</li>
+                    <li><strong>Probability and Impact Matrix:</strong> A predefined grid to classify risks by priority.</li>
+                    <li><strong>Reporting Formats:</strong> Defines how risk information will be documented and communicated.</li>
+                    <li><strong>Tracking:</strong> Describes how risk activities will be documented, audited, and lessons learned captured.</li>
+                    <li><strong>Stakeholder Risk Appetite and Tolerance:</strong> Documents acceptable levels of risk exposure.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 2, Slides 14 & 15.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q2">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 2: (5 Marks)<br>List the factors that determine the success of risk identification process.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>The success of the risk identification process depends on several factors, including:</p>
+                <ul>
+                    <li><strong>Early identification:</strong> Starting the process as soon as possible in the project lifecycle.</li>
+                    <li><strong>Iterative identification:</strong> Repeating the process throughout the project as new information becomes available.</li>
+                    <li><strong>Emergent identification:</strong> Being open to identifying new risks as they become apparent.</li>
+                    <li><strong>Comprehensive identification:</strong> Striving to identify as many relevant risks as possible from various sources and categories.</li>
+                    <li><strong>Explicit identification of opportunities:</strong> Actively looking for positive risks, not just threats.</li>
+                    <li><strong>Multiple perspectives:</strong> Involving a diverse group of stakeholders, team members, and subject matter experts.</li>
+                    <li><strong>Risks linked to project objectives:</strong> Focusing on uncertainties that can impact the project's goals (scope, time, cost, quality, etc.).</li>
+                    <li><strong>Complete risk statement:</strong> Clearly and unambiguously articulating each identified risk, often including cause, risk, and effect.</li>
+                    <li><strong>Ownership and level of detail:</strong> Assigning owners to risks and documenting them with appropriate detail.</li>
+                    <li><strong>Objectivity:</strong> Minimizing bias in the identification process and fostering an open, honest environment.</li>
+                    <li><strong>Use of appropriate tools and techniques:</strong> Employing methods like brainstorming, checklists, RBS, SWOT analysis, etc., effectively.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 4, Slide 20.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q3">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 3: (5 Marks)<br>What are the differences between qualitative and quantitative risk analyses? What are the similarities?</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Differences:</strong></p>
+                <ul>
+                    <li><strong>Nature of Analysis:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> Subjective assessment of probability and impact using descriptive scales (e.g., High, Medium, Low). It prioritizes risks.</li>
+                            <li><strong>Quantitative:</strong> Objective, numerical analysis of the combined effect of risks on project objectives, often using statistical methods and models (e.g., Monte Carlo simulation, EMV).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Purpose:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> To prioritize identified risks for further analysis or action and to identify risks for a watchlist. It's a quick way to filter risks.</li>
+                            <li><strong>Quantitative:</strong> To produce numerical estimates of overall project risk exposure, assess the probability of achieving objectives, and identify risks requiring the most attention based on their numerical impact.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Used:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> Expert judgment, experience, descriptive scales.</li>
+                            <li><strong>Quantitative:</strong> Requires more detailed data, often historical data, probability distributions, and specific impact values (e.g., cost, duration).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Complexity and Effort:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> Generally faster, less complex, and less resource-intensive.</li>
+                            <li><strong>Quantitative:</strong> More complex, time-consuming, and resource-intensive; often requires specialized tools and expertise.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Output:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> Prioritized list of risks, risk ratings (e.g., using a P&I Matrix), watchlist.</li>
+                            <li><strong>Quantitative:</strong> Probabilistic analysis of project outcomes (e.g., S-curves for cost/schedule), confidence levels, prioritized list of quantified risks (e.g., Tornado diagram).</li>
+                        </ul>
+                    </li>
+                     <li><strong>When Used:</strong>
+                        <ul>
+                            <li><strong>Qualitative:</strong> Typically performed on all identified risks for all projects.</li>
+                            <li><strong>Quantitative:</strong> Performed on high-priority risks (identified through qualitative analysis) for larger, more complex, or strategically important projects where numerical analysis is beneficial.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Similarities:</strong></p>
+                <ul>
+                    <li><strong>Goal-Oriented:</strong> Both aim to better understand and manage project risks to improve the likelihood of achieving project objectives.</li>
+                    <li><strong>Input from Risk Register:</strong> Both typically use the list of identified risks from the Risk Register as a primary input.</li>
+                    <li><strong>Assess Probability and Impact:</strong> Both consider the probability of risks occurring and their potential impact on project objectives, though the method of assessment differs.</li>
+                    <li><strong>Support Decision Making:</strong> Both provide information to support decisions regarding risk responses and overall project management.</li>
+                    <li><strong>Iterative:</strong> Both can be (and often should be) revisited throughout the project lifecycle as more information becomes available or circumstances change.</li>
+                    <li><strong>Part of Overall Risk Management:</strong> Both are integral processes within the broader Project Risk Management framework.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapters 5 & 6.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q4">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 4: (5 Marks)<br>Describe the circumstances where a project manager would best choose to adopt the "Risk Accept" strategy.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>A project manager would best choose to adopt the "Risk Accept" strategy under the following circumstances:</p>
+                <ol>
+                    <li><strong>Low Priority Risks:</strong> For risks that have been assessed (typically through qualitative analysis) as having a very low probability of occurrence and/or a very low impact on project objectives. The effort and cost of other response strategies may not be justified.</li>
+                    <li><strong>No Cost-Effective Response:</strong> When it is not possible or cost-effective to address a specific risk in any other way (e.g., avoid, transfer, mitigate). The cost of implementing other responses might outweigh the potential impact of the risk.</li>
+                    <li><strong>Inability to Identify Other Suitable Responses:</strong> After thorough analysis, if the project team is unable to identify any other viable or practical response strategy.</li>
+                    <li><strong>Opportunities (Positive Risks):</strong> For positive risks (opportunities), acceptance can mean being willing to take advantage of the opportunity if it arises, but not actively pursuing it or investing resources to make it happen. This is often for opportunities with low probability or where the benefit doesn't justify proactive effort.</li>
+                    <li><strong>Passive Acceptance:</strong> This form of acceptance is chosen when no specific action will be taken other than documenting the decision. The team will deal with the risk if and when it occurs. This is common for very minor risks.</li>
+                    <li><strong>Active Acceptance:</strong> This involves taking proactive steps to prepare for the risk, even while accepting its potential occurrence. The most common active acceptance strategy is to establish a contingency reserve (time, money, or resources) to handle the risk if it materializes. A contingency plan might also be developed. This is suitable for risks where the impact is manageable with pre-allocated resources.</li>
+                    <li><strong>Risks Outside Project Control:</strong> Some risks may be entirely outside the project team's ability to influence or control (e.g., certain macroeconomic factors). While monitoring is essential, acceptance might be the only practical primary strategy, often coupled with contingency planning.</li>
+                </ol>
+                <p>In all cases of acceptance, the decision should be documented in the risk register, and the risk should still be monitored, especially if it's not extremely low in priority, as its characteristics (probability/impact) might change over time.</p>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 8, Slides 62 & 63 (for threats) and Slide 66 (for opportunities).</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q5">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 5: (5 Marks)<br>Describe the three basic response strategies for positive risks or opportunities.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>The three basic response strategies primarily focused on actively pursuing positive risks (opportunities) are Exploit, Enhance, and Share. (Acceptance is also a strategy but can be more passive).</p>
+                <ol>
+                    <li>
+                        <strong>Exploit:</strong>
+                        <ul>
+                            <li><strong>Definition:</strong> This strategy is selected for high-impact, high-probability opportunities where the organization wishes to ensure that the opportunity is realized. It seeks to eliminate the uncertainty associated with the upside risk by making sure the opportunity definitely happens.</li>
+                            <li><strong>Action:</strong> Involves taking direct and aggressive measures to ensure the conditions for the opportunity are met and that the project captures its full benefit. This might involve allocating the best resources, dedicating specific effort, or changing project plans to make the opportunity certain.</li>
+                            <li><strong>Example:</strong> Assigning the most talented resources to a critical task to ensure early completion, thereby guaranteeing a contractual bonus.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Enhance:</strong>
+                        <ul>
+                            <li><strong>Definition:</strong> This strategy is used to increase the probability and/or the positive impacts of an opportunity. It focuses on identifying and maximizing the key drivers of these positive-impact risks.</li>
+                            <li><strong>Action:</strong> Involves taking steps to improve the chances of the opportunity occurring or to increase its potential benefits if it does. This is less aggressive than "Exploit" as it doesn't aim for certainty but rather an improvement in likelihood or outcome.</li>
+                            <li><strong>Example:</strong> Adding more resources to an activity to increase the chances of finishing early; investing in new technology that could improve efficiency beyond initial expectations.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Share:</strong>
+                        <ul>
+                            <li><strong>Definition:</strong> This strategy involves allocating some or all of the ownership of an opportunity to a third party who is best able to capture the opportunity for the benefit of the project.</li>
+                            <li><strong>Action:</strong> Typically involves forming partnerships, joint ventures, or special-purpose companies where the third party brings specific expertise or resources that the project team lacks, and the benefits are shared.</li>
+                            <li><strong>Example:</strong> A construction company partnering with a specialized sustainable technology firm to implement an innovative, cost-saving green building technique, sharing the subsequent benefits or awards.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>(Note: "Accept" is also a strategy for opportunities, where the team is willing to take advantage if it arises but doesn't actively pursue it. The question asks for three "basic response strategies," and Exploit, Enhance, and Share are the more proactive ones for opportunities.)</p>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 8, Slides 64, 65, & 66.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q6">
+            <div class="page-origin-note">(Page 1/5)</div>
+            <div class="question-text">Question 6: (5 Marks)<br>Define the pre-tender health and safety plan and its main components.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Definition:</strong></p>
+                <p>The Pre-tender Health and Safety Plan is a document or a summary of health and safety matters that should be addressed and provided to potential bidders at the pre-tender stage (before they submit their bids for a project). Its purpose is to give contractors foresight of the specific H&S conditions, requirements, and significant hazards associated with the project, allowing them to factor these into their bids and proposed methodologies.</p>
+                <p><strong>Main Components:</strong></p>
+                <p>A Pre-tender Health and Safety Plan typically covers the following components:</p>
+                <ul>
+                    <li><strong>General description and location of the work:</strong> Overview of the project and its physical setting.</li>
+                    <li><strong>Time and program (schedule):</strong> Key project timelines that might influence H&S considerations (e.g., work during specific seasons, concurrent operations).</li>
+                    <li><strong>Existing off-site conditions:</strong> Factors external to the site that could impact H&S (e.g., traffic management requirements, public access, neighboring activities).</li>
+                    <li><strong>Existing on-site conditions:</strong> Information about the site itself (e.g., ground conditions, presence of overhead power lines, existing structures, known contaminants, access/egress points).</li>
+                    <li><strong>Hazards from existing structures:</strong> Specific risks associated with any demolition, refurbishment, or interaction with existing buildings or infrastructure (e.g., asbestos, structural instability).</li>
+                    <li><strong>Existing records:</strong> Relevant H&S information available (e.g., site investigation reports, asbestos surveys, utility drawings, previous incident records).</li>
+                    <li><strong>The design:</strong> Key H&S considerations incorporated into the design, or design aspects that pose particular H&S challenges for construction. This may include information on significant residual risks from the design phase.</li>
+                    <li><strong>Site layout and management proposals (preliminary):</strong> Initial thoughts on how the site might be organized and managed from an H&S perspective (e.g., welfare facilities, traffic routes, storage areas).</li>
+                    <li><strong>Site rules and procedures (client-specific):</strong> Any overarching site-specific H&S rules, emergency procedures, or permit-to-work systems that contractors will be expected to adhere to.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 10, Slide 81.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q7">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">Question 7: (10 Marks)<br>In reference to the case study "A risk identification procedure for construction contracts - a Case study of power station projects in Egypt", mention the main components of the risk checklist that should be adopted by contractors in construction projects.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><em>(Note: Since the actual case study "A risk identification procedure for construction contracts - a Case study of power station projects in Egypt" is not provided with the exam materials, this answer will be based on general best practices for risk checklists in construction projects, drawing from the overall course content on risk identification and the Risk Breakdown Structure (RBS) concept.)</em></p>
+                <p>The main components of a risk checklist that should be adopted by contractors in construction projects, particularly for complex projects like power stations, would typically be structured around a comprehensive Risk Breakdown Structure (RBS). These components would aim to cover various categories of potential risks:</p>
+                <ol>
+                    <li><strong>Project Management Risks:</strong>
+                        <ul>
+                            <li>Planning & Scheduling (e.g., unrealistic timelines, poor activity sequencing)</li>
+                            <li>Estimating (e.g., inaccurate cost or resource estimates)</li>
+                            <li>Communication (e.g., poor communication with stakeholders, unclear reporting)</li>
+                            <li>Control & Monitoring (e.g., inadequate progress tracking, ineffective change control)</li>
+                            <li>Team & Human Resources (e.g., lack of skilled personnel, high staff turnover, industrial relations)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Technical & Design Risks:</strong>
+                        <ul>
+                            <li>Design Errors & Omissions (e.g., incomplete or flawed design documents)</li>
+                            <li>Scope Definition (e.g., unclear scope, scope creep)</li>
+                            <li>Technology & Complexity (e.g., use of new or unproven technology, complex interfaces)</li>
+                            <li>Constructability Issues (e.g., design difficult or impossible to build as specified)</li>
+                            <li>Quality Control & Assurance (e.g., failure to meet quality standards, defective workmanship)</li>
+                            <li>Material & Equipment Specifications (e.g., incorrect specifications, unavailability)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Construction & Execution Risks:</strong>
+                        <ul>
+                            <li>Site Conditions (e.g., unforeseen ground conditions, restricted site access, existing utilities)</li>
+                            <li>Logistics & Supply Chain (e.g., material delivery delays, equipment breakdown, storage issues)</li>
+                            <li>Productivity (e.g., lower than expected labor productivity, weather impacts on work)</li>
+                            <li>Health & Safety (e.g., accidents, non-compliance with H&S regulations, hazardous materials) - <em>This would be a major section.</em></li>
+                            <li>Environmental Risks (e.g., pollution incidents, non-compliance with environmental regulations, impact on local ecosystems)</li>
+                            <li>Security (e.g., theft, vandalism)</li>
+                        </ul>
+                    </li>
+                    <li><strong>External Risks:</strong>
+                        <ul>
+                            <li>Regulatory & Legal (e.g., changes in laws/regulations, permit delays, contractual disputes)</li>
+                            <li>Economic & Financial (e.g., inflation, currency fluctuations, financing issues, client payment delays)</li>
+                            <li>Political & Social (e.g., political instability, community opposition, labor strikes)</li>
+                            <li>Force Majeure / Natural Disasters (e.g., earthquakes, floods, extreme weather events)</li>
+                            <li>Market Conditions (e.g., subcontractor availability/pricing, material price volatility)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Stakeholder Risks:</strong>
+                        <ul>
+                            <li>Client-related (e.g., changes in client requirements, delayed decisions by client)</li>
+                            <li>Subcontractor/Supplier-related (e.g., subcontractor default, poor supplier performance)</li>
+                            <li>Consultant-related (e.g., delays in approvals from consultants)</li>
+                            <li>Interface with Other Contractors/Parties</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>For a power station project specifically, the checklist would also include highly specialized categories such as risks related to: specialized power generation equipment, high-voltage systems, fuel supply and handling, complex commissioning processes, and specific environmental compliance for power plants.</p>
+                <p class="rationale-text">Rationale: This answer is structured based on typical RBS categories (Handbook Chapter 3, Slide 16) and general construction risk knowledge. A specific case study might highlight more particular elements.</p>
+            </div>
+        </div>
+
+        <div class="question-section-title">Question 8: Choose the correct answer(s) (30 Marks)</div>
+
+        <div class="question-block" id="q8mcq1">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">1. A project has a 60% chance of a $100,000 profit and a 40 percent of a US $100,000 loss. The Expected Monetary Value for the project is:</div>
+            <ul class="options-list">
+                <li>1. $100,000 profit</li>
+                <li>2. $60,000 loss</li>
+                <li>3. $20,000 profit</li>
+                <li>4. $40,000 loss</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: EMV = (Probability of Profit * Amount of Profit) + (Probability of Loss * Amount of Loss)
+                <br>EMV = (0.60 * $100,000) + (0.40 * -$100,000)
+                <br>EMV = $60,000 - $40,000 = $20,000 profit.
+                <br>(Handbook Chapter 6, definition of Risk Exposure/EMV)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq2">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">2. Risk tolerance is determined in order to help:</div>
+            <ul class="options-list">
+                <li>1. The team ranks the project risks.</li>
+                <li>2. The project manager estimates the project.</li>
+                <li>3. The team schedules the project.</li>
+                <li>4. Management knows how other managers will act on the project.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 1</strong></p>
+                <p class="rationale-text">Rationale: Risk tolerances define the acceptable levels of variation around project objectives. Risks that exceed these tolerances are typically ranked higher or require more immediate attention. (Handbook Chapter 1, Slide 7)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq3">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">3. Risks will be identified during which risk management process(es)?</div>
+            <ul class="options-list">
+                <li>1. Perform Quantitative Risk Analysis and Identify Risks</li>
+                <li>2. Identify Risks and Control Risks</li>
+                <li>3. Perform Qualitative Risk Analysis and Control Risks</li>
+                <li>4. Identify Risks</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4</strong> (and implicitly 2, as new risks are identified in Control Risks)</p>
+                <p class="rationale-text">Rationale: "Identify Risks" is the primary process. However, new risks are also identified during the "Control Risks" (or Monitor Risks) process. Option 4 is the most direct answer for initial identification. Option 2 acknowledges ongoing identification. (Handbook Chapter 4 and Chapter 9, Slide 68)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq4">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">4. Which of the following is NOT a risk response technique?</div>
+            <ul class="options-list">
+                <li>1. Exploit</li>
+                <li>2. Transfer</li>
+                <li>3. Mitigate</li>
+                <li>4. Confront</li>
+                 <li><em>(Option 4 "Exploit" is repeated on page 3/5, likely a typo in the original exam and should be "Confront" or another distinct term). Assuming "Confront" for this answer.</em></li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4 (Confront)</strong></p>
+                <p class="rationale-text">Rationale: Exploit, Transfer, and Mitigate are established risk response techniques. "Confront" is generally associated with conflict resolution, not a standard risk response strategy. (Handbook Chapters 7 & 8)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq5">
+            <div class="page-origin-note">(Page 2/5)</div>
+            <div class="question-text">5. The project manager for a construction project discovers that the local city council may change the building code to allow adjoining properties to combine their sewage systems. She knows that a competitor is about to break ground in the adjacent lot and contacts him to discuss the possibility of having both projects save costs by building a sewage system for the two projects. This is an example of which strategy?</div>
+            <ul class="options-list">
+                <li>1. Mitigate</li>
+                <li>2. Share</li>
+                <li>3. Accept</li>
+                <li>4. Exploit (This option is physically on page 3/5 but belongs to this question)</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 2 (Share) or 4 (Exploit)</strong></p>
+                <p class="rationale-text">Rationale: This scenario has elements of both.
+                <strong>Share:</strong> The PM is proposing to allocate ownership/effort of the opportunity (cost savings via combined system) with a third party (the competitor) for mutual benefit. (Handbook Chapter 8, Slide 66)
+                <strong>Exploit:</strong> The PM is taking proactive steps to ensure the opportunity (cost savings due to potential code change and collaboration) is realized. (Handbook Chapter 8, Slide 64)
+                Given the proactive contact and mutual benefit, "Share" is a very strong fit. If the focus is on making the opportunity happen for her project by collaborating, "Exploit" also fits. In an exam, if only one choice is allowed, "Share" might be slightly better due to the explicit involvement of a third party for mutual gain.
+                </p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq6">
+            <div class="page-origin-note">(Page 3/5)</div>
+            <div class="question-text">6. You are managing a construction project. There is a 30% chance that the weather will cause a three-day delay, costing $12,000. There is also a 20% chance that the price of your building materials will drop, which will save $5,000. What is the total EMV for both of these?</div>
+            <ul class="options-list">
+                <li>1. -$3,600</li>
+                <li>2. $1,000</li>
+                <li>3. -$2,600</li>
+                <li>4. $4,600</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale:
+                EMV (Weather Delay) = 0.30 * (-$12,000) = -$3,600
+                <br>EMV (Material Price Drop) = 0.20 * (+$5,000) = +$1,000
+                <br>Total EMV = -$3,600 + $1,000 = -$2,600.
+                <br>(Handbook Chapter 6)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq7">
+            <div class="page-origin-note">(Page 3/5)</div>
+            <div class="question-text">7. You are managing a project to remodel a kitchen. You find out from your supplier that there is a 50% chance that the model of oven that you planned to use may be discontinued, and you'll have to go with one that costs $650 more. What is the EMV of that risk?</div>
+            <ul class="options-list">
+                <li>1. $650</li>
+                <li>2. -$650</li>
+                <li>3. $325</li>
+                <li>4. -$325</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4</strong></p>
+                <p class="rationale-text">Rationale: EMV = Probability * Impact
+                <br>EMV = 0.50 * (-$650) = -$325. (The cost is an additional expense, hence negative impact)
+                <br>(Handbook Chapter 6)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq8">
+            <div class="page-origin-note">(Page 3/5)</div>
+            <div class="question-text">8. You are in the build phase of the project. But it has run into several unanticipated problems. Several risks have surfaced which you had not anticipated earlier. The project is over-budget and behind schedule. What should you do?</div>
+            <ul class="options-list">
+                <li>1. Create updates to risk response plan</li>
+                <li>2. Create a revised project plan</li>
+                <li>3. Perform risk response audits</li>
+                <li>4. Perform an updated risk identification and analysis</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq8')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4</strong></p>
+                <p class="rationale-text">Rationale: When unanticipated risks surface, the first step is to formally identify and analyze these new risks. Only then can appropriate responses be planned and project plans revised. (Handbook Chapter 4, Chapter 9 Slide 68 - Identifying new risks)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq9">
+            <div class="page-origin-note">(Page 3/5)</div>
+            <div class="question-text">9. Risks because of implementing a risk response are called:</div>
+            <ul class="options-list">
+                <li>1. Unidentifiable Risks</li>
+                <li>2. Residual Risks</li>
+                <li>3. Secondary Risks</li>
+                <li>4. Accepted Risks</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq9')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: Secondary risks are new risks that arise as a direct result of implementing a risk response. (Handbook Chapter 7, Slide 52)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq10">
+            <div class="page-origin-note">(Page 3/5)</div>
+            <div class="question-text">10. Your pharmaceutical drug manufacturing project is running late and you have deadlines to meet on your project. You want to replace some of the inefficient human resources with more talented human resources to finish the project on time. What risk response strategy is being followed in this context?</div>
+            <ul class="options-list">
+                <li>1. Share</li>
+                <li>2. Accept</li>
+                <li>3. Transfer</li>
+                <li>4. Mitigate</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq10')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4</strong></p>
+                <p class="rationale-text">Rationale: Replacing inefficient resources with more talented ones is an action taken to reduce the probability or impact of project delays (the risk of running late). This is a mitigation strategy. (Handbook Chapter 7, Slide 57)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq11">
+            <div class="page-origin-note">(Page 4/5)</div>
+            <div class="question-text">11. By looking at the decision tree below, which decision would you take?
+<div class="image-placeholder">
+    <img src="decTree.png" alt="Decision Tree Diagram from Exam">
+</div>
+            </div>
+            <ul class="options-list">
+                <li>1. Build the new software</li>
+                <li>2. Buy the new software</li>
+                <li>3. Staying with the legacy software</li>
+                <li>4. None of the above</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq11')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer Calculation:</strong></p>
+                <p>We need to calculate the Expected Monetary Value (EMV) for each decision node. The "Impact" values are assumed to be additional costs/losses if they occur, and "Growth in Business Impact" for legacy is also treated as a cost/loss for consistency in minimizing EMV (cost).</p>
+                
+                <p><strong>Decision 1: Build the new software</strong></p>
+                <ul>
+                    <li>Cost: $500,000</li>
+                    <li>Successful Deployment (40%): Additional Impact $0. EMV_success = 0.40 * $0 = $0</li>
+                    <li>Unsuccessful Deployment (100% - 40% = 60%): Additional Impact $2,000,000. EMV_unsuccess = 0.60 * $2,000,000 = $1,200,000</li>
+                    <li>Total EMV (Build) = Initial Cost + EMV_success + EMV_unsuccess = $500,000 + $0 + $1,200,000 = $1,700,000 (Total Cost/Loss)</li>
+                </ul>
+
+                <p><strong>Decision 2: Buy the new software</strong></p>
+                <ul>
+                    <li>Cost: $750,000</li>
+                    <li>Successful Deployment (assumed 100% - 5% = 95%): Additional Impact $0. EMV_success = 0.95 * $0 = $0</li>
+                    <li>Unsuccessful Deployment (5%): Additional Impact $2,000,000. EMV_unsuccess = 0.05 * $2,000,000 = $100,000</li>
+                    <li>Total EMV (Buy) = Initial Cost + EMV_success + EMV_unsuccess = $750,000 + $0 + $100,000 = $850,000 (Total Cost/Loss)</li>
+                </ul>
+
+                <p><strong>Decision 3: Stay with the legacy software</strong></p>
+                <ul>
+                    <li>Cost: $100,000</li>
+                    <li>Growth in Business (100%): Impact $2,000,000 (assuming this is a cost/loss of opportunity if legacy system hinders growth, or maintenance costs)</li>
+                    <li>Total EMV (Stay) = Initial Cost + Impact = $100,000 + $2,000,000 = $2,100,000 (Total Cost/Loss)</li>
+                </ul>
+                
+                <p><strong>Comparison of Total Costs/Losses:</strong></p>
+                <ul>
+                    <li>Build: $1,700,000</li>
+                    <li>Buy: $850,000</li>
+                    <li>Stay: $2,100,000</li>
+                </ul>
+                <p>The decision with the lowest total expected cost/loss is "Buy the new software".</p>
+                <p><strong>Correct Answer: 2 (Buy the new software)</strong></p>
+                <p class="rationale-text">Rationale: Decision tree analysis involves calculating the EMV for each path and choosing the one with the most favorable outcome (lowest cost or highest profit). Here, buying the software has the lowest expected total cost of $850,000. (Handbook Chapter 6 for EMV concepts)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq12">
+            <div class="page-origin-note">(Page 4/5)</div>
+            <div class="question-text">12. Overtime associated with the execution effort of a project is estimated at 120 hours with probability 0.5, 250 hours with probability 0.6, and 300 hours with probability 0.3. What is the monetary value of the amount of overtime?</div>
+            <ul class="options-list">
+                <li>1. 300 hours</li>
+                <li>2. 670 hours</li>
+                <li>3. 250 hours</li>
+                <li>4. 100 hours</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq12')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 1 (300 hours)</strong> - *with caveat about question flaw*</p>
+                <p>The probabilities given (0.5 + 0.6 + 0.3 = 1.4) sum to more than 1.0, which is a fundamental error for mutually exclusive outcomes of a single variable. This indicates a flawed question.</p>
+                <p>However, if we proceed by calculating the expected number of hours *as if* these were valid probabilities for distinct scenarios contributing to total overtime (a common misinterpretation or simplification in exam questions):</p>
+                <p>Expected Hours = (120 hours * 0.5) + (250 hours * 0.6) + (300 hours * 0.3)</p>
+                <p>Expected Hours = 60 hours + 150 hours + 90 hours = 300 hours.</p>
+                <p>The question asks for "monetary value," but the options are in hours. Assuming the question intends to ask for the "expected amount of overtime in hours" and option 1 refers to this calculated value:</p>
+                <p class="rationale-text">Rationale: The question is flawed as the probabilities sum to 1.4. If interpreted as calculating the expected number of overtime hours from the given scenarios (ignoring the probability sum error for the sake of matching an option), the calculation is (0.5 * 120) + (0.6 * 250) + (0.3 * 300) = 60 + 150 + 90 = 300 hours. Since 300 hours is an option and the question asks for "monetary value" but gives "hours" as options, this interpretation is the most likely intended path despite the error. A true monetary value cannot be determined without an hourly rate.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq13">
+            <div class="page-origin-note">(Page 4/5 & 5/5)</div>
+            <div class="question-text">13. During risk identification sessions, you and your team identify more than 150 risks for your project. You are afraid that evaluating each of these risks quantitatively will cost you an enormous amount of time, while not all of them are really relevant and important enough to justify such measure. What should you do next?</div>
+            <ul class="options-list">
+                <li>1. Identify risk triggers where possible. Analyze only those risks quantitatively for which no trigger could be found.</li>
+                <li>2. Use qualitative risk analysis in order to prioritize risks for further action, such as quantitative risk analysis.</li>
+                <li>3. Assess the probability of each risk qualitatively and further analyze only those risks with high probability.</li>
+                <li>4. Assess the potential impact of each risk qualitatively and further analyze only those risks with high impact.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq13')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 2</strong></p>
+                <p class="rationale-text">Rationale: When faced with a large number of identified risks, the standard process is to first perform Qualitative Risk Analysis. This helps to prioritize the risks based on their assessed probability and impact. High-priority risks can then be selected for more detailed Quantitative Risk Analysis if needed, while low-priority risks might be placed on a watchlist or accepted. Options 3 and 4 are incomplete as qualitative analysis considers both probability AND impact for prioritization. Option 1 is not the standard next step for prioritizing a large volume of risks. (Handbook Chapter 5)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq14">
+            <div class="page-origin-note">(Page 5/5)</div>
+            <div class="question-text">14. If a risk event has a 90 percent chance of occurring, and the consequences will be US $10,000, what does US $9,000 represent?</div>
+            <ul class="options-list">
+                <li>1. Risk value</li>
+                <li>2. Present value</li>
+                <li>3. Expected monetary value</li>
+                <li>4. Contingency budget</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq14')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: Expected Monetary Value (EMV) is calculated as Probability × Impact.
+                <br>In this case, EMV = 0.90 × $10,000 = $9,000.
+                <br>"Risk value" is a general term; EMV is the specific quantitative measure. Present value relates to time value of money. Contingency budget is an allocation, not the calculated EMV itself. (Handbook Chapter 6, definition of Risk Exposure/EMV)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="q8mcq15">
+            <div class="page-origin-note">(Page 5/5)</div>
+            <div class="question-text">15. A contingency plan is:</div>
+            <ul class="options-list">
+                <li>1. A planned response that defines the steps to be taken if an identified risk event should occur.</li>
+                <li>2. A workaround</li>
+                <li>3. A reserve used to allow for future situations which may be planned for only in part.</li>
+                <li>4. 1 and 3</li>
+                <li>5. 1 and 2</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('q8mcq15')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 1</strong></p>
+                <p class="rationale-text">Rationale: A contingency plan is a predefined set of actions to be taken if a specific identified risk event occurs (Definition 1). A workaround (2) is an unplanned response to an un Gårdsgoda. A contingency reserve (related to 3) is the budget/time allocated to fund the contingency plan, not the plan itself. Therefore, statement 1 is the most accurate definition of a contingency plan. (Handbook Chapter 7, Slide 52)</p>
+            </div>
+        </div>
+    
+        <div class="end-of-exam">
+            END of Exam, Good Luck
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

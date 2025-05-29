@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Mock Exam 4</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        .bank-question-note { font-size: 0.8em; color: #800080; margin-top: 5px; font-style: italic;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>CES665 Risk Management and Safety - Mock Exam 4</h3>
+            <p>Time allowed: 2 Hrs. (Recommended)</p>
+        </div>
+
+        <div class="question-section-title">Section A: Short Answer Questions</div>
+
+        <div class="question-block" id="mock2_q1_sa">
+            <div class="question-text">Question 1 (5 Marks)<br>Explain the difference between Mitigation and Transfer as risk response strategies for negative risks. Provide an example for each.</div>
+            <!-- From provided question bank (modified from "Question 2: Explain the difference between the following: - Mitigation and Transfer risk response strategies [2 marks]") -->
+            <div class="bank-question-note">Partially from provided question bank.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_q1_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Mitigation:</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Risk mitigation is a strategy where the project team acts to reduce the probability of a risk's occurrence or its impact on project objectives to an acceptable threshold. It doesn't eliminate the risk entirely but lessens its potential severity or likelihood.</li>
+                    <li><strong>Example:</strong> If there's a risk of project delays due to an inexperienced team member, providing additional training to that team member or assigning a mentor to oversee their work are examples of mitigation. This reduces the likelihood of errors or minimizes their impact.</li>
+                </ul>
+                <p><strong>Transfer (Transference):</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Risk transfer is a strategy where the project team shifts the impact of a threat (and often ownership of its management) to a third party. The risk itself is not eliminated from the project environment, but the financial or other consequences are borne by another entity.</li>
+                    <li><strong>Example:</strong> Purchasing insurance for potential damage to construction equipment. If the equipment is damaged (the risk occurs), the insurance company bears the financial cost, thus transferring the financial impact from the project. Another example is subcontracting a high-risk portion of work to a specialized firm under a fixed-price contract, transferring performance and cost risks associated with that portion.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 7, Slides 57, 58 (Mitigation) and Slides 59, 60 (Transfer).</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_q2_sa">
+            <div class="question-text">Question 2 (5 Marks)<br>What are the main deliverables of the Risk Identification procedure?</div>
+            <!-- From provided question bank (modified from "Question 2: State the following procedures and determine what are its main deliverables/s: - Risk Identification Procedure [5 marks]") -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_q2_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>The main deliverable (or output) of the Risk Identification procedure is the initial <strong>Risk Register</strong>.</p>
+                <p>The Risk Register at this stage typically includes:</p>
+                <ul>
+                    <li><strong>List of Identified Risks:</strong> A comprehensive list of potential threats and opportunities that could affect the project. Each risk is usually given a unique identifier.</li>
+                    <li><strong>Risk Descriptions:</strong> Clear and unambiguous statements describing each risk, often including its cause, the uncertain event, and its potential effect on project objectives.</li>
+                    <li><strong>Potential Risk Owners:</strong> Initial identification of individuals or parties who might be best suited to take responsibility for managing specific risks.</li>
+                    <li><strong>Potential Risk Responses:</strong> Preliminary ideas or suggestions for how each risk might be addressed. These are not yet fully developed response plans but initial thoughts.</li>
+                    <li><strong>Risk Categories (Optional at initial stage but good practice):</strong> Risks might be grouped by categories (e.g., using a Risk Breakdown Structure - RBS) such as technical, external, organizational, etc.</li>
+                    <li><strong>Triggers/Symptoms (Optional at initial stage):</strong> Early warning signs that a risk is about to occur or has occurred.</li>
+                </ul>
+                <p>Other project documents might also be updated as a result of risk identification, such as the assumption log if new assumptions are made or existing ones are challenged.</p>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 4, Slide 29.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_q3_sa">
+            <div class="question-text">Question 3 (5 Marks)<br>What is a "Hazard" in the context of safety management, and how does it relate to "Risk"? Give an example.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_q3_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Hazard:</strong> In safety management, a hazard is a condition, practice, or potential source of harm that has the potential to cause accidental loss, injury to people, damage to property, or harm to the environment.</p>
+                <p><strong>Relation to Risk:</strong></p>
+                <p>A hazard is the *source* of potential harm. Risk, in the safety context, is the *chance (probability or likelihood)* that someone will be harmed by the hazard, combined with the *severity* of that harm if it occurs. You cannot have a risk without a hazard being present.</p>
+                <p><strong>Example:</strong></p>
+                <ul>
+                    <li><strong>Hazard:</strong> A trailing electrical cable across a walkway in a construction site.</li>
+                    <li><strong>Risk:</strong> The risk is that a worker might trip over the cable (probability) and suffer an injury such as a sprain, fracture, or head injury (severity). The level of risk would depend on factors like how many people use the walkway, the lighting conditions, and how obstructed the cable is.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 11, Slide 87.</p>
+            </div>
+        </div>
+
+
+        <div class="question-section-title">Section B: Multiple Choice Questions</div>
+
+        <div class="question-block" id="mock2_mcq1">
+            <!-- From provided question bank (Question 10) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">4. If a risk has a low occurrence frequency and a high amount of damage so the most appropriate response strategy is:</div>
+            <ul class="options-list">
+                <li>A. Reduce</li>
+                <li>B. Avoid</li>
+                <li>C. Transfer</li>
+                <li>D. Accept</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: For risks with low probability but high negative impact (high amount of damage), transferring the risk (e.g., through insurance or outsourcing) is often the most appropriate strategy. Avoidance might be too drastic, mitigation might not sufficiently reduce the high impact, and acceptance could be too dangerous given the high potential damage. (Handbook Chapter 7, Slides 59-60)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_mcq2">
+            <!-- From provided question bank (Question 11) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">5. Risk is defined as an uncertainty that matters; it can affect project scope negatively or positively.</div>
+            <ul class="options-list">
+                <li>A. True</li>
+                <li>B. False</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: This aligns with the PMBOK® definition of risk as an uncertain event or condition that, if it occurs, has a positive or negative effect on one or more project objectives (including scope). (Handbook Chapter 1, Slides 5 & 6)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_mcq3">
+            <!-- From provided question bank (Question 12) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">6. Risk is high in the concept and design phases, decreasing as work is accomplished.</div>
+            <ul class="options-list">
+                <li>A. True</li>
+                <li>B. False</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: Generally, the level of uncertainty and overall project risk is highest at the beginning of a project (concept and design phases) when less is known. As the project progresses and more information becomes available, decisions are made, and work is completed, the overall risk tends to decrease.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_mcq4">
+            <!-- From provided question bank (Question 13) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">7. The most important risks are determined in Qualitative risk analysis.</div>
+            <ul class="options-list">
+                <li>A. True</li>
+                <li>B. False</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: Qualitative risk analysis is the process of prioritizing identified individual project risks for further analysis or action by assessing their probability of occurrence and impact. This prioritization helps determine which risks are "most important" to focus on. (Handbook Chapter 5, Introduction)</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock2_mcq5">
+            <!-- From provided question bank (Question 14) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">8. The objectives of Project Risk Management are to decrease the probability and impact of risk events.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong> (with a slight nuance)</p>
+                <p class="rationale-text">Rationale: The statement is largely true for negative risks (threats). For positive risks (opportunities), the objective is to *increase* their probability and/or impact. However, if "risk events" is taken generally to mean adverse events, then decreasing their probability and impact is a primary objective. (Handbook Chapter 2, Section 2.1)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_mcq6">
+            <!-- From provided question bank (Question 15) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">9. Risk identification determines what might happen and how this could affect the objectives of the project.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: This is a core part of risk identification – determining potential events (what might happen) and documenting their characteristics, including their potential effects on project objectives. (Handbook Chapter 4, Introduction)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock2_mcq7">
+            <!-- From provided question bank (Question 16) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">10. Sharing is the most appropriate response strategy when the risk has high occurrence frequency and high amount of benefits.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock2_mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: For a positive risk (opportunity) with high probability (occurrence frequency) and high positive impact (amount of benefits), "Share" is a valid strategy, especially if a third party is better positioned to capture the opportunity and the benefits can be shared. "Exploit" would also be appropriate. (Handbook Chapter 8, Slide 66)</p>
+            </div>
+        </div>
+
+        <div class="end-of-exam">
+            END of Mock Exam 2
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Mock Exam 9</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        .bank-question-note { font-size: 0.8em; color: #800080; margin-top: 5px; font-style: italic;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>CES665 Risk Management and Safety - Mock Exam 9</h3>
+            <p>Time allowed: 2 Hrs. (Recommended)</p>
+        </div>
+
+        <div class="question-section-title">Section A: Short Answer Questions</div>
+
+        <div class="question-block" id="mock7_q1_sa">
+            <div class="question-text">Question 1 (5 Marks)<br>What is the purpose of a Safety Management Plan (SMP) and list five of its typical contents.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_q1_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Purpose of a Safety Management Plan (SMP):</strong></p>
+                <p>A Safety Management Plan (SMP) is a comprehensive document that details how safety will be managed on a specific project, particularly in construction. Its purpose is to outline the systematic approach to ensuring a safe and healthy work environment, prevent accidents and injuries, comply with legal and regulatory requirements, and protect all personnel involved in or affected by the project.</p>
+                <p><strong>Five Typical Contents of an SMP:</strong></p>
+                <ol>
+                    <li><strong>Safety Policy and Objectives:</strong> The organization's commitment to safety and specific, measurable safety goals for the project.</li>
+                    <li><strong>Project's Safety Organization Chart:</strong> Defines roles, responsibilities, and reporting lines for safety matters on the project.</li>
+                    <li><strong>Hazard Identification Procedures:</strong> Outlines the methods that will be used to identify potential safety hazards.</li>
+                    <li><strong>Risk Assessment Procedures:</strong> Describes how the risks associated with identified hazards will be evaluated in terms of probability and severity.</li>
+                    <li><strong>Emergency Response Plans:</strong> Details procedures for dealing with various emergencies such as fire, medical incidents, or spills.</li>
+                </ol>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 11, Slides 92 & 93.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_q2_sa">
+             <!-- From provided question bank (Question 2: What are the main inputs, outputs and tools and techniques for... Perform Quantitative Risk Analysis) -->
+            <div class="bank-question-note">From provided question bank (selected process: Perform Quantitative Risk Analysis).</div>
+            <div class="question-text">Question 2 (5 Marks)<br>What are the main Inputs, Tools & Techniques, and Outputs (ITTOs) for the "Perform Quantitative Risk Analysis" process?</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_q2_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Inputs to Perform Quantitative Risk Analysis:</strong></p>
+                <ul>
+                    <li>Project Management Plan (Risk Management Plan, Cost Management Plan, Schedule Management Plan, Baselines)</li>
+                    <li>Project Documents (Risk Register, Assumption Log, Basis of Estimates, Cost/Duration Estimates, Schedule Network Diagrams)</li>
+                    <li>Enterprise Environmental Factors (EEFs) (e.g., industry studies, commercial risk databases)</li>
+                    <li>Organizational Process Assets (OPAs) (e.g., information from previous similar projects)</li>
+                </ul>
+                <p><strong>Tools & Techniques for Perform Quantitative Risk Analysis:</strong></p>
+                <ul>
+                    <li>Expert Judgment</li>
+                    <li>Data Gathering (e.g., Interviews)</li>
+                    <li>Interpersonal and Team Skills (e.g., Facilitation)</li>
+                    <li>Representations of Uncertainty (e.g., Probability Distributions like Beta, Triangular, Normal)</li>
+                    <li>Data Analysis Techniques:
+                        <ul>
+                            <li>Simulation (e.g., Monte Carlo Analysis)</li>
+                            <li>Sensitivity Analysis (e.g., Tornado Diagrams)</li>
+                            <li>Decision Tree Analysis</li>
+                            <li>Influence Diagrams</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Outputs of Perform Quantitative Risk Analysis:</strong></p>
+                <ul>
+                    <li><strong>Project Documents Updates:</strong>
+                        <ul>
+                            <li>Risk Register updates (e.g., probabilistic analysis of the project, probability of achieving cost and time objectives, prioritized list of quantified risks, trends in quantitative risk analysis results)</li>
+                            <li>Risk Report updates</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 6, Slides 36 (general definition), 47 (Monte Carlo), 49 (Sensitivity Analysis), and PMBOK principles (ITTO diagram from lecture slide on Quantitative Risk Analysis was not directly in the provided handbook but is standard PMBOK content).</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock7_q3_sa">
+            <div class="question-text">Question 3 (5 Marks)<br>Define "Risk Trigger" and explain its importance in risk management.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_q3_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Risk Trigger (Symptom):</strong></p>
+                <p>A risk trigger is an event, condition, or warning sign that indicates that a previously identified risk is about to occur or has already occurred. Triggers are pre-identified symptoms or indicators associated with a specific risk.</p>
+                <p><strong>Importance in Risk Management:</strong></p>
+                <p>Risk triggers are crucial in risk management for several reasons:</p>
+                <ul>
+                    <li><strong>Early Warning:</strong> They provide an early warning system, allowing the project team to anticipate the materialization of a risk.</li>
+                    <li><strong>Timely Response:</strong> By monitoring for triggers, the project team can implement planned contingency or fallback responses in a timely manner, potentially reducing the negative impact of a threat or increasing the benefit of an opportunity.</li>
+                    <li><strong>Activation of Plans:</strong> Triggers are often the pre-defined conditions for activating contingency plans or other risk responses. Without clear triggers, it can be difficult to know when to act.</li>
+                    <li><strong>Monitoring Effectiveness:</strong> They are key elements to monitor during the Control Risks process.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 7, Slide 52.</p>
+            </div>
+        </div>
+
+        <div class="question-section-title">Section B: Multiple Choice Questions</div>
+
+        <div class="question-block" id="mock7_mcq1">
+            <!-- From provided question bank (As the project manager of a project to construct a city park...) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">4. As the project manager of a project to construct a city park, you have identified 39 risks, determined triggers, rated them on a risk rating matrix, tested assumptions, and assessed data quality. You now plan to move to the next step. What have you missed?</div>
+            <ul class="options-list">
+                <li>A. Risk Mitigation</li>
+                <li>B. Overall risk ranking for the project</li>
+                <li>C. Simulation</li>
+                <li>D. Involvement of other stakeholders</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: After rating risks on a matrix (part of Qualitative Risk Analysis), the key output is an "Overall risk ranking for the project" or a prioritized list of risks. This step is essential before moving to detailed response planning (like Risk Mitigation) or more advanced analysis (like Simulation). While stakeholder involvement (D) is ongoing, B represents a specific missing output/step in the described sequence. (Handbook Chapter 5, Section 5.4)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_mcq2">
+            <!-- From provided question bank (Which of these is an input of the Control Risks process?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">5. Which of these is an INPUT of the Control Risks process?</div>
+            <ul class="options-list">
+                <li>A. Work performance information</li>
+                <li>B. Risk audits</li>
+                <li>C. Change requests</li>
+                <li>D. Work Performance Reports</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: D</strong></p>
+                <p class="rationale-text">Rationale: Work Performance Reports are an input to Control Risks. Work Performance Information and Change Requests are outputs. Risk Audits are a tool/technique. (Handbook Chapter 9, Slide 67)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_mcq3">
+            <!-- From provided question bank (Which of these statements about Risk in a project is correct?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">6. Which of these statements about Risk in a project is correct?</div>
+            <ul class="options-list">
+                <li>A. Risk responses reflect an organization's perceived balance between risk taking and risk avoidance.</li>
+                <li>B. Risk is always induced external to the project.</li>
+                <li>C. Risks are always negative in nature and are threats that need to be managed well.</li>
+                <li>D. Risks need not be planned for in all projects.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: A is correct as risk responses are guided by the organization's risk appetite and tolerance (balance between risk taking and avoidance). B is false (risks can be internal). C is false (risks can be positive opportunities). D is false (risk planning is essential for effective project management). (Handbook Chapter 1 & 2)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_mcq4">
+            <!-- From provided question bank (A project manager is quantifying risk for her project. Several of her experts are offsite...) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">7. A project manager is quantifying risk for her project. Several of her experts are offsite but wish to be included. How can this best be done?</div>
+            <ul class="options-list">
+                <li>1. Use Monte Carlo analysis using the Internet as a tool.</li>
+                <li>2. Apply the critical path method.</li>
+                <li>3. Determine options for recommended corrective action.</li>
+                <li>4. Apply the Delphi Technique.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 4</strong></p>
+                <p class="rationale-text">Rationale: The Delphi Technique is specifically designed to gather expert opinions anonymously, often remotely, through rounds of questionnaires. This makes it ideal for including offsite experts in processes like quantitative risk assessment (e.g., estimating probability distributions). Monte Carlo (1) is an analysis method, not a data gathering method for offsite experts. CPM (2) is for scheduling. Corrective action (3) is a response. (Handbook Chapter 4, Slide 26)</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock7_mcq5">
+            <!-- From provided question bank (What percentage of the total distribution are 3 sigma from the mean equal to?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">8. In a normal distribution, what percentage of the total distribution is typically considered to be within +/- 3 standard deviations (sigma) from the mean?</div>
+            <ul class="options-list">
+                <li>A. 68.26%</li>
+                <li>B. 99.99%</li>
+                <li>C. 95.46%</li>
+                <li>D. 99.73%</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: D</strong></p>
+                <p class="rationale-text">Rationale: This is a standard statistical value for a normal distribution: approximately 68.27% falls within +/- 1 sigma, 95.45% within +/- 2 sigma, and 99.73% within +/- 3 sigma. (General statistical knowledge, relevant to understanding distributions in Quantitative Risk Analysis - Handbook Chapter 6, Slide 45)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_mcq6">
+            <div class="question-text">9. The "Risk Seeker" profile, as shown in utility curves for risk appetite, indicates an individual who:</div>
+            <ul class="options-list">
+                <li>A. Prefers to avoid uncertainty even for lower potential rewards.</li>
+                <li>B. Is comfortable with high levels of risk, especially if the potential reward is also high.</li>
+                <li>C. Is neutral to the degree of uncertainty and focuses only on expected outcomes.</li>
+                <li>D. Always transfers risks to third parties.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: A risk seeker is willing to take on higher risk for the chance of higher rewards. (Handbook Chapter 1, Slide 8)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock7_mcq7">
+            <div class="question-text">10. Which of these is NOT one of the "4 Ps" of evidence gathering during an accident investigation?</div>
+            <ul class="options-list">
+                <li>A. People</li>
+                <li>B. Position</li>
+                <li>C. Procedures</li>
+                <li>D. Parts</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock7_mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: The "4 Ps" are People, Position, Parts, and Paper. Procedures would fall under "Paper" evidence. (Handbook Chapter 15, Slide 151)</p>
+            </div>
+        </div>
+
+        <div class="end-of-exam">
+            END of Mock Exam 7
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

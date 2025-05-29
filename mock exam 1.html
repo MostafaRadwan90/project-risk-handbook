@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Mock Exam 1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>CES665 Risk Management and Safety - Mock Exam 1</h3>
+            <p>Time allowed: 2 Hrs. (Recommended)</p>
+        </div>
+
+        <div class="question-section-title">Section A: Short Answer Questions</div>
+
+        <div class="question-block" id="mock1_q1">
+            <div class="question-text">Question 1 (5 Marks)<br>Define "Risk Appetite" and explain how it differs from "Risk Tolerance."</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_q1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Risk Appetite:</strong> Risk appetite is the degree of uncertainty an entity (organization or individual) is willing to take on in anticipation of a reward. It's a high-level, strategic guideline that reflects the organization's general attitude toward risk-taking to achieve its objectives.</p>
+                <p><strong>Difference from Risk Tolerance:</strong></p>
+                <ul>
+                    <li><strong>Risk Appetite</strong> is a broader, strategic concept about the *amount* and *type* of risk an organization is willing to pursue or retain.</li>
+                    <li><strong>Risk Tolerance</strong> is more specific and operational. It refers to the specified range of acceptable variation or deviation an entity is willing to accept around specific objectives (e.g., a +/- 10% tolerance on budget). Tolerance operates within the boundaries set by the overall risk appetite.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 1, Slides 7 & 8.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_q2">
+            <div class="question-text">Question 2 (5 Marks)<br>List five common components of a Pre-tender Health and Safety Plan.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_q2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>Five common components of a Pre-tender Health and Safety Plan include:</p>
+                <ol>
+                    <li>General description and location of the work.</li>
+                    <li>Existing on-site conditions (e.g., ground conditions, existing utilities, known hazards).</li>
+                    <li>Hazards from existing structures (especially for demolition or refurbishment).</li>
+                    <li>The design (highlighting inherent H&S considerations or challenges).</li>
+                    <li>Site rules and procedures (client-specific H&S requirements contractors must adhere to).</li>
+                </ol>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 10, Slide 81.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_q3">
+            <div class="question-text">Question 3 (5 Marks)<br>What is a Risk Breakdown Structure (RBS) and why is it useful in project risk management?</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_q3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Risk Breakdown Structure (RBS):</strong> The RBS is a hierarchical structure of potential risk sources or categories of risk for a project. It provides a framework for systematically identifying risks by breaking down the project into various areas where risks might originate.</p>
+                <p><strong>Usefulness:</strong></p>
+                <ul>
+                    <li><strong>Comprehensive Identification:</strong> Helps ensure a more thorough and systematic process of risk identification by prompting consideration of various risk categories.</li>
+                    <li><strong>Organization:</strong> Assists in categorizing and organizing identified risks in the risk register.</li>
+                    <li><strong>Communication:</strong> Provides a common framework for discussing and understanding risks among stakeholders.</li>
+                    <li><strong>Checklist Basis:</strong> The lowest levels of an RBS can be used as a starting point for risk checklists.</li>
+                    <li><strong>Focus:</strong> Helps to focus risk identification efforts on specific areas of the project or types of risk.</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 3, Slide 16.</p>
+            </div>
+        </div>
+
+        <div class="question-section-title">Section B: Multiple Choice Questions</div>
+
+        <div class="question-block" id="mock1_mcq1">
+            <div class="question-text">4. A project manager decides to change the project design to use a well-known technology instead of a new, unproven one to avoid potential technical failures. This is an example of which risk response strategy?</div>
+            <ul class="options-list">
+                <li>A. Mitigate</li>
+                <li>B. Transfer</li>
+                <li>C. Avoid</li>
+                <li>D. Accept</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: Changing the plan to eliminate the threat (unproven technology) entirely is risk avoidance. (Handbook Chapter 7, Slide 56)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_mcq2">
+            <div class="question-text">5. The process of numerically analyzing the combined effect of identified individual project risks on overall project objectives is known as:</div>
+            <ul class="options-list">
+                <li>A. Perform Qualitative Risk Analysis</li>
+                <li>B. Identify Risks</li>
+                <li>C. Perform Quantitative Risk Analysis</li>
+                <li>D. Plan Risk Responses</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: This is the definition of Perform Quantitative Risk Analysis. (Handbook Chapter 6, Introduction)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_mcq3">
+            <div class="question-text">6. Which of the following is typically an OUTPUT of the Plan Risk Management process?</div>
+            <ul class="options-list">
+                <li>A. Risk Register</li>
+                <li>B. Risk Management Plan</li>
+                <li>C. Prioritized list of risks</li>
+                <li>D. Risk Response Plan</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: The primary output of Plan Risk Management is the Risk Management Plan. (Handbook Chapter 2, Slide 13)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_mcq4">
+            <div class="question-text">7. In the Loss Causation Model, "Substandard Acts or Practices" are considered:</div>
+            <ul class="options-list">
+                <li>A. Basic Causes</li>
+                <li>B. Immediate Causes</li>
+                <li>C. Lack of Control</li>
+                <li>D. Loss</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: Substandard Acts (unsafe acts) and Substandard Conditions (unsafe conditions) are categorized as Immediate Causes in the Loss Causation Model. (Handbook Chapter 15, Slide 165)</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock1_mcq5">
+            <div class="question-text">8. A construction company partners with a specialized engineering firm to implement an innovative tunneling technique that could significantly reduce project duration, sharing the potential time savings. This is an example of which strategy for positive risks?</div>
+            <ul class="options-list">
+                <li>A. Exploit</li>
+                <li>B. Enhance</li>
+                <li>C. Share</li>
+                <li>D. Accept</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: Allocating ownership of an opportunity to a third party who is best able to capture it for the benefit of the project, and sharing the benefits, is the Share strategy. (Handbook Chapter 8, Slide 66)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_mcq6">
+            <div class="question-text">9. The Total Recordable Incident Rate (TRIR) is an example of a:</div>
+            <ul class="options-list">
+                <li>A. Leading Indicator</li>
+                <li>B. Lagging Indicator</li>
+                <li>C. Predictive Indicator</li>
+                <li>D. Proactive Measure</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: TRIR tracks incidents that have already occurred, making it a reactive or lagging indicator. (Handbook Chapter 13, Slide 113)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock1_mcq7">
+            <div class="question-text">10. If a risk event has a 25% chance of occurring, and the consequence is a cost of $80,000, what is the Expected Monetary Value (EMV)?</div>
+            <ul class="options-list">
+                <li>A. $20,000</li>
+                <li>B. -$20,000</li>
+                <li>C. $80,000</li>
+                <li>D. -$60,000</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock1_mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: EMV = Probability * Impact. For a threat (cost), the impact is negative. EMV = 0.25 * (-$80,000) = -$20,000. (Handbook Chapter 6)</p>
+            </div>
+        </div>
+
+        <div class="end-of-exam">
+            END of Mock Exam 1
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

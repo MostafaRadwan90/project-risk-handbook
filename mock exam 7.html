@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Mock Exam 7</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        .bank-question-note { font-size: 0.8em; color: #800080; margin-top: 5px; font-style: italic;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>CES665 Risk Management and Safety - Mock Exam 7</h3>
+            <p>Time allowed: 2 Hrs. (Recommended)</p>
+        </div>
+
+        <div class="question-section-title">Section A: Short Answer Questions</div>
+
+        <div class="question-block" id="mock5_q1_sa">
+            <div class="question-text">Question 1 (5 Marks)<br>What are "Leading Indicators" and "Lagging Indicators" in safety performance measurement? Provide one example for each.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_q1_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Leading Indicators:</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> These are proactive safety measures that aim to identify and prevent safety hazards *before* incidents occur. They focus on future safety performance and activities that can improve safety outcomes.</li>
+                    <li><strong>Example:</strong> The number of safety training sessions conducted per month, or the percentage of workers correctly using Personal Protective Equipment (PPE).</li>
+                </ul>
+                <p><strong>Lagging Indicators:</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> These are reactive safety measures that track safety performance *after* an incident has already happened. They measure failures and past outcomes.</li>
+                    <li><strong>Example:</strong> The Total Recordable Incident Rate (TRIR) for a given period, or the number of Lost Time Injuries (LTIs).</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 13, Slides 111, 112, & 113.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_q2_sa">
+            <div class="question-text">Question 2 (5 Marks)<br>Describe the purpose and key elements of a Construction Phase Health and Safety Plan.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_q2_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Purpose:</strong></p>
+                <p>The Construction Phase Health and Safety Plan is typically developed by the main contractor. Its purpose is to detail how health and safety will be managed practically during the construction phase of the project, translating the principles of the overall H&S plan and pre-tender H&S plan into specific actions and arrangements for the site.</p>
+                <p><strong>Key Elements/Principles for Development:</strong></p>
+                <ul>
+                    <li><strong>Avoid risks altogether</strong> where possible (elimination).</li>
+                    <li><strong>Evaluate risks that cannot be avoided</strong> (risk assessment).</li>
+                    <li><strong>Combat risks at source</strong> (e.g., removing a problem rather than just posting a warning sign).</li>
+                    <li><strong>Adapt work to the individual,</strong> and give them control over speed of work where possible.</li>
+                    <li><strong>Make use of technological progress</strong> to improve safety.</li>
+                    <li><strong>Give priority to solutions protecting the whole workplace</strong> rather than individuals (collective protection over personal protection).</li>
+                    <li><strong>Ensure everyone knows what they need to do</strong> to remain safe and healthy (communication, training, information).</li>
+                    <li>Foster a <strong>positive organizational safety culture</strong> where risk control is integrated into normal work.</li>
+                </ul>
+                <p>Specific contents would include site-specific hazard controls, emergency procedures, roles and responsibilities for H&S on site, and arrangements for monitoring and review.</p>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 10, Slides 82 & 83.</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock5_q3_sa">
+            <!-- From provided question bank (Question 2: What are the main inputs, outputs and tools and techniques for each of the following processes; Identify Risks...) -->
+            <div class="bank-question-note">From provided question bank (selected process: Identify Risks).</div>
+            <div class="question-text">Question 3 (5 Marks)<br>What are the main Inputs, Tools & Techniques, and Outputs (ITTOs) for the "Identify Risks" process?</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_q3_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Inputs to Identify Risks:</strong></p>
+                <ul>
+                    <li>Project Management Plan (especially Risk Management Plan, Scope Baseline, Cost Management Plan, Schedule Management Plan, etc.)</li>
+                    <li>Project Documents (e.g., Assumption Log, Lessons Learned Register, Stakeholder Register, Requirements Documentation)</li>
+                    <li>Enterprise Environmental Factors (EEFs) (e.g., industry studies, published checklists)</li>
+                    <li>Organizational Process Assets (OPAs) (e.g., lessons learned from past projects, risk checklists)</li>
+                </ul>
+                <p><strong>Tools & Techniques for Identify Risks:</strong></p>
+                <ul>
+                    <li>Expert Judgment</li>
+                    <li>Data Gathering (e.g., Brainstorming, Checklists, Interviews, Delphi Technique)</li>
+                    <li>Data Analysis (e.g., Root Cause Analysis, SWOT Analysis, Assumption and Constraint Analysis)</li>
+                    <li>Diagramming Techniques (e.g., Cause and Effect Diagrams, Flowcharts, Influence Diagrams)</li>
+                    <li>Meetings (Risk Workshops)</li>
+                </ul>
+                <p><strong>Outputs of Identify Risks:</strong></p>
+                <ul>
+                    <li><strong>Risk Register (Initial):</strong> Containing a list of identified risks, potential risk owners, and potential responses.</li>
+                    <li>Risk Report (may be initiated or updated)</li>
+                    <li>Project Documents Updates (e.g., Assumption Log, Lessons Learned Register)</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 4, Slide 23 and PMBOK principles.</p>
+            </div>
+        </div>
+
+        <div class="question-section-title">Section B: Multiple Choice Questions</div>
+
+        <div class="question-block" id="mock5_mcq1">
+            <!-- From provided question bank (Deciding how to approach, plan and execute the risk management activities...) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">4. Deciding how to approach, plan and execute the risk management activities for a project, defines:</div>
+            <ul class="options-list">
+                <li>A. Risk management plan</li>
+                <li>B. Project risk management</li>
+                <li>C. Risk management planning procedure</li>
+                <li>D. Risk management process</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: The Risk Management Plan is the document that outlines how risk management activities will be structured and performed. "Risk management planning procedure" is part of developing this plan. "Project risk management" and "risk management process" are broader terms for the overall discipline and set of activities. (Handbook Chapter 2, Slide 14)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_mcq2">
+            <!-- From provided question bank (Requirements, technology and complexity are:) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">5. Requirements, technology and complexity are examples of which category in a Risk Breakdown Structure (RBS)?</div>
+            <ul class="options-list">
+                <li>A. Technical risks</li>
+                <li>B. External risks</li>
+                <li>C. Project management risks</li>
+                <li>D. Construction risks</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: These are classic examples of technical risk sources often found under the "Technical" category in an RBS. (Handbook Chapter 3, Slide 16)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_mcq3">
+            <!-- From provided question bank (Changing project scope to increase risk or condition or to protect the project objectives...) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">6. Changing project scope to eliminate a threat or protect the project objectives from its impact, defines which risk response strategy?</div>
+            <ul class="options-list">
+                <li>A. Avoidance</li>
+                <li>B. Mitigation</li>
+                <li>C. Acceptance</li>
+                <li>D. Transfer</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: Risk Avoidance involves changing the project plan (which can include scope changes) to eliminate the threat or its impact entirely. (Handbook Chapter 7, Slide 56)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_mcq4">
+            <!-- From provided question bank (The ultimate aim of all these techniques is to identify and prepare a comprehensive list of risks in a project:) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">7. Brainstorming, Delphi Technique, and Interviews are primarily examples of:</div>
+            <ul class="options-list">
+                <li>A. Modeling Techniques</li>
+                <li>B. Data Gathering Techniques (for risk identification)</li>
+                <li>C. Variance and trend techniques</li>
+                <li>D. Risk Analysis Techniques</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: These are all well-known data gathering techniques used extensively in the Identify Risks process to compile a list of potential risks. (Handbook Chapter 4, Slides 25, 26, 28)</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock5_mcq5">
+            <!-- From provided question bank (15 Which of the following is FALSE regarding risk management?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">8. Which of the following is FALSE regarding risk management?</div>
+            <ul class="options-list">
+                <li>1. All identified risks are maintained in the risk register.</li>
+                <li>2. Risk prioritization occurs in Qualitative Risk Analysis.</li>
+                <li>3. Risk prioritization occurs in Quantitative Risk Analysis.</li>
+                <li>4. Low priority risks are maintained in a watch list.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: 1. True, the risk register is the central repository. 2. True, qualitative analysis prioritizes risks. 4. True, watchlists are for low-priority risks. 3. False, while quantitative analysis provides numerical data that can further refine prioritization or identify key drivers of overall risk, the primary *act* of prioritization based on probability and impact scales is a hallmark of Qualitative Risk Analysis. Quantitative analysis provides more detailed numerical insights on already prioritized risks. (Handbook Chapter 5 & 6)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_mcq6">
+             <!-- From provided question bank (16 A project manager has assembled the project team, identified 56 risks...) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">9. A project manager has assembled the project team, identified 56 risks on the project, determined what would trigger the risks, rated them on a risk rating matrix, tested their assumptions and assessed the quality of the data used. The team is continuing to move through the risk management process. What has the project manager forgotten to do before moving to detailed response planning?</div>
+            <ul class="options-list">
+                <li>1. Simulation</li>
+                <li>2. Risk mitigation (This is a response strategy, not a forgotten step in analysis)</li>
+                <li>3. Overall risk ranking for the project (Prioritized list)</li>
+                <li>4. Involving of other stakeholders (This should happen throughout, but a specific output is missing)</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: After rating risks on a matrix (Qualitative Analysis), a key output is the overall risk ranking or prioritized list of risks. This step is crucial before deciding on specific mitigation or other responses, or moving to quantitative analysis like simulation if needed. (Handbook Chapter 5, Section 5.4)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock5_mcq7">
+             <!-- From provided question bank (17 Risk monitoring and control involves all of the following tasks except:) -->
+            <div class="bank-question-note">From provided question bank (Same as MCQ in Mock Exam 2, kept for bank coverage).</div>
+            <div class="question-text">10. Risk monitoring and control involves all of the following tasks except:</div>
+            <ul class="options-list">
+                <li>1. Identifying new risks.</li>
+                <li>2. Ensuring the execution of risk plans.</li>
+                <li>3. Contingency planning.</li>
+                <li>4. Evaluating and execution of risk plans.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock5_mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: 3</strong></p>
+                <p class="rationale-text">Rationale: Contingency *planning* (developing the plans) is done in the "Plan Risk Responses" process. Risk Monitoring and Control involves *implementing* or *executing* those plans if risk triggers occur, identifying new risks, and evaluating the effectiveness of risk plans. (Handbook Chapter 9, Slide 68)</p>
+            </div>
+        </div>
+
+        <div class="end-of-exam">
+            END of Mock Exam 5
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

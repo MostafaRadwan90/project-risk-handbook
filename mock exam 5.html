@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CES665 Risk Management and Safety - Mock Exam 5</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .exam-header { margin-bottom: 30px; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text { font-weight: bold; margin-bottom: 10px; font-size: 1.1em; }
+        .options-list { list-style-type: none; padding-left: 0; }
+        .options-list li { margin-bottom: 8px; }
+        .btn-show-answer { margin-top: 10px; }
+        .answer-block {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .answer-block strong { color: #28a745; }
+        .rationale-text { margin-top: 8px; font-style: italic; color: #555; }
+        .page-origin-note {font-size: 0.8em; color: #6c757d; text-align: right; margin-bottom: -15px; margin-right: -5px;}
+        .question-section-title { font-size: 1.5em; color: #007bff; margin-bottom:20px; padding-bottom:10px; border-bottom: 1px solid #ccc;}
+        .end-of-exam { text-align: center; font-weight: bold; margin-top: 40px; padding: 15px; background-color: #007bff; color: white; border-radius: 5px; }
+        .image-placeholder { text-align: center; margin: 15px 0; }
+        .image-placeholder img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        .bank-question-note { font-size: 0.8em; color: #800080; margin-top: 5px; font-style: italic;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h2>AIN SHAMS UNIVERSITY, FACULTY OF ENGINEERING</h2>
+            <h3>CES665 Risk Management and Safety - Mock Exam 5</h3>
+            <p>Time allowed: 2 Hrs. (Recommended)</p>
+        </div>
+
+        <div class="question-section-title">Section A: Short Answer Questions</div>
+
+        <div class="question-block" id="mock3_q1_sa">
+            <!-- From provided question bank (Question 2: Explain the difference between the following: - Residual and Secondary Risks [2 marks]) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">Question 1 (5 Marks)<br>Explain the difference between Residual Risks and Secondary Risks. Provide an example for each.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_q1_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Residual Risks:</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Residual risks are those risks that remain *after* risk responses have been implemented. No risk response is usually 100% effective in eliminating a risk (unless it's avoidance), so some level of risk often remains. These are the "leftover" risks that the project team may decide to accept or monitor.</li>
+                    <li><strong>Example:</strong> A project team identifies a risk of a 2-week delay due to potential bad weather. They implement a mitigation strategy by adding 1 week of buffer to the schedule for this activity. The residual risk is that the bad weather could still cause more than 1 week of delay (e.g., a 1.5-week delay would mean 0.5 weeks of impact despite the buffer).</li>
+                </ul>
+                <p><strong>Secondary Risks:</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Secondary risks are new risks that arise as a *direct result* of implementing a specific risk response. The action taken to address one risk creates another.</li>
+                    <li><strong>Example:</strong> To mitigate the risk of in-house development delays for a software module (original risk), the project manager decides to outsource the development to a third-party vendor (risk response). A secondary risk created by this outsourcing decision could be "the vendor fails to deliver on time or to the required quality standards," or "loss of intellectual property to the vendor."</li>
+                </ul>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 7, Slide 52.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_q2_sa">
+            <div class="question-text">Question 2 (5 Marks)<br>What are the main deliverables of the Perform Qualitative Risk Analysis procedure?</div>
+             <!-- From provided question bank (modified from "Question 2: State the following procedures and determine what are its main deliverables/s: - Qualitative Risk Analysis Procedure [5 marks]") -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_q2_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p>The main deliverables (outputs) of the Perform Qualitative Risk Analysis procedure are primarily updates to project documents, most significantly the <strong>Risk Register</strong>. These updates include:</p>
+                <ul>
+                    <li><strong>Risk Prioritization / Ranked List of Risks:</strong> Identified risks are ranked or prioritized based on their assessed probability and impact. This helps focus attention on the most significant risks.</li>
+                    <li><strong>Risk Ratings/Scores:</strong> Each risk is assigned a rating (e.g., High, Medium, Low) or a score derived from the Probability and Impact Matrix.</li>
+                    <li><strong>Watchlist:</strong> A list of low-priority risks that do not require immediate proactive management but should be monitored.</li>
+                    <li><strong>Risks Grouped by Categories:</strong> Risks may be categorized (e.g., by source using RBS, by project phase affected) to identify concentrations of risk.</li>
+                    <li><strong>Risk Urgency Information:</strong> Identification of risks that may require urgent responses, even if their overall P&I score isn't the absolute highest.</li>
+                    <li><strong>Basis of Assessment:</strong> The rationale behind the probability and impact assessments for each risk, providing context for the prioritization.</li>
+                    <li><strong>List of Risks for Additional Analysis and Response:</strong> High-priority risks that will proceed to quantitative analysis (if planned) or directly to risk response planning.</li>
+                </ul>
+                <p>Other project documents that might be updated include the Assumption Log (if assumptions are challenged or new ones arise during analysis) and potentially an Issue Log if some items are deemed current problems rather than future risks.</p>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 5, Section 5.4 and the "Risk Register Updated" slide.</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_q3_sa">
+            <div class="question-text">Question 3 (5 Marks)<br>Describe the "Mitigate" risk response strategy and list three distinct examples of mitigation actions.</div>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_q3_sa')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Model Answer:</strong></p>
+                <p><strong>Mitigate Risk Response Strategy:</strong></p>
+                <p>Risk mitigation is a response strategy for negative risks (threats) where the project team takes active steps to reduce the probability of the risk occurring and/or its potential impact on project objectives if it does occur. The goal is to bring the risk exposure down to an acceptable threshold, rather than eliminating the risk entirely (as in avoidance).</p>
+                <p><strong>Three Examples of Mitigation Actions:</strong></p>
+                <ol>
+                    <li><strong>Adopting Less Complex Processes:</strong> Simplifying a complex technical approach or manufacturing process can reduce the likelihood of errors, defects, or delays.</li>
+                    <li><strong>Conducting More Tests or Inspections:</strong> Increased testing of a software module or more frequent quality inspections of construction work can reduce the probability of failures or defects reaching the end-user or next project phase, thereby reducing their impact.</li>
+                    <li><strong>Choosing a More Stable or Reliable Supplier:</strong> If there's a risk of supply chain disruption, selecting a supplier with a proven track record of reliability, even if slightly more expensive, can reduce the probability of delivery delays or quality issues.</li>
+                </ol>
+                <p class="rationale-text">Rationale: Based on Handbook Chapter 7, Slides 57 & 58.</p>
+            </div>
+        </div>
+
+        <div class="question-section-title">Section B: Multiple Choice Questions</div>
+
+        <div class="question-block" id="mock3_mcq1">
+            <!-- From provided question bank (Question 17) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">4. Communication, site rules and moral obligations are some of the safety and health plan contents.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq1')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: A comprehensive Health and Safety Plan includes communication strategies for safety information, site-specific rules, and often implies moral and legal obligations regarding safety. (Handbook Chapter 10, Slide 79 & 81)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_mcq2">
+            <!-- From provided question bank (Question 18) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">5. Contingency reserves are set aside for both passive and active acceptance response strategy.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq2')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: Contingency reserves are specifically associated with *active* acceptance, where proactive steps (like setting aside funds/time) are taken. Passive acceptance involves no action other than documenting the risk. (Handbook Chapter 8, Slide 63)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_mcq3">
+            <!-- From provided question bank (Question 19) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">6. Residual risks are risks that remain after all of the response strategies have been implemented.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq3')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: This is the definition of residual risk – the risk remaining after responses. (Handbook Chapter 7, Slide 52)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_mcq4">
+            <!-- From provided question bank (Question 20) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">7. Risk outcomes and risk event status are some of risk characteristics.</div>
+            <ul class="options-list">
+                <li>A. False</li>
+                <li>B. True</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq4')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: B</strong></p>
+                <p class="rationale-text">Rationale: Understanding potential outcomes (impacts) and the current status (e.g., active, closed, occurred) are key characteristics documented for risks, typically in the risk register.</p>
+            </div>
+        </div>
+        
+        <div class="question-block" id="mock3_mcq5">
+            <!-- From provided question bank (Risk monitoring and control involves all the following tasks except:) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">8. Risk monitoring and control involves all the following tasks except:</div>
+            <ul class="options-list">
+                <li>A. Identifying new risks.</li>
+                <li>B. Evaluating and execution of risk plans.</li>
+                <li>C. Ensuring the execution of risk plans.</li>
+                <li>D. Contingency planning.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq5')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: D</strong></p>
+                <p class="rationale-text">Rationale: Contingency planning (developing the actual plans) is part of the "Plan Risk Responses" process. Risk Monitoring and Control involves implementing/executing those plans if triggers occur, identifying new risks, and evaluating existing plans. (Handbook Chapter 9, Slide 68)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_mcq6">
+            <!-- From provided question bank (What is the most effective document to review to learn about the project's procedure for managing risk?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">9. What is the most effective document to review to learn about the project's procedure for managing risk?</div>
+            <ul class="options-list">
+                <li>A. A risk management plan</li>
+                <li>B. A risk analysis plan</li>
+                <li>C. A project plans</li>
+                <li>D. A risk assessment study.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq6')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: A</strong></p>
+                <p class="rationale-text">Rationale: The Risk Management Plan specifically outlines the methodology, roles, responsibilities, timing, and procedures for conducting risk management activities on the project. (Handbook Chapter 2, Slides 14 & 15)</p>
+            </div>
+        </div>
+
+        <div class="question-block" id="mock3_mcq7">
+            <!-- From provided question bank (Which document is developed along the risk management processes from identifying risks through performing qualitative risk analysis to control risk?) -->
+            <div class="bank-question-note">From provided question bank.</div>
+            <div class="question-text">10. Which document is developed and updated along the risk management processes from identifying risks through performing qualitative risk analysis to control risk?</div>
+            <ul class="options-list">
+                <li>A. A list of risk triggers.</li>
+                <li>B. Risk mitigation (plan/document)</li>
+                <li>C. Risk register.</li>
+                <li>D. Decision tree.</li>
+            </ul>
+            <button class="btn btn-primary btn-sm btn-show-answer" onclick="toggleAnswer('mock3_mcq7')">Show Answer</button>
+            <div class="answer-block">
+                <p><strong>Correct Answer: C</strong></p>
+                <p class="rationale-text">Rationale: The Risk Register is initiated during Identify Risks and is continuously updated throughout all subsequent risk management processes, including qualitative analysis, quantitative analysis, response planning, and monitoring/control. (Handbook Chapter 4, Slide 29)</p>
+            </div>
+        </div>
+
+        <div class="end-of-exam">
+            END of Mock Exam 3
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(questionId) {
+            var answerBlock = document.querySelector('#' + questionId + ' .answer-block');
+            var button = document.querySelector('#' + questionId + ' .btn-show-answer');
+            if (answerBlock.style.display === 'none' || answerBlock.style.display === '') {
+                answerBlock.style.display = 'block';
+                button.textContent = 'Hide Answer';
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary');
+            } else {
+                answerBlock.style.display = 'none';
+                button.textContent = 'Show Answer';
+                button.classList.remove('btn-secondary');
+                button.classList.add('btn-primary');
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
